@@ -1,13 +1,12 @@
-import './App.css'
 
-function App() {
 
+
+const App =()=>{
   return (
     <>
-   <h2> tarvel agency</h2>
-   <h1>proshanto saha</h1>
+      <h1 className="text-center text-3xl font-bold">Hello world!</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
