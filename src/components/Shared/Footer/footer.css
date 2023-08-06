@@ -1,7 +1,7 @@
 /* Footer container */
 .footer {
-  background-color: #5a5858;
-  color: #fff;
+  background-color: #fdfafa;
+  color: #0b0b0b;
   padding: 40px 0;
 }
 
@@ -26,14 +26,14 @@
 .header {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: #0c0c0c;
 }
 
 /* Footer paragraphs */
 .paragraph {
   font-size: 14px;
   line-height: 1.6;
-  color: #ccc;
+  color: #191818;
 }
 
 /* Footer contact info and links */
@@ -48,7 +48,7 @@
 }
 
 .social-media li a {
-  color: #ccc;
+  color: #171616;
   text-decoration: none;
 }
 

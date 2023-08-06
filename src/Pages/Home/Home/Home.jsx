@@ -1,10 +1,14 @@
-
+import Explore from '../Explore/Explore';
+import Intro from '../Intro/Intro';
+import Slider from '../Slider/Slider';
 
 
 const Home = () => {
     return (
         <div>
-            <h2 className="text-red-600">this is home</h2>
+            <Slider/>
+            <Intro/>
+            <Explore/>
         </div>
     );
 };
