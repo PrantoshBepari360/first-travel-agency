@@ -2,11 +2,14 @@ import img from "../../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg
 
 const Explore = () => {
   return (
-    <div className="mb-10">
-      <section className="mb-5">
-        <h2 className="font-mono md:text-6xl text-4xl text-center">
-          About our Agency
-        </h2>
+    <div className="mb-20">
+      <section className="mb-9">
+        <h4 className=" md:text-6xl text-4xl text-center text-orange-500 mb-2">
+          Lets Explore the world
+        </h4>
+        <h5 className=" text-2xl text-center text-orange-500">
+          -----With fun & Joy------
+        </h5>
       </section>
       <section className="flex flex-col gap-20 sm:flex-row sm:gap-10">
         <div className="w-full sm:w-1/2 lg:w-2/5"  data-aos="fade-right">

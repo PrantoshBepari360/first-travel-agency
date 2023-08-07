@@ -1,6 +1,6 @@
 const Intro = () => {
   return (
-    <div className="flex flex-col gap-6 sm:flex-row sm:gap-6 justify-center items-center mb-10">
+    <div className="flex flex-col gap-6 sm:flex-row sm:gap-6 justify-center items-center mb-20">
       <div className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-blue-200  hover:shadow-xl p-3 rounded-xl" data-aos="fade-up"
      data-aos-duration="3000">
         <div className="text-center">
