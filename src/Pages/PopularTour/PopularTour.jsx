@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {  Autoplay, Pagination } from 'swiper/modules';
+// import {  Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import "../PopularTour/Popular.css"
 const PopularTour = () => {
@@ -18,7 +18,7 @@ const PopularTour = () => {
       <div className="container">
         <h2 className="lg:text-4xl text-xl text-center mb-12 font-semibold text-[#4e5050] ">Popular Destinations</h2>
         <Swiper
-          modules={[Pagination,Autoplay]} 
+          // modules={[Pagination,Autoplay]} 
           spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 2000 }}
