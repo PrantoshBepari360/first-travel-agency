@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TravelPackagesCard from "./TravelPackagesCard";
 
+
 const TravelPackages = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {
