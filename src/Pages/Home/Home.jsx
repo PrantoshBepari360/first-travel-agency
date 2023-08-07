@@ -4,6 +4,7 @@ import Intro from "./Intro/Intro";
 import Explore from "./Explore/Explore";
 import TravelPackages from "./TravelPackages/TravelPackages";
 import PopularTour from "./PopularTour/PopularTour";
+import Featured from "./Featured/Featured";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Explore />
       <TravelPackages />
       <PopularTour />
+      <Featured/>
     </div>
   );
 };

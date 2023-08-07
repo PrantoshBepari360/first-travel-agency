@@ -7,7 +7,7 @@ import img3 from "../../../assets/slider/diego.jpg";
 
 const Slider = () => {
   return (
-    <div className="relative mb-10">
+    <div className="relative mb-20">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

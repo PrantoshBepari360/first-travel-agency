@@ -1,0 +1,13 @@
+.featured-img{
+    height: 300px;
+    width: 820px;
+}
+
+.featured-item {
+    background-image: url('../../../assets/slider/dino-reichmuth-A5rCN8626Ck-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  

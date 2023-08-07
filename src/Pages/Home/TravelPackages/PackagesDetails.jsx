@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const PackagesDetails = () => {
   return (
-    <div className='container'>
-        <h2 className='text-4xl text-center'>Packages Details....</h2>
-        </div>
-  )
-}
+    <div className="container">
+      <h2>Hello </h2>
+    </div>
+  );
+};
 
-export default PackagesDetails
+export default PackagesDetails;

@@ -2,14 +2,17 @@ import img from "../../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg
 
 const Explore = () => {
   return (
-    <div className="mb-10">
-      <section className="mb-5">
-        <h2 className="font-mono md:text-6xl text-4xl text-center">
-          Explore Our Site
-        </h2>
+    <div className="mb-20">
+      <section className="mb-9">
+        <h4 className=" md:text-6xl text-4xl text-center text-orange-500 mb-2">
+          Lets Explore the world
+        </h4>
+        <h5 className=" text-2xl text-center text-orange-500">
+          -----With fun & Joy------
+        </h5>
       </section>
       <section className="flex flex-col gap-20 sm:flex-row sm:gap-10">
-        <div className="w-full sm:w-1/2 lg:w-2/5"  data-aos="fade-right">
+        <div className="w-full sm:w-1/2 lg:w-2/5" data-aos="fade-right">
           <img src={img} className="w-full h-auto rounded-lg" alt="tour" />
         </div>
         <div className="w-full  sm:w-1/2 lg:w-3/5" data-aos="fade-left">
@@ -19,7 +22,7 @@ const Explore = () => {
             provide you with exceptional service and tailor-made itineraries
             that suit your preferences and interests. Our team of experienced
             travel experts is dedicated to helping you discover the worlds most
-            captivating destinations. 
+            captivating destinations.
           </p>
           <div className="flex gap-6 mb-4">
             <div className="flex gap-3  items-center">
@@ -36,7 +39,9 @@ const Explore = () => {
                 className="w-10"
                 alt=""
               />
-              <h2 className="font-bold">Most popular booking solution provider</h2>
+              <h2 className="font-bold">
+                Most popular booking solution provider
+              </h2>
             </div>
           </div>
           <p className="text-lg">

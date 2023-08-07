@@ -3,9 +3,9 @@ import { FaStar, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const TravelPackagesCard = ({ item }) => {
-  const { image, name, price, visited, review, reviewPeople } = item;
+  const { image, name, price, visited, review, reviewPeople, id } = item;
   return (
-    <Link to="package">
+    <Link to={`packegeDetails/${id}`}>
       <div className="border-0 shadow  mb-3 p-2 rounded cursor-pointer">
         <div className="group max-w-sm  relative max-h-full	mx-auto overflow-hidden rounded shadow-lg">
           <img
