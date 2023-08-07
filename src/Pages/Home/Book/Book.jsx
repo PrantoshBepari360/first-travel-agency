@@ -1,7 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
 import img from "../../../assets/book/brooke-bell-Houd_MDFMcU-unsplash.jpg";
-import Marquee from "react-fast-marquee";
-
 const Book = () => {
   const place = useLoaderData();
   const { title, image, description, cost, travel } = place;
@@ -45,9 +43,7 @@ const Book = () => {
         </div>
       </section>
     <div className="bg-gray-300 p-2">
-      <Marquee speed={50} className="text-md">
-        Trusted by thousands of people all over the world.Most trusted agency to enjoy your vacation with less money than any other company..
-      </Marquee>
+   
     </div>
     </div>
   );
