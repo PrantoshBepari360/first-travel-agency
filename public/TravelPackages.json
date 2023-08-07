@@ -6,8 +6,26 @@
         "price":"70",
         "visited":"20",
         "review":"4.0",
+        "title":"Amazing  Travel  in CoxBazar",
         "reviewPeople":"243 Reviews",
-        "background":"https://img.freepik.com/free-photo/caribbean-beach-with-palm-trees-blue-sky_268835-1810.jpg?w=1800&t=st=1691395742~exp=1691396342~hmac=9996f0b3deb7f321e933a17971405a1b67d02fef9afe0e155aa00559f369d5c1"
+        "tourDetails":"Runt ut labore et dolore magna aliqua enim ad minim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "backgroundImg":[
+            {
+                "background1":"https://img.freepik.com/free-photo/beautiful-landscape-cityscape-hua-hin-city-around-sea-ocean-bay_74190-9225.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background2":"https://img.freepik.com/free-photo/aerial-shot-copacabana-beach-rio-de-janeiro-brazil-crowded-with-people_181624-28621.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+              },
+              {
+                "background3":"https://img.freepik.com/free-photo/overhead-aerial-shot-different-colored-boats-sandy-beach-with-sea-nearby_181624-20946.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+              },
+              {
+                "background4":"https://img.freepik.com/free-photo/tropical-beach-with-palm-sri-lanka_167946-162.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+              }
+            
+        ]
+       
+
     },
     {
         "id":2,

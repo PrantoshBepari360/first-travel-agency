@@ -40,7 +40,7 @@ const PopularTour = () => {
         >
           {popularTour.map((destination,index) => (
             <SwiperSlide key={index}>
-              <div className="overflow-hidden rounded relative group cursor-pointer">
+              <div className="overflow-hidden  rounded relative group cursor-pointer">
                 <img
                   src={destination.image}
                   className="w-full h-auto object-cover"
