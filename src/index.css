@@ -1,16 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Public Sans", sans-serif;
-}
+
 @layer components {
   .container {
     @apply max-w-screen-xl mx-auto  w-full px-5;
@@ -21,6 +12,17 @@
   .footer_small_title {
     @apply lg:text-[20px] text-[18px]  text-[#575757];
   }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
 }
 
 h4 {
