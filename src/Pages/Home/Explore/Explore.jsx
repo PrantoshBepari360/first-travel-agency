@@ -40,9 +40,7 @@ const Explore = () => {
                 className="w-10"
                 alt=""
               />
-              <h2 className="font-bold">
-                Most popular booking solution provider
-              </h2>
+              <h2 className="font-bold">Most popular booking solution provider</h2>
             </div>
           </div>
           <p className="text-lg">
@@ -56,7 +54,7 @@ const Explore = () => {
         </div>
       </section>
 
-      <div className="container py-20">
+      <div className="py-20">
         <div className="flex justify-center align-cente w-full">
           <iframe
             id="YTvideo"
@@ -65,8 +63,8 @@ const Explore = () => {
             allowfullscreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             title="Beside you every step of the way - 30s"
-            width="1000"
-            height="560"
+            width="100%"
+            height="670"
             src="https://www.youtube.com/embed/MAtquKWcVbQ?autohide=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.libertytravel.com&amp;widgetid=1"
             data-gtm-yt-inspected-9401261_293="true"
           ></iframe>

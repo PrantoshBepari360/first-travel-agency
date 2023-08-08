@@ -6,9 +6,9 @@
         "price":"70",
         "visited":"20",
         "review":"4.0",
-        "title":"Amazing  Travel  in CoxBazar",
         "reviewPeople":"243 Reviews",
-        "tourDetails":"Runt ut labore et dolore magna aliqua enim ad minim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "title":"Amazing  Travel  in CoxBazar",
+        "tourDetails":"Runt ut labore et dolore magna aliqua enim ad minim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
         "backgroundImg":[
             {
                 "background1":"https://img.freepik.com/free-photo/beautiful-landscape-cityscape-hua-hin-city-around-sea-ocean-bay_74190-9225.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
@@ -34,7 +34,24 @@
         "price":"40",
         "visited":"30",
         "review":"3.8",
-        "reviewPeople":"289 Reviews"
+        "reviewPeople":"289 Reviews",
+        "title":"Amazing  Travel  in Sundarban",
+        "tourDetails":"Runt ut labore et dolore magna aliqua enim ad minim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "backgroundImg":[
+            {
+                "background1":"https://img.freepik.com/free-photo/beautiful-axis-deer-from-sundarbans-tiger-reserve-india_475641-831.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background2":"https://img.freepik.com/free-photo/herd-wild-deer-middle-lake-surrounded-by-greenery_181624-6260.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background3":"https://img.freepik.com/free-photo/beautiful-mangrove-forest-landscape-thailand_74190-3877.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background4":"https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1137.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph" 
+              }
+            
+        ]
     },
     {
         "id":3,
@@ -43,7 +60,24 @@
         "price":"200",
         "visited":"12",
         "review":"5.0",
-        "reviewPeople":"65 Reviews"
+        "reviewPeople":"65 Reviews",
+        "title":"Amazing  Travel  in Sylhet",
+        "tourDetails":"Runt ut labore et dolore magna aliqua enim ad minim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "backgroundImg":[
+            {
+                "background1":"https://img.freepik.com/free-photo/tea-plantation-south-korea-bright-green-bushes-are-green-tea_1101-2475.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background2":"https://img.freepik.com/free-photo/tea-pickers-working-kerela-india_53876-42847.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background3":"https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning-nature-background_335224-954.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+              },
+              {
+                "background4":"https://img.freepik.com/free-photo/asian-woman-wearing-vietnam-culture-traditional-strawberry-garden-doi-ang-khang-chiang-mai-thailand_335224-755.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph" 
+              }
+            
+        ]
     },
     {
         "id":4,

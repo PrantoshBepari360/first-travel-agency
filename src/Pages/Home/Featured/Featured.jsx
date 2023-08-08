@@ -3,7 +3,7 @@ import "./Featured.css";
 
 const Featured = () => {
   return (
-    <>
+    <div className="container">
       <section className="mb-9">
         <h4 className=" md:text-6xl text-4xl text-center text-orange-500 mb-2">
           We choose travel
@@ -31,7 +31,7 @@ const Featured = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

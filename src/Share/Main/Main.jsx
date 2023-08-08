@@ -10,6 +10,8 @@ import Register from "../../components/Auth/Register";
 import Footer from "../Footer/Footer";
 import PackagesDetails from "../../Pages/Home/TravelPackages/PackagesDetails";
 import Blog from "../../Pages/Blog/Blog";
+import TourBooking from "../../Pages/Home/TravelPackages/TourBooking";
+
 
 const Main = () => {
   return (
@@ -23,6 +25,7 @@ const Main = () => {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/tourDetails/:id" element={<PackagesDetails />}></Route>
+        <Route path="/tourBooking" element={<TourBooking></TourBooking>}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
