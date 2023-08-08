@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,13 +7,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import "../PopularTour/Popular.css"
 import { Autoplay } from "swiper";
+import { MdStar } from 'react-icons/md';
+import CommentForm from "./CommentForm";
+import SimilarTours from "./SimilarTours/SimilarTours";
+;
 
 const PackagesDetails = () => {
-  
   const { id } = useParams();
-
   const [packages, setPackages] = useState([]);
-
+  
   useEffect(() => {
     fetch("/TravelPackages.json")
       .then((res) => res.json())
@@ -21,10 +23,10 @@ const PackagesDetails = () => {
   }, []);
 
   const details = packages?.find((pk) => pk.id === Number(id));
-const { image, name, price, visited, review, reviewPeople} =  details
+
   return (
-   <div>
-<div className="relative rounded bg-center bg-cover">
+   <>
+<div className="relative  rounded bg-center bg-cover">
   <img
     className="w-full object-cover h-[400px] min-h-full"
     src="https://img.freepik.com/free-photo/caribbean-beach-with-palm-trees-blue-sky_268835-1810.jpg?w=1800&t=st=1691395742~exp=1691396342~hmac=9996f0b3deb7f321e933a17971405a1b67d02fef9afe0e155aa00559f369d5c1"
@@ -37,11 +39,33 @@ const { image, name, price, visited, review, reviewPeople} =  details
     </h2>
   </div>
 </div>
-<div className="flex flex-col  md:flex-row gap-12 mt-12 ">
-  <div className="lg:w-8/12	 w-full	">
-<div>
-<h2 className="text-3xl font-bold text-[#4e5050] mb-4">{name}</h2>
+<div className="bg-gray-100 py-12 flex flex-col md:flex-row justify-between items-center">
+ <div className="ms-2">
+ <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">Are You Still Intarested To Tour?</h2>
+  <p className="lg:text-lg text-sm text-center md:text-left pb-2">We Offer A Wide Range Of Procedures To Help You Get The Perfect Smile</p>
+ </div>
+  <div>
+  <Link to="/tourBooking">
+  <button className="booking_btn">Book A Tour!</button>
+  </Link>
+  </div>
 </div>
+<div className="flex flex-col   md:flex-row gap-6 pt-12 ">
+  <div className="lg:w-8/12	 w-full	">
+<div className="flex flex-wrap  md:flex-row items-center lg:justify-between gap-1">
+  
+<div className="flex items-center  ">
+<h2 className="text-3xl font-bold text-[#4e5050]  mb-4">{details?.name}</h2>
+<MdStar className="h-9 w-9 ms-10 lg:ms-8 pb-2  text-yellow-400"></MdStar>
+<h2 className="font-bold text-lg  pb-2 ">{details?.review}</h2>
+<h2 className="text-lg  pb-2 ps-4"> ({details?.reviewPeople})</h2>
+</div>
+<div>
+<h2 className="text-lg"> {details?.visited} People</h2>
+</div>
+
+</div>
+<div className="text-[#4e5050]  mb-4 tracking-wider"> <span className="">StartFrom </span> <span className="text-2xl font-bold">${details?.price}</span> <span>/ Per Person</span></div>
   <Swiper
           modules={[Autoplay]} 
           spaceBetween={30}
@@ -65,7 +89,7 @@ const { image, name, price, visited, review, reviewPeople} =  details
         >
           {details?.backgroundImg?.map((i) => (
             <SwiperSlide key={i}>
-              <div className="overflow-hidden h-[400px] rounded relative group cursor-pointer">
+              <div className="overflow-hidden max-h-96	 rounded relative group cursor-pointer">
                 <img
                  src={i?.background1}
                   className="w-full  object-cover"
@@ -90,143 +114,23 @@ const { image, name, price, visited, review, reviewPeople} =  details
             </SwiperSlide>
           ))}
         </Swiper>
-
-
-  <div className="container">
-
-
-
-<h2>Review {details?.review}</h2>
-<h2>Review People {details?.reviewPeople}</h2>
-<h2>Visited {details?.visited}</h2>
-</div>
-
-    <h3></h3>
+        <h2 className="lg:text-4xl text-[26px] font-bold text-[#4e5050] pb-6">{details?.title}</h2>
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Tour Details</h2>
+          <p className="text-lg tracking-wide">{details?.tourDetails}</p>
+        </div>
+        <CommentForm></CommentForm>
+  
   </div>
-  <div style={{boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px"}} className="lg:w-4/12	me-4 w-full z-50 mt-[-120px] rounded bg-[#FFFFFF]  pb-8 border-none">
-    <div className="bg-[#22a5c3] py-14 rounded border-none">
-      <h2 className="text-white text-center text-2xl font-bold">Start From <span className="text-3xl"> {details?.price}</span>$/ Per Person</h2>
-    </div>
-    <form className="px-4">
-     <div className="flex pt-6 items-center justify-between gap-2">
-     <div className="mb-1  lg:w-1/2 w-full">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="name"
-        >
-          First Name <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-      <div className="mb-1 lg:w-1/2 w-full">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="subject"
-        >
-          Last Name <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Last Name"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-     </div>
-    <div className="mb-1">
-    <label class="block text-gray-700 text-sm font-bold " for="country">
-Country <span className="text-red-600 text-lg">*</span>
-</label>
-<select id="country" name="country" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
-<option value="country1">Bangladesh</option>
-<option value="country2">India</option>
-<option value="country3">Australia</option>
-<option value="country4">Canada</option>
-<option value="country5">London</option>
-</select>
-    </div>
-      <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold"
-          htmlFor="name"
-        >
-          Phone <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="number"
-          id="name"
-          name="name"
-          placeholder="Your Phone"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="subject"
-        >
-          Subject <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Subject"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-
-      <div className="flex">
-        <button
-          type="submit"
-          className="px-4 py-3  bg-[#22a5c3] font-bold text-white rounded"
-        >
-          Proceed To Book
-        </button>
-      </div>
-    </form>
+  <div className="border-2 h-80 mt-14 rounded lg:w-1/3 w-full	">
+         
   </div>
+
 </div>
-</div> 
+<SimilarTours></SimilarTours>
+</> 
   );
 };
 
 export default PackagesDetails;
 
-
-
-
-
-
-// {/* <div className="container">
-// <h2>Name {details?.name}</h2>
-// {/* <h2>Image <img src={details?.image} alt="" /></h2> */}
-
-// {/* <h2>Image <img src={details?.backgroundImg?.background1} alt="" /></h2>
-// <h2>Image <img src={details?.backgroundImg?.background2} alt="" /></h2>
-// <h2>Image <img src={details?.backgroundImg?.background3} alt="" /></h2> */}
-// {
-//   details?.backgroundImg?.map(i => (
-//    <div>
-//      <img src={i?.background1} alt="" />
-//      <img src={i?.background2} alt="" />
-//      <img src={i?.background3} alt="" />
-//     </div>
-//   ))
-// }
-// <h2>Price {details?.price}</h2>
-// <h2>Review {details?.review}</h2>
-// <h2>Review People {details?.reviewPeople}</h2>
-// <h2>Visited {details?.visited}</h2>
-// </div> */}

@@ -13,12 +13,15 @@
 
 @layer components{
     .container{
-        @apply max-w-screen-xl mx-auto  w-full px-5
+        @apply max-w-screen-xl mx-auto  w-full 
     }
     .footer_title{
         @apply text-[20px] md:text-[22px] lg:text-[24px] text-[#4e5050] font-bold lg:mb-4 mt-4 mb-2
     }
     .footer_small_title{
         @apply lg:text-[20px] text-[18px]  text-[#575757] 
+    }
+    .booking_btn{
+        @apply px-5 py-4  border-2 bg-black rounded  text-xl font-bold me-2 text-white
     }
 }

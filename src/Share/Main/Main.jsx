@@ -5,6 +5,7 @@ import Home from "../../Pages/Home/Home";
 import Contact from "../../Pages/Contact/Contact";
 import Footer from "../Footer/Footer";
 import PackagesDetails from "../../Pages/Home/TravelPackages/PackagesDetails";
+import TourBooking from "../../Pages/Home/TravelPackages/TourBooking";
 
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/tourBooking" element={<TourBooking></TourBooking>}></Route>
         <Route path="/tourDetails/:id" element={<PackagesDetails></PackagesDetails>}></Route>
       </Routes>
       <Footer />
