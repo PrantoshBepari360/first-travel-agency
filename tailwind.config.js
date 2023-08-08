@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-  }
-}
-
+    extend: {
+      colors: {
+        "regal-blue": "#243c5a",
+      },
+      margin: {
+        "5px": "5px",
+      },
+      zIndex: {
+        100: "100",
+      },
+      screens: {
+        lg: "1100px",
+      },
+    },
+  },
+};

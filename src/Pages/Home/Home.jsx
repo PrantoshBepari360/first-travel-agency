@@ -1,4 +1,3 @@
-
 import Slider from "./Slider/Slider";
 import Intro from "./Intro/Intro";
 import Explore from "./Explore/Explore";
@@ -14,7 +13,7 @@ const Home = () => {
       <Explore />
       <TravelPackages />
       <PopularTour />
-      <Featured/>
+      <Featured />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import img from "../../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg
 
 const Explore = () => {
   return (
-    <div className="mb-20">
+    <div className="container">
       <section className="mb-9">
         <h4 className=" md:text-6xl text-4xl text-center text-orange-500 mb-2">
           Lets Explore the world
@@ -11,12 +11,13 @@ const Explore = () => {
           -----With fun & Joy------
         </h5>
       </section>
+
       <section className="flex flex-col gap-20 sm:flex-row sm:gap-10">
-        <div className="w-full sm:w-1/2 lg:w-2/5" data-aos="fade-right">
+        <div className="w-full sm:w-1/2 lg:w-2/5">
           <img src={img} className="w-full h-auto rounded-lg" alt="tour" />
         </div>
-        <div className="w-full  sm:w-1/2 lg:w-3/5" data-aos="fade-left">
-          <p className="mb-4 text-lg">
+        <div className="w-full sm:w-1/2 lg:w-3/5">
+          <p className="text-lg text-justify">
             Welcome to our travel agency! We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
             provide you with exceptional service and tailor-made itineraries
@@ -54,6 +55,23 @@ const Explore = () => {
           </p>
         </div>
       </section>
+
+      <div className="container py-20">
+        <div className="flex justify-center align-cente w-full">
+          <iframe
+            id="YTvideo"
+            data-video-id="MAtquKWcVbQ"
+            frameborder="0"
+            allowfullscreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            title="Beside you every step of the way - 30s"
+            width="1000"
+            height="560"
+            src="https://www.youtube.com/embed/MAtquKWcVbQ?autohide=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.libertytravel.com&amp;widgetid=1"
+            data-gtm-yt-inspected-9401261_293="true"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };

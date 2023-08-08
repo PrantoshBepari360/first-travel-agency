@@ -125,7 +125,7 @@ const PackagesDetails = () => {
             </div>
             <div className="mb-1">
               <label
-                class="block text-gray-700 text-sm font-bold "
+                className="block text-gray-700 text-sm font-bold "
                 for="country"
               >
                 Country <span className="text-red-600 text-lg">*</span>
@@ -133,7 +133,7 @@ const PackagesDetails = () => {
               <select
                 id="country"
                 name="country"
-                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
               >
                 <option value="country1">Bangladesh</option>
                 <option value="country2">India</option>
