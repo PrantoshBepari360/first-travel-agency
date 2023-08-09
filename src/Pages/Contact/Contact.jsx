@@ -1,12 +1,9 @@
-import PersonIcon from '@mui/icons-material/Person';
-
-
 const Contact = () => {
-    return (
-        <div>
-            <PersonIcon className='text-orange-500'></PersonIcon>This is person
-        </div>
-    );
+  return (
+    <div>
+      <h1>This is Contact Page</h1>
+    </div>
+  );
 };
 
 export default Contact;

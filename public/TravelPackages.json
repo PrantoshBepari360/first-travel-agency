@@ -1,0 +1,83 @@
+[
+    {
+        "id":1,
+        "image":"https://img.freepik.com/free-photo/beautiful-landscape-cityscape-hua-hin-city-around-sea-ocean-bay_74190-9225.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph",
+        "name":"CoxBazar",
+        "price":"70",
+        "visited":"20",
+        "review":"4.0",
+        "reviewPeople":"243 Reviews"
+    },
+    {
+        "id":2,
+        "image":"https://img.freepik.com/free-photo/beautiful-axis-deer-from-sundarbans-tiger-reserve-india_475641-831.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph",
+        "name":"Sundarban",
+        "price":"40",
+        "visited":"30",
+        "review":"3.8",
+        "reviewPeople":"289 Reviews"
+    },
+    {
+        "id":3,
+        "image":"https://img.freepik.com/free-photo/tea-plantation-south-korea-bright-green-bushes-are-green-tea_1101-2475.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph",
+        "name":"Sylhet",
+        "price":"200",
+        "visited":"12",
+        "review":"5.0",
+        "reviewPeople":"65 Reviews"
+    },
+    {
+        "id":4,
+        "image":"https://img.freepik.com/free-photo/small-house-built-peaceful-green-hill-high-up-mountains_181624-8241.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph",
+        "name":"Rangamati",
+        "price":"100",
+        "visited":"10",
+        "review":"4.6",
+        "reviewPeople":"335 Reviews"
+    },
+    {
+        "id":5,
+        "image":"https://img.freepik.com/free-photo/beautiful-river-snow-covered-mountains-landscape-kashmir-state-india_1232-4805.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais",
+        "name":"Sajek Valley",
+        "price":"90",
+        "visited":"34",
+        "review":"5.0",
+        "reviewPeople":"735 Reviews"
+    },
+    {
+        "id":6,
+        "image":"https://img.freepik.com/free-photo/aerial-view-village_144627-46656.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais",
+        "name":"Khagrachhari",
+        "price":"60",
+        "visited":"39",
+        "review":"4.4",
+        "reviewPeople":"255 Reviews"
+    },
+    {
+        "id":7,
+        "image":"https://img.freepik.com/free-photo/single-boat-sea-beautiful-cloudy-sky_181624-54702.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais",
+        "name":"Kuakata",
+        "price":"72",
+        "visited":"19",
+        "review":"3.4",
+        "reviewPeople":"655 Reviews"
+    },
+    {
+        "id":8,
+        "image":"https://img.freepik.com/free-photo/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand_335224-1141.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais",
+        "name":"Sunamganj",
+        "price":"60",
+        "visited":"39",
+        "review":"3.4",
+        "reviewPeople":"855 Reviews"
+    },
+    {
+        "id":9,
+        "image":"https://img.freepik.com/free-photo/peaceful-kamphaeng-phet-town-waterfront-ping-river-with-reflection_554837-281.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais",
+        "name":"Barisal",
+        "price":"70",
+        "visited":"89",
+        "review":"5.0",
+        "reviewPeople":"55 Reviews"
+    }
+]
