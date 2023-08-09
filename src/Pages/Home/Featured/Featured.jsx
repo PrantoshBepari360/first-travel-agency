@@ -1,4 +1,4 @@
-import featuredImg from "../../../assets/book/caleb-miller-0Bs3et8FYyg-unsplash.jpg";
+import featuredImg from "../../../assets/book/caleb.jpg";
 import "./Featured.css";
 
 const Featured = () => {
@@ -12,10 +12,10 @@ const Featured = () => {
           -----to let our memories live------
         </h5>
       </section>
-      <div className="mb-10 pt-8 featured-item bg-fixed ">
+      <div className="mb-10 featured-item bg-fixed ">
         <div className="md:flex justify-center items-center py-10 px-28 bg-slate-600 bg-opacity-60">
           <div>
-            <img src={featuredImg} alt="" className="featured-img rounded-xl" />
+            <img src={featuredImg} alt="" className="featured-img rounded-xl hidden lg:block" />
           </div>
           <div className="md:ml-10 ">
             <p className="text-white font-bold mb-2">

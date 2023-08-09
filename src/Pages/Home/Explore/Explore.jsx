@@ -27,20 +27,14 @@ const Explore = () => {
           </p>
           <div className="flex gap-6 mb-4">
             <div className="flex gap-3  items-center">
-              <img
-                src="https://jufailitech.com/envatoitems/travilo/html/images/resource/f-icon-1.png"
-                className="w-10"
-                alt=""
-              />
+              <img src="" className="w-10" alt="" />
               <h2 className="font-bold">Best travel tour agency & company</h2>
             </div>
             <div className="flex gap-3  items-center">
-              <img
-                src="https://jufailitech.com/envatoitems/travilo/html/images/resource/f-icon-2.png"
-                className="w-10"
-                alt=""
-              />
-              <h2 className="font-bold">Most popular booking solution provider</h2>
+              <img src="" className="w-10" alt="" />
+              <h2 className="font-bold">
+                Most popular booking solution provider
+              </h2>
             </div>
           </div>
           <p className="text-lg">
@@ -59,8 +53,6 @@ const Explore = () => {
           <iframe
             id="YTvideo"
             data-video-id="MAtquKWcVbQ"
-            frameborder="0"
-            allowfullscreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             title="Beside you every step of the way - 30s"
             width="100%"

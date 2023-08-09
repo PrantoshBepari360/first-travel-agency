@@ -1,14 +1,10 @@
 const Intro = () => {
   return (
     <div className="flex flex-col gap-6 sm:flex-row sm:gap-6 justify-center items-center mb-20">
-      <div
-        className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-blue-200  hover:shadow-xl p-3 rounded-xl"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+      <div className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-blue-200  hover:shadow-xl p-3 rounded-xl">
         <div className="text-center">
           <img
-            src="https://jufailitech.com/envatoitems/travilo/html/images/resource/intro-1.png"
+            src=""
             className="w-24 mx-auto mb-3"
             alt=""
           />
@@ -20,14 +16,10 @@ const Intro = () => {
         </div>
       </div>
 
-      <div
-        className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-orange-200  hover:shadow-xl p-3 rounded-xl"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+      <div className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-orange-200  hover:shadow-xl p-3 rounded-xl">
         <div className="text-center">
           <img
-            src="https://jufailitech.com/envatoitems/travilo/html/images/resource/intro-2.png"
+            src=""
             className="w-24 mx-auto mb-3"
             alt=""
           />
@@ -39,14 +31,10 @@ const Intro = () => {
         </div>
       </div>
 
-      <div
-        className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-green-200  hover:shadow-xl p-3 rounded-xl"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+      <div className=" w-full border shadow-md sm:w-1/2 lg:w-1/4 hover:shadow-green-200  hover:shadow-xl p-3 rounded-xl">
         <div className="text-center">
           <img
-            src="https://jufailitech.com/envatoitems/travilo/html/images/resource/intro-3.png"
+            src=""
             className="w-24 mx-auto mb-3"
             alt=""
           />
