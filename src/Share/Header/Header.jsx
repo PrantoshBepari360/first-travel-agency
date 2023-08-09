@@ -38,7 +38,7 @@ const Header = () => {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <div className="md:w-11/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto">
+    <div className="w-11/12 mx-auto sm:w-11/12 md:w-10/12 lg:w-9/12">
       <div className="flex items-center justify-between p-2 md:block md:py-5 lg:p-2 lg:flex">
         <div className="md:hidden">
           {isMobileMenuOpen ? (
