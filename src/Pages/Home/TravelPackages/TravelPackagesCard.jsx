@@ -2,10 +2,12 @@ import React from "react";
 import { FaStar, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 const TravelPackagesCard = ({ item }) => {
-  const { image, name, price, visited, review, reviewPeople } = item;
+  const { image, name, price, visited, review, reviewPeople, id } = item;
   return (
-    <Link to="package">
+   <div>
+        <Link to={`/tourDetails/${id}`}>
       <div className="border-0 shadow  mb-3 p-2 rounded cursor-pointer">
         <div className="group max-w-sm  relative max-h-full	mx-auto overflow-hidden rounded shadow-lg">
           <img
@@ -13,7 +15,7 @@ const TravelPackagesCard = ({ item }) => {
             src={image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
         </div>
         <div className="ps-2 pe-2">
           <div className="flex pt-3 items-center justify-between">
@@ -36,6 +38,10 @@ const TravelPackagesCard = ({ item }) => {
         </div>
       </div>
     </Link>
+   </div>
+
+
+  
   );
 };
 
