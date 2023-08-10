@@ -1,17 +1,19 @@
 [
     {
-        "mainmanu":"Main-Home"
+        
+        "manuName":"Main-Home"
     },
     {
-        "mainmanu":"Main2-Home"
+        
+        "manuName":"Main2-Home"
     },
-    {
-        "mainmanu":"Main3-Home"
+    {   
+        "manuName":"Main3-Home"
     },
-    {
-        "mainmanu":"Main4-Home"
+    {   
+        "manuName":"Main4-Home"
     },
-    {
-        "mainmanu":"Main5-Home"
+    {  
+        "manuName":"Main5-Home"
     }
 ]
