@@ -6,41 +6,42 @@ import { AiOutlineFacebook,AiOutlineInstagram,AiFillLinkedin,AiOutlineGithub,AiO
 
 const Top = () => {
   return (
-    <div className=' bg-blue-400 w-[78rem] mx-auto p-6 flex flex- justify-between'>
+    <div className=' bg-blue-400'>
+      <div className=' bg-blue-400 w-[78rem] mx-auto pt-2 pr-6 pl-6 pb-14 flex flex- justify-between'>
 
       <div className='flex justify-between '>
-        <h3 className='text-white mr-8 '>Fllow us:</h3>
+        <h3 className='text-white mr-6 '>Follow us:</h3>
         <div>
-          <ul className="flex justify-center space-x-5 ">
+          <ul className="flex justify-center ">
             <li>
               <a href="#" class="text-white hover:text-gray-900  dark:hover:text-white dark:text-gray-400">
-              <AiOutlineFacebook className='mt-1 w-6 h-6 '/>
+              <AiOutlineFacebook className='w-6 h-6 mr-4 color-white '/>
               </a>
             </li>
             <li>
               <a href="#" className="text-white hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-              <AiOutlineInstagram className='mt-1 w-6 h-6'/>
+              <AiOutlineInstagram className='mr-4 w-6 h-6 '/>
               </a>
             </li>
             <li>
               <a href="#" className="text-white hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-              <AiFillLinkedin className='mt-1 w-6 h-6'/>
+              <AiFillLinkedin className='mr-4 w-6 h-6'/>
               </a>
             </li>
             <li>
               <a href="#" className="text-white hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-              <AiOutlineGithub className='mt-1 w-6 h-6'/>
+              <AiOutlineGithub className='mr-4 w-6 h-6'/>
               </a>
             </li>
             <li>
               <a href="#" className="text-white hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-              <AiOutlineDribbbleSquare className='mt-1 w-6 h-6'/>
+              <AiOutlineDribbbleSquare className='mr-4 w-6 h-6'/>
               </a>
             </li>
           </ul>
         </div>
 
-        <p className='text-white ml-8  flex '>{<HiPhone className='mr-2 '/>}01740354026</p>
+        <p className='text-white ml-5 flex '>{<HiPhone className='mr-2 '/>}01740354026</p>
       </div>
       <div className='flex'>
         <LangDrop/>
@@ -50,6 +51,8 @@ const Top = () => {
       </div>
 
     </div>
+    </div>
+    
   )
 }
 

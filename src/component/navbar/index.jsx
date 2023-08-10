@@ -6,7 +6,7 @@ import slids from '../../../src/slide.json'
 
 const Navbar = () => {
   return (
-    <div className='mx-auto bg-blue-400 '>
+    <div className='mx-auto '>
               <Bottom className="" />
 
         <Top/>

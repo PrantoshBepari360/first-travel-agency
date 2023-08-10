@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import list from './list.json'
 import {HiChevronDown}  from "react-icons/hi";
 
-const Home = () => {
+
+ 
+const ReUseNav = () => {
     const [isOpen, SetIsOpen] = useState(false)
     // const [isDropdownOpen, SetDropdownOpen] = useState(false)
 
@@ -26,5 +28,4 @@ const Home = () => {
 
     )
 }
-
-export default Home
+export default ReUseNav

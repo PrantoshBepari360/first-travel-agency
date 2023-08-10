@@ -7,9 +7,9 @@ const Element = () => {
   return (
     <div className='relative'>
          
-         <button onClick={()=>SetIsOpen((prev)=>!prev)} className=' hover:text-white flex justify-between active:text-red-400'>Elements
-         {<HiChevronDown className='h-8 ml-5' />}</button>
-         {isOpen && <div className='mt-6 z-10 absolute'>
+         <button onClick={()=>SetIsOpen((prev)=>!prev)} className=' hover:text-white flex justify-between'>Elements
+         {<HiChevronDown className='ml-2 mt-2' />}</button>
+         {isOpen && <div className='mt-8 z-10 absolute opacity-60'>
             {list.map((item,i)=>(
                 <div className=' bg-black text-gray-400 hover:text-white p-1 w-40 '>
                     <h3 className='mt-2'>{item.mainmanu}</h3>

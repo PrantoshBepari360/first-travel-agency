@@ -17,7 +17,7 @@ const Slider = () => {
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
             navigation
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
 
             spaceBetween={50}
@@ -35,17 +35,29 @@ const Slider = () => {
         >
             {slids.map((slide) => (
 
-                <SwiperSlide key={slide.image}>
+                <SwiperSlide key={slide.image} className='relative'>
 
                     <img className=''src='9.jpg' />
-                    <p className=''>{slide.title}</p>
+                    <div className='sexx absolute top-20 text=center '> 
+                        <p className='flex z-60  text-white'>{slide.title}</p>
+                        {/* <h2>Hello</h2> */}
+                    </div>
+                    
 
                 </SwiperSlide>
             ))}
-            {/* <SwiperSlide><img src='2.jpg' /></SwiperSlide>
+            {/* 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+            width: 100%
+            text-align: center;
+            
+            <SwiperSlide><img src='2.jpg' /></SwiperSlide>
             <SwiperSlide><img src='2.jpg' /></SwiperSlide>
             <SwiperSlide><img src='2.jpg' /> </SwiperSlide> */}
-            ...
+        
         </Swiper>
     )
 }
