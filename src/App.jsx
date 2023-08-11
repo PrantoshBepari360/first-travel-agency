@@ -1,17 +1,7 @@
-import Navbar from "./component/navbar";
-import Top from "./component/navbar/Top";
+import Main from "./Share/Main/Main";
 
-
-const App =()=>{
-  return (
-    <>
-     <div className="mx-auto">
-     <Navbar/>
-     </div>
-    
-
-    </>
-  );
+function App() {
+  return <Main />;
 }
 
 export default App;
