@@ -9,16 +9,17 @@ import TravelForm from "./Slider/TravelForm/TravelForm";
 
 
 const Home = () => {
+
   return (
     <div>
-      <Slider />
-      <TravelForm/>
-      <Intro />
-      <Explore />
-      <TravelPackages />
-      <PopularTour />
-      <Featured />
-      <BackgroundVideo />
+          <Slider />
+          <TravelForm />
+          <Intro />
+          <Explore />
+          <TravelPackages />
+          <PopularTour />
+          <Featured />
+          <BackgroundVideo />
     </div>
   );
 };
