@@ -36,8 +36,9 @@ const PackagesDetails = () => {
           </h2>
         </div>
       </div>
-      <div className="bg-gray-100 py-12 flex flex-col md:flex-row justify-between items-center">
-        <div className="ms-2">
+    <div className="bg-gray-100">
+    <div className="container  py-12 flex flex-col md:flex-row justify-between items-center">
+        <div className="ms-2 ">
           <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
             Are You Still Intarested To Tour?
           </h2>
@@ -52,7 +53,8 @@ const PackagesDetails = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col   md:flex-row gap-6 pt-12 ">
+    </div>
+      <div className="flex flex-col container  md:flex-row gap-6 pt-12 ">
         <div className="lg:w-8/12	 w-full	">
           <div className="flex flex-wrap  md:flex-row items-center lg:justify-between gap-1">
             <div className="flex items-center  ">
@@ -99,23 +101,10 @@ const PackagesDetails = () => {
                 <div className="overflow-hidden max-h-96	 rounded relative group cursor-pointer">
                   <img src={i?.background1} className="w-full  object-cover" />
                   <img src={i?.background2} className="w-full   object-cover" />
+                  <img src={i?.background3} className="w-full   object-cover" />
+                  <img src={i?.background4} className="w-full   object-cover" />
                 </div>
-                <div className="mb-1 lg:w-1/2 w-full">
-                  <label
-                    className="block text-gray-700 text-sm font-bold "
-                    htmlFor="subject"
-                  >
-                    Last Name <span className="text-red-600 text-lg">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Last Name"
-                    className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-                    required
-                  />
-                </div>
+                
               </SwiperSlide>
             ))}
           </Swiper>
