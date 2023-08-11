@@ -29,6 +29,11 @@ const Navlinks = [
     href: "/contact",
     label: "Contact",
   },
+  {
+    id: "5",
+    href: "/explore",
+    label: "Explore",
+  },
 ];
 
 const Header = () => {
