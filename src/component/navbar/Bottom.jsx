@@ -16,8 +16,8 @@ import list from './dropdown/list.json'
 const Bottom = ({mainmanu}) => {
     return (
         <div className='relative'>
-            <div className='absolute w-full z-50 top-10'>
-                <div className='bg-green-400 p-6 w-[78rem] mx-auto flex justify-between ' >
+            <div className=' w-full z-50 top-10 absolute'>
+                <div className='flex justify-between mx-auto bg-green-400 p-6 w-[78rem] ' >
                 <h2 className="bg-green-400 text-2xl"> helo i am bottom</h2>
 
 

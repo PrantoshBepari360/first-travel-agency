@@ -38,7 +38,7 @@ const Slider = () => {
                 <SwiperSlide key={slide.image} className='relative'>
 
                     <img className=''src='9.jpg' />
-                    <div className='sexx absolute top-20 text=center '> 
+                    <div className='text=center absolute top-20  '> 
                         <p className='flex z-60  text-white'>{slide.title}</p>
                         {/* <h2>Hello</h2> */}
                     </div>
