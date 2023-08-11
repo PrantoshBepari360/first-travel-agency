@@ -5,11 +5,14 @@ import TravelPackages from "./TravelPackages/TravelPackages";
 import PopularTour from "./PopularTour/PopularTour";
 import Featured from "./Featured/Featured";
 import BackgroundVideo from "./Slider/BackgroundVideo";
+import TravelForm from "./Slider/TravelForm/TravelForm";
+
 
 const Home = () => {
   return (
     <div>
       <Slider />
+      <TravelForm/>
       <Intro />
       <Explore />
       <TravelPackages />
