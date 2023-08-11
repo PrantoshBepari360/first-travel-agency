@@ -16,7 +16,7 @@ const TourBooking = () => {
     </h2>
   </div>
 </div>
-             <div className="lg:w-10/12	 mx-auto pt-12 w-full z-50  rounded   pb-8 border-none">
+             <div className="lg:w-10/12 container	 mx-auto pt-12 w-full z-50  rounded   pb-8 border-none">
                 <h2 className='text-center text-3xl font-bold'>Billing Details</h2>
     <form className="px-4">
      <div className="flex flex-col md:flex-row pt-6 items-center justify-between gap-4">
@@ -54,7 +54,7 @@ const TourBooking = () => {
       </div>
      </div>
      
-<div className='flex flex-col md:flex-row  items-center justify-between gap-4'>
+<div className='flex flex-col md:flex-row   items-center justify-between gap-4'>
 <div className="mb-1 lg:w-1/2 w-full">
         <label
           className="block text-gray-700 text-sm font-bold"

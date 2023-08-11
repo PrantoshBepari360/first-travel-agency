@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row  gap-2 pt-36 px-5">
+      <div className="flex container pb-12 flex-col md:flex-row  gap-2 pt-36 px-5">
         <div className="lg:w-1/3 w-full lg:mt-8 mb-6">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-[60px] h-[60px] flex justify-center items-center bg-slate-600 rounded-full">
