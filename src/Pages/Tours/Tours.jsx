@@ -1,5 +1,5 @@
 import React from "react";
-import TravelPackages from "../Home/TravelPackages/TravelPackages";
+import TravelPackages from "../../components/TravelPackages/TravelPackages";
 
 const Tours = () => {
   return (

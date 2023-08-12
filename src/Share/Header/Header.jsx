@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
-import { useAuth } from "./../../components/useProvider/useAuth";
+import { useAuth } from "../../contextApi/useAuth";
 
 const Header = () => {
   // Fetch data

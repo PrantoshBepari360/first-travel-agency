@@ -4,7 +4,7 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../PopularTour/Popular.css";
+import "./Popular.css";
 
 const PopularTour = () => {
   const [popularTour, setPopularTour] = useState([]);
