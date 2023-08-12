@@ -6,9 +6,9 @@ import ScrollToTopButton from "./ScrollToTopButton ";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="w-11/12 mx-auto py-20 sm:w-11/12 md:w-10/12 lg:w-9/12">
       <footer className=" py-8">
-        <div className="container mx-auto pb-8 flex flex-wrap justify-between">
+        <div className=" mx-auto pb-8 flex flex-wrap justify-between">
           <div className="w-full sm:w-1/2 md:w-1/4">
             <h3 className="footer_title">Travel Agency</h3>
             <ul className="">
