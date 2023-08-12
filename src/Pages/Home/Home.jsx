@@ -1,10 +1,12 @@
-import Slider from "./Slider/Slider";
-import Intro from "./Intro/Intro";
-import Explore from "./Explore/Explore";
-import TravelPackages from "./TravelPackages/TravelPackages";
-import PopularTour from "./PopularTour/PopularTour";
+
+import PopularTour from "../../components/PopularTour/PopularTour";
+import TravelPackages from "../../components/TravelPackages/TravelPackages";
+import BackgroundVideo from "./BackgroundVideo";
+import Explore from "./Explore";
 import Featured from "./Featured/Featured";
-import BackgroundVideo from "./Slider/BackgroundVideo";
+import Intro from "./Intro";
+import Slider from "./Slider";
+
 
 
 const Home = () => {
