@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { initializeFirebaseApp } from "./firebase.init";
+import { initializeFirebaseApp } from "../login/firebase/firebase.init";
 import {
   getAuth,
   createUserWithEmailAndPassword,

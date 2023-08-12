@@ -1,51 +1,56 @@
-import React from 'react';
+import React from "react";
+import { useAuth } from "../../hooks/useAuth";
 
 const CommentForm = () => {
+  const { user } = useAuth();
   return (
     <div className="max-w-xl pt-10">
-      <h3 className="text-2xl font-semibold mb-4">Leave a Comment <span className="text-red-600 text-lg">*</span> </h3>
+      <h3 className="text-2xl font-semibold mb-4">
+        Leave a Comment <span className="text-red-600 text-lg">*</span>{" "}
+      </h3>
       <form>
-      <div className="flex flex-col md:flex-row  items-center justify-between gap-4">
-     <div className="mb-1  lg:w-1/2 w-full">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="name"
-        >
-          Full Name <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Full Name"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-      <div className="mb-1 lg:w-1/2 w-full">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="subject"
-        >
-          Email <span className="text-red-600 text-lg">*</span>
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="email"
-          placeholder="Email Address"
-          className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-          required
-        />
-      </div>
-     </div>
+        <div className="flex flex-col md:flex-row  items-center justify-between gap-4">
+          <div className="mb-1  lg:w-1/2 w-full">
+            <label
+              className="block text-gray-700 text-sm font-bold "
+              htmlFor="name"
+            >
+              Full Name <span className="text-red-600 text-lg">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+              required
+            />
+          </div>
+          <div className="mb-1 lg:w-1/2 w-full">
+            <label
+              className="block text-gray-700 text-sm font-bold "
+              htmlFor="subject"
+            >
+              Email <span className="text-red-600 text-lg">*</span>
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="email"
+              placeholder={user?.email}
+              className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+              required
+              disabled
+            />
+          </div>
+        </div>
         <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold "
-          htmlFor="subject"
-        >
+          <label
+            className="block text-gray-700 text-sm font-bold "
+            htmlFor="subject"
+          >
             Comment <span className="text-red-600 text-lg">*</span>
-        </label>
+          </label>
           <textarea
             id="comment"
             name="comment"

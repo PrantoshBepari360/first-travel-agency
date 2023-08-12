@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 import { GiHiking } from "react-icons/gi";
 import { MdOutlineTravelExplore } from "react-icons/md";
@@ -45,7 +43,7 @@ const About = () => {
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
               Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
               a ornare odio. Sed non mauris vitae erat consequat auctor eu in
-              elit. Class aptent taciti sociosqu ad litora.
+              elit. className aptent taciti sociosqu ad litora.
             </p>
           </div>
           <div>
@@ -57,7 +55,7 @@ const About = () => {
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
               Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
               a ornare odio. Sed non mauris vitae erat consequat auctor eu in
-              elit. Class aptent taciti sociosqu ad litora.
+              elit. className aptent taciti sociosqu ad litora.
             </p>
           </div>
         </div>
@@ -65,50 +63,46 @@ const About = () => {
 
       <section>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-screen-xl mx-auto mb-20">
-        <div className="text-center flex flex-col items-center justify-center">
-  <p className="text-8xl mb-1">
-    <GiHiking className="text-teal-500"/>
-  </p>
-  <h2 className="text-2xl font-bold mb-1">Our Journey</h2>
-  <p>
-    Follow our transformative journey, from inception to innovation,
-    as we chart a course through challenges 
-  </p>
-</div>
-        <div className="text-center flex flex-col items-center justify-center">
-  <p className="text-8xl mb-1">
-    <MdOutlineTravelExplore className="text-teal-500"/>
-  </p>
-  <h2 className="text-2xl font-bold mb-1">Mission & Values
-</h2>
-  <p>
-    Follow our transformative journey, from inception to innovation,
-    as we chart a course through challenges 
-  </p>
-</div>
-        <div className="text-center flex flex-col items-center justify-center">
-  <p className="text-8xl mb-1">
-    <RiTeamLine className="text-teal-500"/>
-  </p>
-  <h2 className="text-2xl font-bold mb-1">Exploring the Team
-</h2>
-  <p>
-    Follow our transformative journey, from inception to innovation,
-    as we chart a course through challenges 
-  </p>
-</div>
-        <div className="text-center flex flex-col items-center justify-center">
-  <p className="text-8xl mb-1">
-    <FiCheckCircle className="text-teal-500"/>
-  </p>
-  <h2 className="text-2xl font-bold mb-1">Why Choose Us</h2>
-  <p>
-    Follow our transformative journey, from inception to innovation,
-    as we chart a course through challenges 
-  </p>
-</div>
-
-         
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-8xl mb-1">
+              <GiHiking className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Our Journey</h2>
+            <p>
+              Follow our transformative journey, from inception to innovation,
+              as we chart a course through challenges
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-8xl mb-1">
+              <MdOutlineTravelExplore className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Mission & Values</h2>
+            <p>
+              Follow our transformative journey, from inception to innovation,
+              as we chart a course through challenges
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-8xl mb-1">
+              <RiTeamLine className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Exploring the Team</h2>
+            <p>
+              Follow our transformative journey, from inception to innovation,
+              as we chart a course through challenges
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-8xl mb-1">
+              <FiCheckCircle className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Why Choose Us</h2>
+            <p>
+              Follow our transformative journey, from inception to innovation,
+              as we chart a course through challenges
+            </p>
+          </div>
         </div>
       </section>
 
@@ -116,51 +110,47 @@ const About = () => {
         <h2 className="md:text-3xl text-2xl font-bold mb-2">
           Recommended travel for you
         </h2>
-        <h2 className="text-xl  ">
-          -----Best places of the world------
-        </h2>
-
+        <h2 className="text-xl  ">-----Best places of the world------</h2>
 
         <div>
-        <Swiper
-          spaceBetween={30}
-          pagination={{ clickable: true }}
-          autoplay={{
-            delay: "3000",
-          }}
-          modules={[Autoplay]}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-          }}
-        >
-          {popularTour.map((destination) => (
-            <SwiperSlide key={destination.id}>
-              <div className="overflow-hidden relative group cursor-pointer rounded-xl">
-                <img
-                  src={destination.image}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="p-4 opacity-0 group-hover:opacity-50 delay-75	absolute  inset-0 bg-slate-800 ">
-                  <h3 className="font-semibold bottom-2 left-4  absolute mb-2  text-white text-3xl">
-                    {destination.name}
-                  </h3>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            autoplay={{
+              delay: 3000,
+            }}
+            modules={[Autoplay]}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+            }}
+          >
+            {popularTour?.map((destination) => (
+              <SwiperSlide key={destination?.id}>
+                <div className="overflow-hidden relative group cursor-pointer rounded-xl">
+                  <img
+                    src={destination.image}
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="p-4 opacity-0 group-hover:opacity-50 delay-75	absolute  inset-0 bg-slate-800 ">
+                    <h3 className="font-semibold bottom-2 left-4  absolute mb-2  text-white text-3xl">
+                      {destination.name}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     </>
