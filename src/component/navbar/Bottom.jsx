@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Home from './dropdown/Home'
-import About from './dropdown/About'
-import Tours from './dropdown/Tours'
-import Shop from './dropdown/Shop'
-import Blogs from './dropdown/Blog'
-import Element from './dropdown/Elements'
+// import Home from './dropdown/Home'
+// import About from './dropdown/About'
+// import Tours from './dropdown/Tours'
+// import Shop from './dropdown/Shop'
+// import Blogs from './dropdown/Blog'
+// import Element from './dropdown/Elements'
 import { HiMenu,HiOutlineClipboard,HiSearch} from "react-icons/hi";
-import list from './dropdown/list.json'
+import NavJson from '../../../public/Nav.json'
 
 
 
@@ -22,29 +22,14 @@ const Bottom = ({mainmanu}) => {
 
 
                 <div className=" flex   ">
-                    <div className=' flex ' >
-                        <Link to='/' className='mr-5 pb-6 hover:text-white ' >
-                            <Home
-                            item={list.mainmanu}
-                            
-                            />
-                        </Link>
-                        <Link to='/About' className='mr-5 hover:text-white'>
-                            <About />
-                        </Link>
-                        <Link to='/Tours' className='mr-5 hover:text-white'>
-                            <Tours />
-                        </Link>
-                        <Link to='/Shop' className='mr-5 hover:text-white'>
-                            <Shop />
-                        </Link>
-                        <Link to='/Blogs' className='mr-5 hover:text-white'>
-                            <Blogs />
-                        </Link>
-                        <Link to='/Element' className='mr-5 hover:text-white'>
-                            <Element />
-                        </Link>
-                    </div>
+
+                    {NavJson.map((item,i)=>(
+                        
+                    ))}
+
+
+
+                
 
                     <div className="flex-3  ">
                         <ul className="flex justify-center  space-x-5">
@@ -81,3 +66,38 @@ const Bottom = ({mainmanu}) => {
 }
 
 export default Bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div className=' flex ' >
+// <Link to='/' className='mr-5 pb-6 hover:text-white ' >
+//     <Home
+//     item={list.mainmanu}   
+//     />
+// </Link>
+// <Link to='/About' className='mr-5 hover:text-white'>
+//     <About />
+// </Link>
+// <Link to='/Tours' className='mr-5 hover:text-white'>
+//     <Tours />
+// </Link>
+// <Link to='/Shop' className='mr-5 hover:text-white'>
+//     <Shop />
+// </Link>
+// <Link to='/Blogs' className='mr-5 hover:text-white'>
+//     <Blogs />
+// </Link>
+// <Link to='/Element' className='mr-5 hover:text-white'>
+//     <Element />
+// </Link>
+// </div>
