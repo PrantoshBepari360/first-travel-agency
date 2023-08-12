@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../useProvider/useAuth";
+import { useAuth } from './../contextApi/useAuth';
 
 const Login = () => {
   const { isLoading, loginUser, signInWidthGoogle, authError } = useAuth();

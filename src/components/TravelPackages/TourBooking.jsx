@@ -1,5 +1,5 @@
 import React from "react";
-import TravelForm from "./TravelForm/TravelForm";
+import TravelForm from "../TravelForm/TravelForm";
 
 const TourBooking = () => {
   return (
