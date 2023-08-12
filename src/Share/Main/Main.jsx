@@ -14,12 +14,14 @@ import TourBooking from "../../Pages/Home/TravelPackages/TourBooking";
 import Tours from "../../Pages/Tours/Tours";
 import Shop from "../../Pages/Shop/Shop";
 import Element from "../../Pages/Element/Element";
+import Navbar from "../../component/navbar";
 
 
 const Main = () => {
   return (
     <>
       <Header />
+        <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>

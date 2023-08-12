@@ -1,7 +1,7 @@
 import React from 'react'
 import Top from './Top'
 import Bottom from './Bottom'
-import Slider from './slider'
+// import Slider from './slider'
 import slids from '../../../src/slide.json'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
 
         <Top/>
         
-        <Slider className="" slids={slids} />
+        {/* <Slider className="" slids={slids} /> */}
         {/* <div className='mt-8'> */}
         {/* <Bottom />/ */}
         {/* </div> */}
