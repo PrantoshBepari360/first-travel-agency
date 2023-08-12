@@ -12,12 +12,13 @@ import Contact from "../../Pages/Contact/Contact";
 import PackagesDetails from "../../components/TravelPackages/PackagesDetails";
 import TourBooking from "../../components/TravelPackages/TourBooking";
 import Login from "../../login/Login";
+import Navbar from "../../component/navbar";
 
 const Main = () => {
   return (
     <>
       <Header />
-        <Navbar/>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
