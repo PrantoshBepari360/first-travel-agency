@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 
-const TravelForm = ({ details }) => {
+const TravelForm = ({ destination }) => {
   return (
     <div className="py-4">
       <form className="bg-slate-100 flex flex-col md:flex-row justify-between flex-wrap gap-2 shadow rounded py-6 px-6">
@@ -14,7 +13,7 @@ const TravelForm = ({ details }) => {
           <input
             type="text"
             id="destination"
-            placeholder={details}
+            placeholder={destination?.name}
             className="w-full border-2 rounded py-3 px-3 focus:outline-none "
             required
             disabled

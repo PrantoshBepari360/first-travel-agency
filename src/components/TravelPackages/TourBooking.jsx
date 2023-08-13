@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from "react";
 import TravelForm from "../TravelForm/TravelForm";
 import { useParams } from "react-router-dom";
 import { useAuth } from "./../../hooks/useAuth";
+import { useFetchData } from "../../hooks/useFetchData";
 
 const TourBooking = () => {
   const { user } = useAuth();
   const { id } = useParams();
-  const [packages, setPackages] = useState([]);
+  const { packages } = useFetchData();
 
-  useEffect(() => {
-    fetch("/TravelPackages.json")
-      .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, []);
-
-  const details = packages?.find((pk) => pk.id === Number(id));
+  const details = packages?.find((pk) => pk?.id === Number(id));
 
   return (
     <>
@@ -34,7 +28,7 @@ const TourBooking = () => {
       <div className="w-full mx-auto z-50 rounded py-5 border-none lg:w-10/12">
         <h2 className="text-center text-3xl font-bold">Billing Details</h2>
         <form className="px-4">
-          <TravelForm details={details?.name} />
+          <TravelForm destination={details} />
           <div className="flex flex-col md:flex-row pt-6 items-center justify-between gap-4">
             <div className="mb-1  lg:w-1/2 w-full">
               <label

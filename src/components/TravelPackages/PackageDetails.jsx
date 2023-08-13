@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { MdStar } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { MdStar } from "react-icons/md";
-import { Link, useParams } from "react-router-dom";
-import SimilarTours from "../SimilarTours/SimilarTours";
 import "../PopularTour/Popular.css";
+import SimilarTours from "../SimilarTours/SimilarTours";
 import CommentForm from "./CommentForm";
+import { useFetchData } from "../../hooks/useFetchData";
 
-const PackagesDetails = () => {
+const PackageDetails = () => {
   const { id } = useParams();
-  const [packages, setPackages] = useState([]);
+  const { packages } = useFetchData();
 
-  useEffect(() => {
-    fetch("/TravelPackages.json")
-      .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, []);
-
-  const details = packages?.find((pk) => pk.id === Number(id));
+  const details = packages?.find((pk) => pk?.id === Number(id));
 
   return (
     <>
@@ -31,7 +25,7 @@ const PackagesDetails = () => {
         <div className="absolute top-0 rounded left-0 w-full h-full bg-black opacity-40"></div>
         <div className="container">
           <h2 className="xl:text-5xl mx-auto text-center lg:text-4xl text-3xl absolute top-0 left-0 w-full h-full flex items-center justify-center   text-white font-bold">
-            Tour Packages Details....
+            Tour detailss details....
           </h2>
         </div>
       </div>
@@ -105,8 +99,8 @@ const PackagesDetails = () => {
           {details?.title}
         </h2>
         <div>
-          <h2 className="text-3xl font-bold mb-4">Tour Details</h2>
-          <p className="text-lg tracking-wide">{details?.tourDetails}</p>
+          <h2 className="text-3xl font-bold mb-4">Tour details</h2>
+          <p className="text-lg tracking-wide">{details?.tourdetails}</p>
         </div>
 
         <CommentForm />
@@ -116,4 +110,4 @@ const PackagesDetails = () => {
   );
 };
 
-export default PackagesDetails;
+export default PackageDetails;

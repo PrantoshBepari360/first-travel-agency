@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { FaStar, FaUser } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useFetchData } from "../../hooks/useFetchData";
 
 const SimilarTours = () => {
   const { id } = useParams();
-  const [packages, setPackages] = useState([]);
-
-  useEffect(() => {
-    fetch("/TravelPackages.json")
-      .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, []);
+  const { packages } = useFetchData();
 
   return (
     <div className="container">
