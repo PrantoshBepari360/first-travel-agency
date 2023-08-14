@@ -17,7 +17,7 @@ import Navbar from "../../component/navbar";
 const Main = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
