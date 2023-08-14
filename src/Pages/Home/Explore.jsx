@@ -1,4 +1,4 @@
-import img from "../../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg"; // Import the image
+import img from "../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg"; // Import the image
 
 const Explore = () => {
   return (
