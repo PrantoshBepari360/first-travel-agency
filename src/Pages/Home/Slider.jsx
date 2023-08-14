@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
-import img1 from "../../../assets/slider/dino.jpg";
-import img2 from "../../../assets/slider/daniela.jpg";
-import img3 from "../../../assets/slider/diego.jpg";
+import img1 from "../../assets/slider/diego.jpg";
+import img2 from "../../assets/slider/daniela.jpg";
+import img3 from "../../assets/slider/diego.jpg";
 
 const Slider = () => {
   return (
-    <div className="relative mb-20">
+    <div className="relative mb-20 -z-100">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

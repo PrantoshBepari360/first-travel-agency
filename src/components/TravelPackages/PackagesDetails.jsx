@@ -7,8 +7,8 @@ import { Link, useParams } from "react-router-dom";
 import "../PopularTour/Popular.css";
 import { Autoplay } from "swiper";
 import { MdStar } from "react-icons/md";
-import CommentForm from "./CommentForm";
-import SimilarTours from "./SimilarTours/SimilarTours";
+import SimilarTours from "../SimilarTours/SimilarTours";
+import CommentForm from "../TravelPackages/CommentForm"
 const PackagesDetails = () => {
   const { id } = useParams();
   const [packages, setPackages] = useState([]);
@@ -119,7 +119,7 @@ const PackagesDetails = () => {
         </div>
         <div className="border-2 h-80 mt-14 rounded lg:w-1/3 w-full	"></div>
       </div>
-      <SimilarTours></SimilarTours>
+      <SimilarTours />
     </>
   );
 };

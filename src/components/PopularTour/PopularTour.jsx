@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
-import "../PopularTour/Popular.css";
+import "./Popular.css";
+
 const PopularTour = () => {
   const [popularTour, setPopularTour] = useState([]);
 
@@ -12,6 +14,7 @@ const PopularTour = () => {
       .then((res) => res.json())
       .then((data) => setPopularTour(data));
   }, []);
+
   return (
     <div className="py-8">
       <div className="container">
@@ -20,9 +23,11 @@ const PopularTour = () => {
         </h2>
         <Swiper
           spaceBetween={30}
-          slidesPerView={1}
-          autoplay={{ delay: 2000 }}
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: "3000",
+          }}
+          modules={[Autoplay]}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -38,9 +43,9 @@ const PopularTour = () => {
             },
           }}
         >
-          {popularTour.map((destination, index) => (
-            <SwiperSlide key={index}>
-              <div className="overflow-hidden  rounded relative group cursor-pointer">
+          {popularTour.map((destination) => (
+            <SwiperSlide key={destination.id}>
+              <div className="overflow-hidden rounded relative group cursor-pointer">
                 <img
                   src={destination.image}
                   className="w-full h-auto object-cover"
