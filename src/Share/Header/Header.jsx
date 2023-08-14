@@ -46,7 +46,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full mx-auto bg-white z-[100] drop-shadow-[0_1px_5px_rgba(193,193,193,0.3)]">
+    <div className="w-full mx-auto bg-gray-600 z-[100] drop-shadow-[0_1px_5px_rgba(193,193,193,0.3)]">
       <div className="w-11/12 mx-auto sm:w-11/12 md:w-10/12 lg:w-9/12">
         <div className="flex items-center justify-between p-2 md:block md:py-5 lg:p-2 lg:flex">
           <div className="md:hidden">
@@ -98,7 +98,7 @@ const Header = () => {
                   <li key={el?.id}>
                     <Link
                       to={el?.href}
-                      className="mr-6 text-gray-800 text-base font-medium hover:text-lime-500 md:mr-4 lg:mr-5 xl:mr-6"
+                      className="mr-6 text-white text-base font-medium hover:text-lime-500 md:mr-4 lg:mr-5 xl:mr-6"
                     >
                       <span>{el?.name}</span>
                     </Link>
@@ -113,7 +113,7 @@ const Header = () => {
                   key={el?.id}
                   className="relative cursor-pointer"
                 >
-                  <span className="mr-6 text-gray-800 text-base font-medium hover:text-lime-500 md:mr-4 lg:mr-5 xl:mr-6">
+                  <span className="mr-6 text-white text-base font-medium hover:text-lime-500 md:mr-4 lg:mr-5 xl:mr-6">
                     {el?.name}
                   </span>
                   <div
@@ -169,13 +169,13 @@ const Header = () => {
             {user?.email ? (
               <button
                 onClick={logOut}
-                className="text-gray-800 text-base font-medium hover:text-lime-500"
+                className="text-white text-base font-medium hover:text-lime-500"
               >
                 Sign out
               </button>
             ) : (
               <Link to="/login">
-                <button className="text-gray-800 text-base font-medium hover:text-lime-500">
+                <button className="text-white text-base font-medium hover:text-lime-500">
                   Sign in
                 </button>
               </Link>

@@ -19,7 +19,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="parallax-container relative h-screen overflow-hidden bg-stone-300">
+      <div className="parallax-container relative overflow-hidden bg-stone-300 -z-100">
         <div className="parallax-image absolute top-0 left-0 w-full h-[600px] bg-cover bg-center z-0 bgImg bg-fixed">
           <div className="overlay"></div> {/* Color overlay */}
         </div>
@@ -33,7 +33,7 @@ const About = () => {
         </div>
       </div>
       <section className="bg-stone-300 mb-20 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-32 max-w-screen-xl mx-auto p-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center justify-center gap-32 max-w-screen-xl mx-auto p-8 ">
           <div>
             <h2 className="text-3xl font-semibold mb-2">About Us</h2>
             <p>
