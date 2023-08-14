@@ -15,11 +15,7 @@ const Featured = () => {
       <div className="mb-10 featured-item bg-fixed">
         <div className="md:flex justify-center items-center py-10 px-28 bg-slate-600 bg-opacity-60">
           <div className="hidden md:block mr-10">
-            <img
-              src={featuredImg}
-              alt=""
-              className="featured-img rounded-xl"
-            />
+            <img src={featuredImg} alt="" className="featured-img rounded-xl" />
           </div>
           <div>
             <p className="text-white font-bold mb-2">

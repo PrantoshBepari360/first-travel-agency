@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
+
 import img1 from "../../assets/slider/diego.jpg";
 import img2 from "../../assets/slider/daniela.jpg";
 import img3 from "../../assets/slider/diego.jpg";
@@ -10,9 +11,9 @@ const Slider = () => {
     <div className="relative mb-20 -z-100">
       <Swiper
         spaceBetween={30}
-        centeredSlides={true}
+        slidesPerView={1}
         autoplay={{
-          delay: "3000",
+          delay: 3000,
         }}
         modules={[Autoplay]}
       >
