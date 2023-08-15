@@ -9,10 +9,11 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Blog from "../../Pages/Blog/Blog";
 import Contact from "../../Pages/Contact/Contact";
-import PackagesDetails from "../../components/TravelPackages/PackagesDetails";
+import PackageDetails from "../../components/TravelPackages/PackageDetails";
 import TourBooking from "../../components/TravelPackages/TourBooking";
 import Login from "../../login/Login";
 import Navbar from "../../component/navbar";
+import PrivetOutlet from "../../login/PrivetOutlet";
 
 const Main = () => {
   return (
@@ -23,16 +24,15 @@ const Main = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/tours" element={<Tours />}></Route>
+        <Route path="/*" element={<PrivetOutlet />}>
+          <Route path="tours" element={<Tours />}></Route>
+          <Route path="tourDetails/:id" element={<PackageDetails />}></Route>
+        </Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/element" element={<Element />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/tourDetails/:id" element={<PackagesDetails />}></Route>
-        <Route
-          path="/tourBooking"
-          element={<TourBooking />}
-        ></Route>
+        <Route path="/tourBooking/:id" element={<TourBooking />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>

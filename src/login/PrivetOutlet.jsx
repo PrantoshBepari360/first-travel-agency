@@ -1,7 +1,7 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { useAuth } from "../useProvider/useAuth";
+import { useAuth } from "./../hooks/useAuth";
 
-export const PrivetOutlet = () => {
+const PrivetOutlet = () => {
   const { user, isLoading } = useAuth();
   const location = useLocation();
 
@@ -15,3 +15,5 @@ export const PrivetOutlet = () => {
     <Navigate to="/login" state={{ from: location }} />
   );
 };
+
+export default PrivetOutlet;

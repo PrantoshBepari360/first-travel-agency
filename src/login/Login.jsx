@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from './../contextApi/useAuth';
-
+import { useAuth } from "./../hooks/useAuth";
 const Login = () => {
   const { isLoading, loginUser, signInWidthGoogle, authError } = useAuth();
   const [showPass, setShowPass] = useState(false);
