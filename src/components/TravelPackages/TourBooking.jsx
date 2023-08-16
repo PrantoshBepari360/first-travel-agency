@@ -2,6 +2,7 @@ import TravelForm from "../TravelForm/TravelForm";
 import { useParams } from "react-router-dom";
 import { useAuth } from "./../../hooks/useAuth";
 import { useFetchData } from "../../hooks/useFetchData";
+import bookingImg from "../../assets/about/flat-design.jpeg";
 
 const TourBooking = () => {
   const { user } = useAuth();
@@ -12,18 +13,16 @@ const TourBooking = () => {
 
   return (
     <>
-      <div className="relative rounded  bg-center bg-cover">
+      <div className="relative bg-cover -z-100">
         <img
-          className="w-full object-cover 	bg-bottom	 h-[300px] min-h-full"
-          src="https://img.freepik.com/free-vector/flat-design-travel-background_23-2149193475.jpg?w=1380&t=st=1691429080~exp=1691429680~hmac=52ce111fa36acc6a2b422d07bf786ff13ea472a0d6c9de869f5d1c1c778b1601"
-          alt=""
+          className="w-full object-cover h-80 lg:h-96"
+          src={bookingImg}
+          alt="Booking Image"
         />
-        <div className="absolute top-0 rounded left-0 w-full h-full bg-black opacity-40"></div>
-        <div className="container">
-          <h2 className="xl:text-5xl mx-auto text-center lg:text-4xl text-3xl absolute top-0 left-0 w-full h-full flex items-center justify-center   text-white font-bold">
-            Booking Tour....
-          </h2>
-        </div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+        <h2 className="absolute top-0 left-0 w-full h-full flex items-center justify-center  text-3xl xl:text-5xl lg:text-4xl text-white font-bold ">
+          Booking...
+        </h2>
       </div>
       <div className="w-full mx-auto z-50 rounded py-5 border-none lg:w-10/12">
         <h2 className="text-center text-3xl font-bold">Billing Details</h2>
