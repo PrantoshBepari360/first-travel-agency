@@ -23,7 +23,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="parallax-container relative overflow-hidden bg-stone-300 -z-100">
+      <div className="parallax-co relative overflow-hidden bg-stone-300 -z-100">
         <div className="parallax-image absolute top-0 left-0 w-full h-[600px] bg-cover bg-center z-0 bgImg bg-fixed">
           <div className="overlay"></div> {/* Color overlay */}
         </div>
