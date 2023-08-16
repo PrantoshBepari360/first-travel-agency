@@ -47,21 +47,6 @@ const Explore = () => {
           </p>
         </div>
       </section>
-
-      <div className="py-20">
-        <div className="flex justify-center align-cente w-full">
-          <iframe
-            id="YTvideo"
-            data-video-id="MAtquKWcVbQ"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            title="Beside you every step of the way - 30s"
-            width="100%"
-            height="670"
-            src="https://www.youtube.com/embed/MAtquKWcVbQ?autohide=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.libertytravel.com&amp;widgetid=1"
-            data-gtm-yt-inspected-9401261_293="true"
-          ></iframe>
-        </div>
-      </div>
     </div>
   );
 };
