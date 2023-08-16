@@ -1,13 +1,14 @@
-import img from "../../assets/about/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg"; // Import the image
-
+import img from "../../assets/about/aboutBg.jpg"; // Import the image
+import logo from "../../assets/logo/f-icon-1.png"
+import logo1 from "../../assets/logo/f-icon-2.png"
 const Explore = () => {
   return (
     <div className="container">
-      <section className="mb-9">
-        <h4 className=" md:text-6xl text-4xl text-center text-orange-500 mb-2">
+      <section className="mb-9 ">
+        <h4 className=" md:text-6xl font-dancingFont text-4xl  text-center text-orange-500 mb-2">
           Lets Explore the world
         </h4>
-        <h5 className=" text-2xl text-center text-orange-500">
+        <h5 className=" text-2xl font-caveatFont text-center text-orange-500">
           -----With fun & Joy------
         </h5>
       </section>
@@ -17,7 +18,7 @@ const Explore = () => {
           <img src={img} className="rounded-lg" alt="tour" />
         </div>
         <div className="w-full md:mt-10 lg:mt-0">
-          <p className="text-lg text-justify">
+          <p className="text-lg text-justify mb-5">
             Welcome to our travel agency! We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
             provide you with exceptional service and tailor-made itineraries
@@ -27,11 +28,11 @@ const Explore = () => {
           </p>
           <div className="flex gap-6 mb-4">
             <div className="flex gap-3  items-center">
-              <img src="" className="w-10" alt="" />
+              <img src={logo} className="w-10" alt="" />
               <h2 className="font-bold">Best travel tour agency & company</h2>
             </div>
             <div className="flex gap-3  items-center">
-              <img src="" className="w-10" alt="" />
+              <img src={logo1} className="w-10" alt="" />
               <h2 className="font-bold">
                 Most popular booking solution provider
               </h2>

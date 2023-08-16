@@ -16,5 +16,11 @@ export default {
         lg: "1100px",
       },
     },
+    fontFamily: {
+      yanoneFont: ['Yanone Kaffeesatz', 'sans-serif'],
+      caveatFont: ['Caveat', 'cursive'],
+      dancingFont: ["Dancing Script", "cursive"],
+    },
+   
   },
 };
