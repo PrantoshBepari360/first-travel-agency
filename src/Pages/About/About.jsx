@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "./About.css";
 
 import { GiHiking } from "react-icons/gi";
 import { MdOutlineTravelExplore } from "react-icons/md";
@@ -14,11 +13,11 @@ const About = () => {
 
   return (
     <>
-      <div className="parallax-container relative overflow-hidden bg-stone-300 -z-100">
-        <div className="parallax-image absolute top-0 left-0 w-full h-[600px] bg-cover bg-center z-0 bgImg bg-fixed">
-          <div className="overlay"></div>
+      <div className="relative overflow-hidden bg-stone-300 -z-100">
+        <div className="bg-[url('/public/brooke.jpg')] relative top-0 left-0 w-full h-[600px] bg-cover bg-center bg-fixed ">
+          <div className="absolute top-0 left-0 w-full h-[600px] bg-gray-700 bg-opacity-60"></div>
         </div>
-        <div className="parallax-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Everything About Us
           </h1>
@@ -27,8 +26,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <section>
-      
+
+      <section className="bg-stone-300">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center justify-center gap-32 max-w-screen-xl mx-auto py-10 ">
           <div>
             <h2 className="text-3xl font-semibold mb-2">About Us</h2>
@@ -55,9 +54,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </section>
-
-      <section>
+        <hr />
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-screen-xl mx-auto py-10">
           <div className="text-center flex flex-col items-center justify-center">
             <p className="text-8xl mb-1">
@@ -102,14 +99,14 @@ const About = () => {
         </div>
       </section>
 
-      <section className="mb-8 max-w-screen-xl mx-auto">
+      <section className="mb-9  max-w-screen-xl mx-auto">
         {popularTour?.length === 0 && (
           <h2 className="text-center text-4xl text-red-700">Loading...</h2>
         )}
         {popularTour?.length > 0 && (
           <>
-            <div className="text-center py-10">
-              <h2 className="md:text-3xl text-2xl font-bold mb-5">
+            <div className="text-center py-5">
+              <h2 className="md:text-3xl text-2xl font-bold py-5">
                 Recommended travel for you
               </h2>
               <h2 className="text-2xl">-----Best places of the world------</h2>

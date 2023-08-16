@@ -12,11 +12,11 @@ const Explore = () => {
         </h5>
       </section>
 
-      <section className="flex flex-col gap-20 sm:flex-row sm:gap-10">
-        <div className="w-full sm:w-1/2 lg:w-2/5">
-          <img src={img} className="w-full h-auto rounded-lg" alt="tour" />
+      <section className="lg:flex flex-col gap-20 sm:flex-row sm:gap-10">
+        <div className="w-full">
+          <img src={img} className="rounded-lg" alt="tour" />
         </div>
-        <div className="w-full sm:w-1/2 lg:w-3/5">
+        <div className="w-full md:mt-10 lg:mt-0">
           <p className="text-lg text-justify">
             Welcome to our travel agency! We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
