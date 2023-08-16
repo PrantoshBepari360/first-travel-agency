@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../contextApi/useAuth";
+import { useAuth } from "../hooks/useAuth";
 
 const Register = () => {
   const { isLoading, registerUser, signInWidthGoogle, authError, user } =

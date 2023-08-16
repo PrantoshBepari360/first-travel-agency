@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "./Popular.css";
 
 const PopularTour = () => {
   const [popularTour, setPopularTour] = useState([]);
@@ -23,9 +20,9 @@ const PopularTour = () => {
         </h2>
         <Swiper
           spaceBetween={30}
-          pagination={{ clickable: true }}
+          slidesPerView={1}
           autoplay={{
-            delay: "3000",
+            delay: 3000,
           }}
           modules={[Autoplay]}
           breakpoints={{
@@ -43,16 +40,16 @@ const PopularTour = () => {
             },
           }}
         >
-          {popularTour.map((destination) => (
-            <SwiperSlide key={destination.id}>
+          {popularTour?.map((destination) => (
+            <SwiperSlide key={destination?.id}>
               <div className="overflow-hidden rounded relative group cursor-pointer">
                 <img
-                  src={destination.image}
+                  src={destination?.image}
                   className="w-full h-auto object-cover"
                 />
                 <div className="p-4 opacity-0 group-hover:opacity-50 delay-75	absolute  inset-0 bg-slate-800 ">
                   <h3 className="font-semibold bottom-2 left-4  absolute mb-2  text-white text-3xl">
-                    {destination.name}
+                    {destination?.name}
                   </h3>
                 </div>
               </div>
