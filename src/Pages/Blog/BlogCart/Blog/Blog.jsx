@@ -1,14 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../../../hooks/useAuth";
 
 const Blog = ({ blogs }) => {
-  const { loading } = useAuth();
-
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
-
   return (
     <div className="grid md:grid-cols-2 gap-2">
       {blogs?.map((blog) => (

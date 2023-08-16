@@ -12,11 +12,11 @@ const Explore = () => {
         </h5>
       </section>
 
-      <section className="flex flex-col gap-20 sm:flex-row sm:gap-10">
-        <div className="w-full sm:w-1/2 lg:w-2/5">
-          <img src={img} className="w-full h-auto rounded-lg" alt="tour" />
+      <section className="lg:flex flex-col gap-20 sm:flex-row sm:gap-10">
+        <div className="w-full">
+          <img src={img} className="rounded-lg" alt="tour" />
         </div>
-        <div className="w-full sm:w-1/2 lg:w-3/5">
+        <div className="w-full md:mt-10 lg:mt-0">
           <p className="text-lg text-justify">
             Welcome to our travel agency! We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
@@ -47,21 +47,6 @@ const Explore = () => {
           </p>
         </div>
       </section>
-
-      <div className="py-20">
-        <div className="flex justify-center align-cente w-full">
-          <iframe
-            id="YTvideo"
-            data-video-id="MAtquKWcVbQ"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            title="Beside you every step of the way - 30s"
-            width="100%"
-            height="670"
-            src="https://www.youtube.com/embed/MAtquKWcVbQ?autohide=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.libertytravel.com&amp;widgetid=1"
-            data-gtm-yt-inspected-9401261_293="true"
-          ></iframe>
-        </div>
-      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 
 import PopularTour from "../../components/PopularTour/PopularTour";
 import TravelPackages from "../../components/TravelPackages/TravelPackages";
-import BackgroundVideo from "./BackgroundVideo";
+// import BackgroundVideo from "./BackgroundVideo";
 import Explore from "./Explore";
 import Featured from "./Featured/Featured";
 import Intro from "./Intro";
@@ -20,7 +20,7 @@ const Home = () => {
       <TravelPackages />
       <PopularTour />
       <Featured />
-      <BackgroundVideo />
+      {/* <BackgroundVideo /> */}
       <Reviews/>
     </div>
   );
