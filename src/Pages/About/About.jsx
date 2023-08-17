@@ -12,6 +12,7 @@ import { TbArmchair2 } from "react-icons/tb";
 import { GiCaptainHatProfile } from "react-icons/gi";
 import { FaUserShield } from "react-icons/fa";
 
+
 const About = () => {
   const { popularTour } = useFetchData();
 

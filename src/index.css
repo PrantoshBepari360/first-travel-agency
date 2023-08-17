@@ -12,6 +12,9 @@
   .footer_small_title {
     @apply lg:text-[20px] text-[18px]  text-[#575757];
   }
+  .booking_btn{
+    @apply px-6 py-4 bg-[#22A5C3] text-white font-bold rounded
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
@@ -25,7 +28,7 @@
   font-family: "Public Sans", sans-serif;
 }
 
-h4 {
+/* h4 {
   font-family: "Dancing Script", cursive;
 }
 
@@ -36,4 +39,4 @@ h5 {
 h6 {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
-
+ */

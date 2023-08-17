@@ -6,7 +6,7 @@ const TravelPackages = () => {
 
   return (
     <div className="container">
-      <h2 className="lg:text-4xl text-xl text-center my-8 font-semibold text-[#4e5050] ">
+      <h2 className="lg:text-4xl text-xl text-center my-8 font-dancingFont text-orange-500 font-semibold  ">
         Travel Packages
       </h2>
       {packages?.length === 0 && (
