@@ -7,6 +7,10 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { RiTeamLine } from "react-icons/ri";
 import { FiCheckCircle } from "react-icons/fi";
 import { useFetchData } from "../../hooks/useFetchData";
+import { TbCalendarStats } from "react-icons/tb";
+import { TbArmchair2 } from "react-icons/tb";
+import { GiCaptainHatProfile } from "react-icons/gi";
+import { FaUserShield } from "react-icons/fa";
 
 const About = () => {
   const { popularTour } = useFetchData();
@@ -152,6 +156,55 @@ const About = () => {
             </Swiper>
           </>
         )}
+      </section>
+
+      <section>
+        <div className="mb-10">
+          <h2 className="text-3xl text-center font-bold">Our Benefit</h2>
+          <hr className="bg-red-900 h-2 w-20  mx-auto" />
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-screen-xl mx-auto mb-20">
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-6xl mb-1">
+              <TbCalendarStats className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Personal Schedule</h2>
+            <p>
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-6xl mb-1">
+              <TbArmchair2 className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Luxury Interiors</h2>
+            <p>
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-6xl mb-1">
+              <GiCaptainHatProfile className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Safe & Confidential</h2>
+            <p>
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters
+            </p>
+          </div>
+          <div className="text-center flex flex-col items-center justify-center">
+            <p className="text-6xl mb-1">
+              <FaUserShield className="text-teal-500" />
+            </p>
+            <h2 className="text-2xl font-bold mb-1">Professional Crew</h2>
+            <p>
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
