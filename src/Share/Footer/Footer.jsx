@@ -16,17 +16,12 @@ const Footer = () => {
 
               <ul className="list-none">
                 <li className="mb-5">Awesome Road, New York, Usa</li>  
-
                 <div className="flex mb-5">
                   <BsFillTelephoneFill className="w-5 h-5"></BsFillTelephoneFill><li className="ml-4">+1 (123) 456-7890</li>
                 </div>
-
-
                 <div className="flex mb-5">
                   <MdLocationOn  className="w-5 h-5" ></MdLocationOn><li className=" ml-4">info@travelagency.com</li>
                 </div>
-
-
                 <div className="flex list-none mb-5">
                   <li> <FaFacebookF className=" text-white rounded-3xl bg-blue-600 w-[3rem] h-[3rem]  ml-3"></FaFacebookF></li>
                   <li><FaInstagram className="text-white rounded-3xl bg-red-800  w-[3rem] h-[3rem] ml-3"></FaInstagram></li>
@@ -37,7 +32,6 @@ const Footer = () => {
 
               </ul>
             </div>
-
             <div className="">
               <h2 className="text-2xl  mb-5 ">Top Destination</h2>
               <h3>New York</h3>

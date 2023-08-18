@@ -25,7 +25,7 @@ const Bottom = () => {
 
   const onEnterHandler = (subMenuId) => {
     setShowSubMenu((prev) => {
-      console.log("running");
+      // console.log("running");
       let arr = [...prev]
       arr[subMenuId] = true
       return arr;
@@ -36,7 +36,7 @@ const Bottom = () => {
 
   const subMousLeaveHandle = (subMenuId) => {
     setShowSubMenu((prev) => {
-      console.log("running");
+      // console.log("running");
       let arr = [...prev]
       arr[subMenuId] = false
       return arr;
@@ -50,12 +50,12 @@ const Bottom = () => {
 
   return (
 
-    <div className='w-full z-50 top-10 absolute'>
-      <div className='flex justify-between bg-white mx-auto p-6 w-[78rem] ' >
+    <div className='w-full sm-50 z-50 top-10 absolute'>
+      <div className='flex justify-between bg-white mx-auto p-6  w-[78%]  ' >
         <h2 className="text-2xl"> helo i am bottom</h2>
 
 
-        <div className=" flex  list-none ">
+        <div className=" lg:flex  list-none ">
           <ul className='flex '>
             {NavJson.map((item, i) => {
               // { console.log(item.name) }
@@ -113,7 +113,7 @@ const Bottom = () => {
           <div className="flex-3  ">
             <ul className="flex justify-center  space-x-5">
               <li>
-                <a href="#" class="text-gray-400">
+                <a href="#" className="text-gray-400">
                   <HiOutlineClipboard className='absolute mt-1 w-7 h-6' /><span className='relative text-white bg-menuColor font-light ml-4 rounded'>0</span>
 
                 </a>

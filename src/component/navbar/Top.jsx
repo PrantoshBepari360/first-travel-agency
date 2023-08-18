@@ -7,7 +7,7 @@ import { AiOutlineFacebook,AiOutlineInstagram,AiFillLinkedin,AiOutlineGithub,AiO
 const Top = () => {
   return (
     <div className=' bg-topColor'>
-      <div className=' flex justify-between bg-topColor w-[78rem] mx-auto pt-2 pr-6 pl-6 pb-14'>
+      <div className=' flex justify-between bg-topColor w-[80%] mx-auto pt-2 pr-6 pl-6 pb-14'>
 
       <div className='flex justify-between '>
         <h3 className='text-white mr-6 '>Follow us:</h3>
