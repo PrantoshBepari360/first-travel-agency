@@ -27,9 +27,7 @@ const Reviews = () => {
         </div>
         <div>
           {reviews?.length === 0 ? (
-            <div className="flex justify-center items-center">
-              <span className="">Loading...</span>
-            </div>
+            <div className="text-center text-4xl text-red-700">Loading...</div>
           ) : (
             <Swiper
               spaceBetween={30}
