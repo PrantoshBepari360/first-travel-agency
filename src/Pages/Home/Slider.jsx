@@ -16,13 +16,13 @@ const Slider = () => {
           delay: 3000,
         }}
         modules={[Autoplay]}
-        className="w-full h-[650px]"
+        className="w-full h-[450px] md:h-[650px]"
       >
         <SwiperSlide>
           <img
             src={img1}
-            className="w-full h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
-            alt=""
+            className="w-full h-[450px] md:h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
+            alt="Banar Image"
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
             <h2 className="lg:text-6xl md:text-3xl text-2xl text-center font-bold mb-4">
@@ -36,7 +36,7 @@ const Slider = () => {
         <SwiperSlide>
           <img
             src={img2}
-            className="w-full h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
+            className="w-full h-[450px] md:h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
@@ -51,7 +51,7 @@ const Slider = () => {
         <SwiperSlide>
           <img
             src={img3}
-            className="w-full h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
+            className="w-full h-[450px] md:h-[650px] bg-center bg-cover bg-no-repeat object-cover absolute top-0 left-0 z-0 blur-sm"
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">

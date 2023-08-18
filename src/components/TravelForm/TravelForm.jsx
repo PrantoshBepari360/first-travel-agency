@@ -1,4 +1,3 @@
-
 const TravelForm = ({ destination }) => {
   return (
     <div className="py-4">

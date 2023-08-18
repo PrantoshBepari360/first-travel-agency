@@ -5,6 +5,10 @@ export default {
     extend: {
       colors: {
         "regal-blue": "#243c5a",
+        topColor: "#00BDBB",
+        menuColor: "#00BDCA",
+        subMenybg: "#2A2A2A",
+        footer: "#333333",
       },
       margin: {
         "5px": "5px",
@@ -12,15 +16,11 @@ export default {
       zIndex: {
         100: "100",
       },
-      screens: {
-        lg: "1100px",
-      },
     },
     fontFamily: {
-      yanoneFont: ['Yanone Kaffeesatz', 'sans-serif'],
-      caveatFont: ['Caveat', 'cursive'],
+      yanoneFont: ["Yanone Kaffeesatz", "sans-serif"],
+      caveatFont: ["Caveat", "cursive"],
       dancingFont: ["Dancing Script", "cursive"],
     },
-   
   },
 };

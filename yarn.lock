@@ -886,7 +886,7 @@
 
 "@types/lodash@^4.14.105":
   version "4.14.197"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.197.tgz#e95c5ddcc814ec3e84c891910a01e0c8a378c54b"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.197.tgz"
   integrity sha512-BMVOiWs0uNxHVlHBgzTIqJYmj+PgCo4euloGF+5m4okL3rEYzM2EEv78mw8zWSMM57dM7kVIgJ2QDvwHSoCI5g==
 
 "@types/long@^4.0.1":
@@ -922,7 +922,7 @@
 
 "@types/react@^16.0.40":
   version "16.14.45"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.45.tgz#c505c96adf959971fc97b4687187c871765a6ae4"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.14.45.tgz"
   integrity sha512-XFtKkY3yuPO5VJSE6Lru9yLkVQvYE+l6NbmLp6IWCg4jo5S8Ijbpke8wC9q4NmQ5pJErT8KKboG5eY7n5n718A==
   dependencies:
     "@types/prop-types" "*"
@@ -2530,7 +2530,7 @@ react-is@^16.13.1:
 
 react-rating@2.0.5:
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/react-rating/-/react-rating-2.0.5.tgz#2c9d7ebe5907db0361ba28b7c19f0394e6e4dd76"
+  resolved "https://registry.npmjs.org/react-rating/-/react-rating-2.0.5.tgz"
   integrity sha512-uldxgLCe5bzqGX7V+7/bPgQQj2Kok6eiMgTMxjKOhfhnQkFLDlc4TjMlp7gaJFAHWdbiOnqpiShI7z8as6oWtg==
   dependencies:
     "@types/lodash" "^4.14.105"
@@ -2833,7 +2833,7 @@ supports-preserve-symlinks-flag@^1.0.0:
 
 swiper@^10.1.0:
   version "10.1.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-10.1.0.tgz#02536bcf34ba0c37cf837c5193005a8e87aa43c8"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-10.1.0.tgz"
   integrity sha512-E+wh+hcSbwlRfXuwBTclcOOikOjNdSF0a2Sdg3J4cIWtHO64A7SaLRfezfrJ67CW3GEc15AduYU2YKlElsjqsQ==
 
 tailwindcss@^3.3.3:

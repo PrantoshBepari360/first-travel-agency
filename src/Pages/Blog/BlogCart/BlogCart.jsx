@@ -23,7 +23,7 @@ const BlogCart = () => {
       <h4 className="text-center mt-5 mb-3">
         <span className="">Deal News</span> / View All Promotions
       </h4>
-      
+
       {currentBlog?.length === 0 && (
         <h2 className="mt-10 text-center text-4xl text-red-700">Loading...</h2>
       )}

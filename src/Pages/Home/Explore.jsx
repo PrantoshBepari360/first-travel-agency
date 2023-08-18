@@ -1,6 +1,6 @@
 import img from "../../assets/about/aboutBg.jpg"; // Import the image
-import logo from "../../assets/logo/f-icon-1.png"
-import logo1 from "../../assets/logo/f-icon-2.png"
+import logo from "../../assets/logo/f-icon-1.png";
+import logo1 from "../../assets/logo/f-icon-2.png";
 const Explore = () => {
   return (
     <div className="container">
