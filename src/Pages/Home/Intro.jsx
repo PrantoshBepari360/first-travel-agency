@@ -37,19 +37,7 @@ const Intro = () => {
           </p>
         </div>
       </div>
-      {/* <div className="intro-block ">
-						<div className="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
-							<div className="icon">
-								<span><img src={logo} alt=""/></span>
-							</div>
-							<h4>Budget Friendly Packages</h4>
-							<p className="travilo-text">Travel doesn't have to break the bank! Explore our curated selection
-								of
-								budget-friendly packages, where you can experience incredible adventures without
-								compromising on
-								quality. Embrace wanderlust without the financial worry.</p>
-						</div>
-					</div> */}
+  
     </div>
   );
 };
