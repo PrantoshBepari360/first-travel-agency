@@ -8,7 +8,7 @@ import "../PopularTour/Popular.css";
 import { Autoplay } from "swiper";
 import { MdStar } from "react-icons/md";
 import SimilarTours from "../SimilarTours/SimilarTours";
-import CommentForm from "../TravelPackages/CommentForm"
+import CommentForm from "../TravelPackages/CommentForm";
 const PackagesDetails = () => {
   const { id } = useParams();
   const [packages, setPackages] = useState([]);
@@ -36,24 +36,24 @@ const PackagesDetails = () => {
           </h2>
         </div>
       </div>
-    <div className="bg-gray-100">
-    <div className="container  py-12 flex flex-col md:flex-row justify-between items-center">
-        <div className="ms-2 ">
-          <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
-            Are You Still Intarested To Tour?
-          </h2>
-          <p className="lg:text-lg text-sm text-center md:text-left pb-2">
-            We Offer A Wide Range Of Procedures To Help You Get The Perfect
-            Smile
-          </p>
-        </div>
-        <div>
-          <Link to="/tourBooking">
-            <button className="booking_btn">Book A Tour!</button>
-          </Link>
+      <div className="bg-gray-100">
+        <div className="container  py-12 flex flex-col md:flex-row justify-between items-center">
+          <div className="ms-2 ">
+            <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
+              Are You Still Intarested To Tour?
+            </h2>
+            <p className="lg:text-lg text-sm text-center md:text-left pb-2">
+              We Offer A Wide Range Of Procedures To Help You Get The Perfect
+              Smile
+            </p>
+          </div>
+          <div>
+            <Link to="/tourBooking">
+              <button className="booking_btn">Book A Tour!</button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
       <div className="flex flex-col container  md:flex-row gap-6 pt-12 ">
         <div className="lg:w-8/12	 w-full	">
           <div className="flex flex-wrap  md:flex-row items-center lg:justify-between gap-1">
@@ -104,7 +104,6 @@ const PackagesDetails = () => {
                   <img src={i?.background3} className="w-full   object-cover" />
                   <img src={i?.background4} className="w-full   object-cover" />
                 </div>
-                
               </SwiperSlide>
             ))}
           </Swiper>
