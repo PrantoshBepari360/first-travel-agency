@@ -17,7 +17,7 @@ const Header = () => {
         });
     })();
   }, []);
-console.log(Navlinks);
+
   const [showSubMenu, setShowSubMenu] = useState([]);
   const { user, logOut } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

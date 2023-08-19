@@ -18,8 +18,10 @@ const Reviews = () => {
     <>
       <div className="container">
         <div className="my-10 text-center">
-          <h2>Customer Reviews</h2>
-          <p>
+          <h2 className="md:text-6xl font-dancingFont text-4xl  text-center text-orange-500 mb-2">
+            Customer Reviews
+          </h2>
+          <p className="text-xl font-caveatFont text-center text-orange-500 md:w-[60%] w-full mx-auto">
             This Our Services from our valuable Customer, those who get from BD
             Travel agency. We every time provide best quality services to our
             cusotmer.
@@ -27,9 +29,7 @@ const Reviews = () => {
         </div>
         <div>
           {reviews?.length === 0 ? (
-            <div className="flex justify-center items-center">
-              <span className="">Loading...</span>
-            </div>
+            <div className="text-center text-4xl text-red-700">Loading...</div>
           ) : (
             <Swiper
               spaceBetween={30}

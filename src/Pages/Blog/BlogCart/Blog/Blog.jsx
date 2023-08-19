@@ -1,14 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../../../hooks/useAuth";
 
 const Blog = ({ blogs }) => {
-  const { loading } = useAuth();
-
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
-
   return (
     <div className="grid md:grid-cols-2 gap-2">
       {blogs?.map((blog) => (
@@ -27,13 +20,14 @@ const Blog = ({ blogs }) => {
             <div className="flex justify-between items-center">
               <h5 className="text-gray-500">Cost: {blog?.price}</h5>
 
-              <Link
+              
+             <Link
                 className="px-3 py-2 border rounded-full bg-white text-orange-500 border-orange-500 hover:text-white hover:border-white hover:bg-orange-500"
                 to={`/tourDetails/${blog?.id}`}
               >
                 Read More
-              </Link>
-            </div>
+              </Link> 
+            </div> 
           </div>
         </div>
       ))}
