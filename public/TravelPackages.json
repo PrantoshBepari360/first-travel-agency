@@ -86,7 +86,23 @@
         "price":"100",
         "visited":"10",
         "review":"4.6",
-        "reviewPeople":"335 Reviews"
+        "reviewPeople":"335 Reviews",
+        "title":"Amazing  Travel  in Rangamati",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/small-house-built-peaceful-green-hill-high-up-mountains_181624-8241.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand_335224-1063.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/limestone-halong-bay-landscape_1385-183.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/light-forest-day-anime-background-illustration-generative-ai_1258-150804.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=sph" 
+            }
+          
+      ]
     },
     {
         "id":5,
@@ -95,7 +111,23 @@
         "price":"90",
         "visited":"34",
         "review":"5.0",
-        "reviewPeople":"735 Reviews"
+        "reviewPeople":"735 Reviews",
+        "title":"Amazing  Travel  in Sajek Valley",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/beautiful-river-snow-covered-mountains-landscape-kashmir-state-india_1232-4805.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/breathtaking-scenery-amazing-landscape-view_181624-19152.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/beautiful-view-remarkables-mountain-range-queenstown-new-zealand_181624-45497.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/outdoor-onsen-japan_1232-2495.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+            }
+          
+      ]
     },
     {
         "id":6,
@@ -104,7 +136,23 @@
         "price":"60",
         "visited":"39",
         "review":"4.4",
-        "reviewPeople":"255 Reviews"
+        "reviewPeople":"255 Reviews",
+        "title":"Amazing  Travel  in Khagrachhari",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/aerial-view-village_144627-46656.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/cityscape_1127-3796.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/old-bridge-chinese-park_1127-3715.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/beautiful-view-isa-khan-s-tomb-new-india-sunny-day_181624-60326.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+            }
+          
+      ]
     },
     {
         "id":7,
@@ -113,7 +161,23 @@
         "price":"72",
         "visited":"19",
         "review":"3.4",
-        "reviewPeople":"655 Reviews"
+        "reviewPeople":"655 Reviews",
+        "title":"Amazing  Travel  in Kuakata",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/single-boat-sea-beautiful-cloudy-sky_181624-54702.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/water-temple-bratan-lake_1385-1792.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-with-coconut-palm-tree_74190-7462.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/pura-ulun-danu-bratan-temple-bali-indonesia_335224-322.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+            }
+          
+      ]
     },
     {
         "id":8,
@@ -122,7 +186,23 @@
         "price":"60",
         "visited":"39",
         "review":"3.4",
-        "reviewPeople":"855 Reviews"
+        "reviewPeople":"855 Reviews",
+        "title":"Amazing  Travel  in Sunamganj",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand_335224-1141.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/sunrise-dal-lake-kashmir-india_1232-4765.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/cityscape_1127-4174.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/sunrise-dal-lake-kashmir-india_1232-4762.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+            }
+          
+      ]
     },
     {
         "id":9,
@@ -131,6 +211,23 @@
         "price":"70",
         "visited":"89",
         "review":"5.0",
-        "reviewPeople":"55 Reviews"
+        "reviewPeople":"55 Reviews",
+        "title":"Amazing  Travel  in Barisal",
+        "backgroundImg":[
+          {
+              "background1":"https://img.freepik.com/free-photo/peaceful-kamphaeng-phet-town-waterfront-ping-river-with-reflection_554837-281.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background2":"https://img.freepik.com/free-photo/beautiful-park_1417-1572.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background3":"https://img.freepik.com/free-photo/bicycle-park-sunny-day_1137-58.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais"
+            },
+            {
+              "background4":"https://img.freepik.com/free-photo/amphitheater-fortaleza-san-felipe-puerta-plata-dominican-republic_333098-125.jpg?size=626&ext=jpg&uid=R90263548&ga=GA1.2.619575553.1680185614&semt=ais" 
+            }
+          
+      ]
+        
     }
 ]

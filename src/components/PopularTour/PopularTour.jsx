@@ -15,7 +15,7 @@ const PopularTour = () => {
   return (
     <div className="py-8">
       <div className="container">
-        <h2 className="lg:text-4xl text-xl text-center mb-12 font-semibold text-[#4e5050] ">
+        <h2 className="lg:text-4xl text-xl text-center mb-12 font-semibold font-dancingFont text-orange-500">
           Popular Destinations
         </h2>
         <Swiper
@@ -42,7 +42,7 @@ const PopularTour = () => {
         >
           {popularTour?.map((destination) => (
             <SwiperSlide key={destination?.id}>
-              <div className="overflow-hidden rounded relative group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl shadow-lg relative group cursor-pointer">
                 <img
                   src={destination?.image}
                   className="w-full h-auto object-cover"

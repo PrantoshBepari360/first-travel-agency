@@ -1,5 +1,4 @@
 import featuredImg from "../../../assets/book/caleb.jpg";
-import "./Featured.css";
 
 const Featured = () => {
   return (
@@ -12,20 +11,24 @@ const Featured = () => {
           -----to let our memories live------
         </h5>
       </section>
-      <div className="mb-10 featured-item bg-fixed">
-        <div className="md:flex justify-center items-center py-10 px-28 bg-slate-600 bg-opacity-60">
-          <div className="hidden md:block mr-10">
-            <img src={featuredImg} alt="" className="featured-img rounded-xl" />
+      <div className="bg-[url('/public/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
+        <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-60">
+          <div className="hidden md:block lg:w-2/4 md:mb-7 lg:mb-0">
+            <img
+              src={featuredImg}
+              alt="Feature Image"
+              className="rounded-xl "
+            />
           </div>
-          <div>
-            <p className="text-white font-bold mb-2">
+          <div className="lg:w-2/4">
+            <p className="text-white font-bold mb-2 text-justify">
               Welcome to our website! We are dedicated to providing exceptional
               fitness solutions tailored to your needs. Our experienced
               trainers, state-of-the-art facilities, and personalized br
               programs will help you achieve your fitness goals and embark on a
               journey of improved health and well-being.
             </p>
-            <button className="btn btn-outline text-orange-100 btn-base-100 border-t-0 border-l-1 border-r-1 border-b-4 border-orange-200">
+            <button className="text-white px-3 py-2 rounded bg-orange-400 hover:bg-orange-500 border-b-2">
               Read More
             </button>
           </div>

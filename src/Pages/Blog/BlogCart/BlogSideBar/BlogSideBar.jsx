@@ -60,7 +60,7 @@ const BlogSideBar = () => {
         <br />
         <div className="flex">
           <div className="me-3 w-1/4">
-            <img src="/" className="w-full"  alt="Image" />
+            <img src="/" className="w-full" alt="Image" />
           </div>
           <div className="w-3/4">
             <div className="mb-3 f-w">Parish Hill.</div>
@@ -73,7 +73,7 @@ const BlogSideBar = () => {
         <br />
         <div className="flex">
           <div className="mr-3 w-1/4">
-            <img src="/" className="w-full"  alt="Image" />
+            <img src="/" className="w-full" alt="Image" />
           </div>
           <div className="w-3/4">
             <div className="mb-3 f-w">Mount Dtna.</div>
@@ -86,7 +86,7 @@ const BlogSideBar = () => {
         <br />
         <div className="flex">
           <div className="mr-3 w-1/4">
-            <img src="/" className="w-full"  alt="Image" />
+            <img src="/" className="w-full" alt="Image" />
           </div>
           <div className="w-3/4">
             <div className="mb-3 f-w">Lake Garda</div>
@@ -99,7 +99,7 @@ const BlogSideBar = () => {
         <br />
         <div className="flex">
           <div className="me-3 w-1/4">
-            <img src="/" className="w-full"  alt="Image" />
+            <img src="/" className="w-full" alt="Image" />
           </div>
           <div className="w-3/4">
             <div className="mb-3 f-w ">Franch Rivira</div>
@@ -167,32 +167,32 @@ const BlogSideBar = () => {
         <ul className="flex flex-wrap gallery mt-3">
           <li className="p-1">
             <a href="#!">
-              <img src="/" className="w-full"  alt="Image" />
+              <img src="/" className="w-full" alt="Image" />
             </a>
           </li>
           <li className="p-1">
             <a href="#!">
-              <img src={2} className="w-full"  alt="Image" />
+              <img src={2} className="w-full" alt="Image" />
             </a>
           </li>
           <li className="p-1">
             <a href="#!">
-              <img src={3} className="w-full"  alt="Image" />
+              <img src={3} className="w-full" alt="Image" />
             </a>
           </li>
           <li className="p-1">
             <a href="#!">
-              <img src={4} className="w-full"  alt="Image" />
+              <img src={4} className="w-full" alt="Image" />
             </a>
           </li>
           <li className="p-1">
             <a href="#!">
-              <img src={5} className="w-full"  alt="Image" />
+              <img src={5} className="w-full" alt="Image" />
             </a>
           </li>
           <li className="p-1">
             <a href="#!">
-              <img src={6} className="w-full"  alt="Image" />
+              <img src={6} className="w-full" alt="Image" />
             </a>
           </li>
         </ul>

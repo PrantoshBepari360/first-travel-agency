@@ -11,12 +11,18 @@ import Slider from "./Slider";
 
 
 const Home = () => {
+
   return (
     <div>
       <Slider />
       <Intro />
       <Explore />
+
+
+
       <TravelPackages />
+
+
       <PopularTour />
       <Featured />
       {/* <BackgroundVideo /> */}
