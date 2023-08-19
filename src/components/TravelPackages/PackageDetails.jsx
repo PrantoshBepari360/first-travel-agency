@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "../PopularTour/Popular.css";
-import SimilarTours from "../SimilarTours/SimilarTours";
 import CommentForm from "./CommentForm";
 import { useFetchData } from "../../hooks/useFetchData";
 import detailImg from "../../assets/about/about.jpeg";
@@ -30,42 +29,48 @@ const PackageDetails = () => {
           </h2>
         </div>
 
-        <div className="container py-12 flex flex-col md:flex-row justify-between items-center">
-          <div className="ms-2">
-            <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
-              Are You Still Intarested To Tour?
-            </h2>
-            <p className="lg:text-lg text-sm text-center md:text-left pb-2">
-              We Offer A Wide Range Of Procedures To Help You Get The Perfect
-              Smile
-            </p>
+        <div className="bg-slate-300 ">
+          <div className="container pt-8 pb-8 flex flex-col md:flex-row justify-between items-center">
+            <div className="ms-2 ">
+              <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
+                Are You Still Intarested To Tour?
+              </h2>
+              <p className="lg:text-lg text-sm text-center md:text-left pb-2">
+                We Offer A Wide Range Of Procedures To Help You Get The Perfect
+                Smile
+              </p>
+            </div>
+            <div>
+              <Link to={`/tourBooking/${id}`}>
+                <button
+                  className=" px-4 py-3 rounded border-2 border-orange-400 bg-white
+               text-orange-400 font-semibold text-xl hover:text-white hover:border-white duration-100  hover:bg-orange-400"
+                >
+                  Book A Tour!
+                </button>
+              </Link>
+            </div>
           </div>
-          <div>
-            <Link to={`/tourBooking/${id}`}>
-              <button className="border px-4 py-3 rounded bg-slate-300 hover:bg-slate-400">
-                Book A Tour!
-              </button>
-            </Link>
+          <div className="container pb-6">
+            <div className="flex items-center  ">
+              <h2 className="text-3xl font-bold text-[#4e5050]  mb-4">
+                {details?.name}
+              </h2>
+              <MdStar className="h-9 w-9 ms-10 lg:ms-8 pb-2  text-yellow-400"></MdStar>
+              <h2 className="font-bold text-lg  pb-2 ">{details?.review}</h2>
+              <h2 className="text-lg  pb-2 ps-4"> ({details?.reviewPeople})</h2>
+            </div>
+            <div className="text-[#4e5050]  mb-8 tracking-wider">
+              <span className="">StartFrom </span>
+              <span className="text-2xl font-bold">${details?.price}</span>
+              <span>/ Per Person</span>{" "}
+              <span className="text-lg font-bold"> {details?.visited}</span>{" "}
+              <span>People</span>
+            </div>
           </div>
         </div>
 
-        <div className="container">
-          <div className="flex items-center  ">
-            <h2 className="text-3xl font-bold text-[#4e5050]  mb-4">
-              {details?.name}
-            </h2>
-            <MdStar className="h-9 w-9 ms-10 lg:ms-8 pb-2  text-yellow-400"></MdStar>
-            <h2 className="font-bold text-lg  pb-2 ">{details?.review}</h2>
-            <h2 className="text-lg  pb-2 ps-4"> ({details?.reviewPeople})</h2>
-          </div>
-          <div className="text-[#4e5050]  mb-4 tracking-wider">
-            <span className="">StartFrom </span>
-            <span className="text-2xl font-bold">${details?.price}</span>
-            <span>/ Per Person</span>{" "}
-            <span className="text-lg font-bold"> {details?.visited}</span>{" "}
-            <span>People</span>
-          </div>
-
+        <div className="container pt-10">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
@@ -99,14 +104,13 @@ const PackageDetails = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          
+
           <h2 className="lg:text-4xl text-[26px] font-bold text-[#4e5050] pb-6">
             {details?.title}
           </h2>
           <p className="text-lg tracking-wide">{details?.tourdetails}</p>
 
           <CommentForm />
-          <SimilarTours />
         </div>
       </>
     </div>
