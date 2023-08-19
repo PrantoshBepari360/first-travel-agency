@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./BlogCart.css";
 import Pagination from "./Pagination/Pagination";
 import BlogSideBar from "./BlogSideBar/BlogSideBar";
-import Blog from "./Blog/Blog";
 import { useFetchData } from "./../../../hooks/useFetchData";
+import PackagesCard from "../../../components/TravelPackages/PackagesCard";
 
 const BlogCart = () => {
   const { packages } = useFetchData();
@@ -32,7 +32,11 @@ const BlogCart = () => {
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-9">
             <br />
-            <Blog blogs={currentBlog} />
+            <div className="grid md:grid-cols-2 gap-2">
+              {currentBlog?.map((blog) => (
+                <PackagesCard id={blog.id} title={blog.title} reviewPeople={blog.reviewPeople} review={blog.review} image={blog.image} />))}
+            </div>
+
             <br />
             <Pagination
               blogPage={blogPage}
