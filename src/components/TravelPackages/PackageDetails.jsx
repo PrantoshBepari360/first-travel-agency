@@ -7,6 +7,7 @@ import "../PopularTour/Popular.css";
 import CommentForm from "./CommentForm";
 import { useFetchData } from "../../hooks/useFetchData";
 import detailImg from "../../assets/about/about.jpeg";
+import Common from "../../Pages/Common";
 
 const PackageDetails = () => {
   const { id } = useParams();
@@ -93,14 +94,15 @@ const PackageDetails = () => {
               },
             }}
           >
-            {details?.backgroundImg?.map((i) => (
-              <SwiperSlide key={i}>
-                <div className="overflow-hidden max-h-96 rounded relative group cursor-pointer">
-                  <img src={i?.background1} className="w-full object-cover" />
-                  <img src={i?.background2} className="w-full object-cover" />
-                  <img src={i?.background3} className="w-full object-cover" />
-                  <img src={i?.background4} className="w-full object-cover" />
-                </div>
+            {details?.backgroundImg?.map((img) => (
+              <SwiperSlide key={img}>
+                <Common
+                  name={img.name}
+                  background1={img.background1}
+                  background2={img.background2}
+                  background3={img.background3}
+                  background4={img.background4}
+                />
               </SwiperSlide>
             ))}
           </Swiper>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Common from "../../Pages/Common";
 
 const PopularTour = () => {
   const [popularTour, setPopularTour] = useState([]);
@@ -40,19 +41,9 @@ const PopularTour = () => {
             },
           }}
         >
-          {popularTour?.map((destination) => (
-            <SwiperSlide key={destination?.id}>
-              <div className="overflow-hidden rounded-2xl shadow-lg relative group cursor-pointer">
-                <img
-                  src={destination?.image}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="p-4 opacity-0 group-hover:opacity-50 delay-75	absolute  inset-0 bg-slate-800 ">
-                  <h3 className="font-semibold bottom-2 left-4  absolute mb-2  text-white text-3xl">
-                    {destination?.name}
-                  </h3>
-                </div>
-              </div>
+          {popularTour?.map((tour) => (
+            <SwiperSlide key={tour.id}>
+              <Common image={tour.image} name={tour.name} />
             </SwiperSlide>
           ))}
         </Swiper>
