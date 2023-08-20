@@ -33,6 +33,8 @@ const Main = () => {
         <Route path="/element" element={<Element />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/tourBooking/:id" element={<TourBooking />}></Route>
+
+
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>

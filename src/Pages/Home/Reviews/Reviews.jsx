@@ -32,12 +32,12 @@ const Reviews = () => {
             <div className="text-center text-4xl text-red-700">Loading...</div>
           ) : (
             <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              autoplay={{
-                delay: 3000,
-              }}
-              modules={[Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            autoplay={{
+              delay: 3000,
+            }}
+            modules={[Autoplay]}
               breakpoints={{
                 640: {
                   slidesPerView: 1,

@@ -1,11 +1,10 @@
 import React from "react";
-import { FaStar, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const TravelPackagesCard = ({ item, blog }) => {
-  const { image, name, visited, title, id } = item || blog;
-  console.log(blog);
-  console.log(item);
+const PackagesCard = (props) => {
+  const { image, name, visited, title, id, review } = props;
+
   return (
     <div className="border rounded mb-3 p-2 cursor-pointer">
       <div className="group max-w-sm relative max-h-full mx-auto overflow-hidden">
@@ -20,6 +19,7 @@ const TravelPackagesCard = ({ item, blog }) => {
           <div className="flex items-center gap-2">
             <FaUser className="h-4 w-4 text-[#FF6C3E]"></FaUser>
             <p className="text-lg text-[#4A5151] font-bold">{visited}</p>
+            <p className="text-lg text-[#4A5151] font-bold">{review}</p>
           </div>
         </div>
         <h2 className="text-[#4A5151] text-2xl font-bold pb-4 ">{title}</h2>
@@ -33,4 +33,4 @@ const TravelPackagesCard = ({ item, blog }) => {
   );
 };
 
-export default TravelPackagesCard;
+export default PackagesCard;

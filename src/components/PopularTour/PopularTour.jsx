@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+// import { Autoplay } from "swiper";
+import { useFetchData } from "../../hooks/useEffect";
 
 const PopularTour = () => {
-  const [popularTour, setPopularTour] = useState([]);
-
-  useEffect(() => {
-    fetch("PopularDestinations.json")
-      .then((res) => res.json())
-      .then((data) => setPopularTour(data));
-  }, []);
+  const { data: popularTour } = useFetchData("PopularDestinations.json"); 
 
   return (
     <div className="py-8">
@@ -21,10 +15,10 @@ const PopularTour = () => {
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{
-            delay: 3000,
-          }}
-          modules={[Autoplay]}
+          // autoplay={{
+          //   delay: 3000,
+          // }}
+          // modules={[Autoplay]}
           breakpoints={{
             640: {
               slidesPerView: 1,

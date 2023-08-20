@@ -1,18 +1,24 @@
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { MdStar } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import "../PopularTour/Popular.css";
-import CommentForm from "./CommentForm";
-import { useFetchData } from "../../hooks/useFetchData";
+// import { Autoplay } from "swiper";
+import { MdStar } from "react-icons/md";
 import detailImg from "../../assets/about/about.jpeg";
+
+import CommentForm from "../TravelPackages/CommentForm";
+import { useFetchData } from "../../hooks/useEffect";
+import Common from "../../Pages/Common";
+
 
 const PackageDetails = () => {
   const { id } = useParams();
-  const { packages } = useFetchData();
+  const { data: packages } = useFetchData("/TravelPackages.json");
 
-  const details = packages?.find((pk) => pk?.id === Number(id));
+  const details = packages.find((pk) => pk.id === Number(id));
+
+  if (!details) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
@@ -74,10 +80,10 @@ const PackageDetails = () => {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            autoplay={{
-              delay: 3000,
-            }}
-            modules={[Autoplay]}
+            // autoplay={{
+            //   delay: 3000,
+            // }}
+            // modules={[Autoplay]}
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -93,14 +99,15 @@ const PackageDetails = () => {
               },
             }}
           >
-            {details?.backgroundImg?.map((i) => (
-              <SwiperSlide key={i}>
-                <div className="overflow-hidden max-h-96 rounded relative group cursor-pointer">
-                  <img src={i?.background1} className="w-full object-cover" />
-                  <img src={i?.background2} className="w-full object-cover" />
-                  <img src={i?.background3} className="w-full object-cover" />
-                  <img src={i?.background4} className="w-full object-cover" />
-                </div>
+            {details?.backgroundImg?.map((img) => (
+              <SwiperSlide key={img}>
+                <Common
+                  name={img.name}
+                  background1={img.background1}
+                  background2={img.background2}
+                  background3={img.background3}
+                  background4={img.background4}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
