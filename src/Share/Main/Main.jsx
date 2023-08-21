@@ -7,7 +7,6 @@ import Shop from "../../Pages/Shop/Shop";
 import Register from "../../login/Register";
 import Footer from "../Footer/Footer";
 import Blog from "../../Pages/Blog/Blog";
-import Contact from "../../Pages/Contact/Contact";
 import PackageDetails from "../../components/TravelPackages/PackageDetails";
 import TourBooking from "../../components/TravelPackages/TourBooking";
 import Login from "../../login/Login";
@@ -15,6 +14,7 @@ import PrivetOutlet from "../../login/PrivetOutlet";
 import Navbar from "../Navbar";
 import ProductDetails from "../../Pages/Shop/ProductDetails";
 import FeatureDetails from "../../Pages/Home/Featured/FeatureDetails";
+import Contact from "../../Pages/contacts/Contact";
 
 const Main = () => {
   return (

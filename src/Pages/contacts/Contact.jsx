@@ -1,7 +1,7 @@
 import MapLocation from "./MapLocation";
 import { Form } from "./Form";
-import Banner from "./banner";
 import contactImg from "../../assets/about/blog.jpeg";
+import Banner from "./Banner";
 
 const Contact = () => {
   return (
