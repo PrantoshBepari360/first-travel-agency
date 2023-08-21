@@ -10,7 +10,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="bg-[url('/src/assets/shop/shop.jpg')] bg-center bg-cover bg-no-repeat  h-96 bg-fixed mb-10 relative">
+      <div className="bg-[url('/src/assets/shop/shop.jpg')] bg-center bg-cover bg-no-repeat  h-96 bg-fixed mb-10 relative -z-10">
         <div className="py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-80  h-96 text-center">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
@@ -20,39 +20,43 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <section className=" container overflow-hidden">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="lg:w-4/5 mx-auto flex flex-wrap">
-            <img
-              alt="ecommerce"
-              className="w-full lg:w-1/2 lg:h-auto h-64 object-cover object-center rounded"
-              src={details?.image}
-            />
-            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <h2 className="text-4xl font-bold mb-2">{details?.name}</h2>
-              <h3 className="text-gray-900 text-3xl title-font font-medium mb-1">
-                ${details?.price}
-              </h3>
+      <section className="container">
+        <div className="px-5 py-20">
+          <div className="md:flex items-center gap-10">
+            <div className="w-full">
+              <img
+                alt="ecommerce"
+                className="w-full md:w-3/4 object-cover object-center rounded"
+                src={details?.image}
+              />
+            </div>
+            <div className="w-full">
+              <h1 className="text-4xl font-bold py-5">{details?.name}</h1>
+              <p className="text-gray-900 text-3xl title-font font-medium">
+                $ {details?.price}
+              </p>
 
-              <div className="lg:mt-10 m-5">
-                <span className="mr-2">-</span>
-                <input
-                  type="number"
-                  className="p-2 border border-rounded text-center w-10 "
-                  value="1"
-                />
-                <span className="ml-2">+</span>
+              <div className="flex gap-5 py-5">
+                <div>
+                  <span className="mr-2"> - </span>
+                  <input
+                    type="number"
+                    className="p-2 border border-rounded text-center w-16"
+                  />
+                  <span className="ml-2"> + </span>
+                </div>
 
-                <button className="w-40 ml-10 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none z-">
+                <button className="p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none">
                   Add to Cart
                 </button>
               </div>
-              <h3 className="text-gray-400 mt-5 lg:mt-10 text-xl title-font font-medium mb-1">
+
+              <h3 className="mt-5 text-gray-400 text-xl title-font font-medium">
                 category:{details?.category}
               </h3>
             </div>
           </div>
-          <p className="mt-5">{details?.description}</p>
+          <p className="mt-10">{details?.description}</p>
         </div>
       </section>
     </>

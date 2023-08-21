@@ -1,18 +1,16 @@
-import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import CommentForm from "./CommentForm";
+import { useFetchData } from "../../hooks/useFetchData";
 import { MdStar } from "react-icons/md";
 import detailImg from "../../assets/about/about.jpeg";
-
-import CommentForm from "../TravelPackages/CommentForm";
-import { useFetchData } from "../../hooks/useEffect";
 import Common from "../../Pages/Common";
-
 
 const PackageDetails = () => {
   const { id } = useParams();
-  const { data: packages } = useFetchData("/TravelPackages.json");
+  const { packages } = useFetchData();
 
   const details = packages.find((pk) => pk.id === Number(id));
 
@@ -80,10 +78,10 @@ const PackageDetails = () => {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            // autoplay={{
-            //   delay: 3000,
-            // }}
-            // modules={[Autoplay]}
+            autoplay={{
+              delay: 3000,
+            }}
+            modules={[Autoplay]}
             breakpoints={{
               640: {
                 slidesPerView: 1,

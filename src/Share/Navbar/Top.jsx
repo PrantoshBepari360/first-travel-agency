@@ -20,36 +20,54 @@ const Top = () => {
           <h3 className="text-white mr-6 ">Follow us :</h3>
           <ul className="flex">
             <li>
-              <a href="#" className="text-white hover:text-black">
+              <a
+                href="https://www.facebook.com/"
+                className="text-white hover:text-black"
+              >
                 <AiOutlineFacebook className="w-6 h-6 mr-4 color-white " />
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-black">
+              <a
+                href="https://www.instagram.com/"
+                className="text-white hover:text-black"
+              >
                 <AiOutlineInstagram className="mr-4 w-6 h-6 " />
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-black">
+              <a
+                href="https://www.linkedin.com/"
+                className="text-white hover:text-black"
+              >
                 <AiFillLinkedin className="mr-4 w-6 h-6" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-black">
+              <a
+                href="https://github.com/PrantoshBepari360/first-travel-agency"
+                className="text-white hover:text-black"
+              >
                 <AiOutlineGithub className="mr-4 w-6 h-6" />
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-black">
+              <a
+                href="https://dribbble.com/shots"
+                className="text-white hover:text-black"
+              >
                 <AiOutlineDribbbleSquare className="mr-4 w-6 h-6" />
               </a>
             </li>
           </ul>
 
-          <p className="text-white hover:text-black flex items-center cursor-pointer">
+          <a
+            href="tel:+880 1740-354026"
+            className="text-white hover:text-black flex items-center cursor-pointer"
+          >
             {<HiPhone className="mr-2" />}
             <span>+880 1740-354026</span>
-          </p>
+          </a>
         </div>
 
         <div className="flex">
