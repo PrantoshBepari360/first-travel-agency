@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Oange Glasses",
+    "price": 199.99,
+    "rating": 4.5,
+    "image": "https://gotravel.qodeinteractive.com/wp-content/uploads/2016/04/product-1-300x300.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Glass"
+  },
+  {
+    "id": 2,
+    "name": "Mountain Cap",
+    "price": 49.99,
+    "rating": 3.8,
+    "image": "../src/assets/shop/shop2.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "name": "Hunting Binoculars",
+    "price": 79.99,
+    "rating": 5.0,
+    "image": "../src/assets/shop/shop3.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Glass"
+  },
+  {
+    "id": 4,
+    "name": "Blue Yoga Mat",
+    "price": 149.99,
+    "rating": 4.2,
+    "image": "../src/assets/shop/shop4.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Travel"
+  },
+  {
+    "id": 5,
+    "name": "Winter Bag",
+    "price": 29.99,
+    "rating": 4.8,
+    "image": "../src/assets/shop/shop5.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Travel"
+  },
+  {
+    "id": 6,
+    "name": "Coffee Thermos",
+    "price": 12.99,
+    "rating": 3.5,
+    "image": "../src/assets/shop/shop6.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Accessories"
+  },
+  {
+    "id": 7,
+    "name": "Designer Thing",
+    "price": 39.99,
+    "rating": 4.0,
+    "image": "../src/assets/shop/shop7.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Blue Sleeping Bag",
+    "price": 89.99,
+    "rating": 4.6,
+    "image": "../src/assets/shop/shop8.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Accessories"
+  },
+  {
+    "id": 9,
+    "name": "Vintage Hat",
+    "price": 64.99,
+    "rating": 4.2,
+    "image": "../src/assets/shop/shop9.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Hat"
+  },
+  {
+    "id": 10,
+    "name": "Small Flashlight",
+    "price": 149.99,
+    "rating": 4.9,
+    "image": "../src/assets/shop/shop10.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Light"
+  },
+  {
+    "id": 11,
+    "name": "Practice PocketKnife",
+    "price": 219.99,
+    "rating": 3.7,
+    "image": "../src/assets/shop/shop11.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Accessories"
+  },
+  {
+    "id": 12,
+    "name": "small Vintage Camera",
+    "price": 79.99,
+    "rating": 4.4,
+    "image": "../src/assets/shop/shop12.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis id eros cursus, ac porttitor velit varius. Curabitur nec magna vitae velit convallis convallis. Sed blandit dui a dui vestibulum, at tristique ante faucibus. Nulla facilisi. Sed consequat sapien id laoreet egestas. Nam et libero ac ligula luctus vulputate in a est. Sed id tincidunt mauris, a tincidunt nunc. Vivamus quis libero dui. Duis fermentum velit non elit malesuada, in fermentum odio vulputate. Proin mattis libero id ligula volutpat, eget euismod dolor fermentum.",
+
+    "category": "Accessories"
+  }
+]
