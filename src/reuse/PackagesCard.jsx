@@ -1,6 +1,7 @@
 import React from "react";
-import { FaStar, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import TilteParaReuse from "./TilteParaReuse";
 
 const PackagesCard = (props) => {
   const { image, name, visited, title,review, reviewPeople ,id} = props
@@ -12,10 +13,13 @@ const PackagesCard = (props) => {
       </div>
       <div className="ps-2 pe-2">
         <div className="flex items-center justify-between pt-3 ">
-          <h3 className="text-[26px]  text-[#FF6C3E] pb-3 font-semibold">
-            {name}
+          <h3 className=" text-[#FF6C3E]">
+            <div className="">
+            <TilteParaReuse  heading3= {name} />
+            </div>
+        
           </h3>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 ">
             <FaUser className="h-4 w-4 text-[#FF6C3E]"></FaUser>
             <p className="text-lg text-[#4A5151] font-bold">{visited}</p>
             <p className="text-lg text-[#4A5151] font-bold">{review}</p>
@@ -23,7 +27,9 @@ const PackagesCard = (props) => {
 
           </div>
         </div>
-        <h2 className="text-[#4A5151] text-2xl font-bold pb-4 ">{title}</h2>
+        <TilteParaReuse  heading4={title}/>
+       
+
         <Link to={`/tourDetails/${id}`}>
           <button className="px-5 py-3 bg-[#FF6C3E] text-white rounded text-lg">
             See Details

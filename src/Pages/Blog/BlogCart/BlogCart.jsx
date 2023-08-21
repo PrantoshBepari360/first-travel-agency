@@ -3,7 +3,7 @@ import "./BlogCart.css";
 import Pagination from "./Pagination/Pagination";
 import BlogSideBar from "./BlogSideBar/BlogSideBar";
 import { useFetchData } from "./../../../hooks/useFetchData";
-import PackagesCard from "../../../components/TravelPackages/PackagesCard";
+import PackagesCard from "../../../reuse/PackagesCard";
 
 const BlogCart = () => {
   const { packages } = useFetchData();

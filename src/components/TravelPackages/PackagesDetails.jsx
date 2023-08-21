@@ -4,14 +4,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link, useParams } from "react-router-dom";
-import "../PopularTour/Popular.css";
 import { Autoplay } from "swiper";
 import { MdStar } from "react-icons/md";
 import SimilarTours from "../SimilarTours/SimilarTours";
 import CommentForm from "../TravelPackages/CommentForm";
+
+
 const PackagesDetails = () => {
   const { id } = useParams();
   const [packages, setPackages] = useState([]);
+  console.log(id);
+
 
   useEffect(() => {
     fetch("/TravelPackages.json")
@@ -20,8 +23,10 @@ const PackagesDetails = () => {
   }, []);
 
   const details = packages?.find((pk) => pk.id === Number(id));
+  console.log(details);
 
   return (
+
     <>
       <div className="relative  rounded bg-center bg-cover">
         <img
