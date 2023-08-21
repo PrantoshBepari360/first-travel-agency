@@ -4,16 +4,24 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link, useParams } from "react-router-dom";
-import "../PopularTour/Popular.css";
 import { Autoplay } from "swiper";
 import { MdStar } from "react-icons/md";
 import SimilarTours from "../SimilarTours/SimilarTours";
 import CommentForm from "../TravelPackages/CommentForm";
-import { useFetchData } from "../../hooks/useEffect";
+
 const PackagesDetails = () => {
-const {data:packages} =useFetchData('/TravelPackages.json')
+  const { id } = useParams();
+  const [packages, setPackages] = useState([]);
+  console.log(id);
+
+  useEffect(() => {
+    fetch("/TravelPackages.json")
+      .then((res) => res.json())
+      .then((data) => setPackages(data));
+  }, []);
 
   const details = packages?.find((pk) => pk.id === Number(id));
+  console.log(details);
 
   return (
     <>

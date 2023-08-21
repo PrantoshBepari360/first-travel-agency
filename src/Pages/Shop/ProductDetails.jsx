@@ -41,6 +41,7 @@ const ProductDetails = () => {
                   <span className="mr-2"> - </span>
                   <input
                     type="number"
+                    placeholder="1"
                     className="p-2 border border-rounded text-center w-16"
                   />
                   <span className="ml-2"> + </span>
@@ -56,7 +57,7 @@ const ProductDetails = () => {
               </h3>
             </div>
           </div>
-          <p className="mt-10">{details?.description}</p>
+          <p className="mt-10 text-justify">{details?.description}</p>
         </div>
       </section>
     </>

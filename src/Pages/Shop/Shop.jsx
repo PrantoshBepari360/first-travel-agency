@@ -1,6 +1,6 @@
 import React from "react";
 import { useFetchData } from "../../hooks/useEffect";
-import PackagesCard from "../../components/TravelPackages/PackagesCard";
+import PackagesCard from "../../reuse/PackagesCard";
 
 const Shop = () => {
   const { data } = useFetchData("/shop.json");
@@ -27,7 +27,6 @@ const Shop = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-16">
           {data.map((shop) => (
-            // <Product key={shop.id} shop={shop} />
             <PackagesCard
               key={shop.id}
               id={shop.id}

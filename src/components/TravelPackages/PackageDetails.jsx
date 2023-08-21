@@ -6,7 +6,7 @@ import CommentForm from "./CommentForm";
 import { useFetchData } from "../../hooks/useFetchData";
 import { MdStar } from "react-icons/md";
 import detailImg from "../../assets/about/about.jpeg";
-import Common from "../../Pages/Common";
+import Common from "../../reuse/Common";
 
 const PackageDetails = () => {
   const { id } = useParams();

@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import Common from "../../Pages/Common";
+import TilteParaReuse from "../../../reuse/TilteParaReuse";
 import Modal from "./Modal";
-import { useFetchData } from "../../hooks/useFetchData";
-import SpinnerLoader from "../../Share/Loader/SpinnerLoader";
+import Common from "../../../reuse/Common";
+import { useFetchData } from "../../../hooks/useFetchData";
+import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 
 const PopularTour = () => {
   const { popularTour } = useFetchData();
@@ -22,11 +23,13 @@ const PopularTour = () => {
   return (
     <div className="py-8">
       <div className="container">
-        <h2 className="lg:text-4xl text-xl text-center mb-10 font-semibold font-dancingFont text-orange-500">
-          Popular Destinations
-        </h2>
+        <div className="mb-9">
+          <TilteParaReuse
+            heading2="Popular Destinations"
+            heading6=" ------ Discover ------"
+          />
+        </div>
         {popularTour.length === 0 && <SpinnerLoader />}
-
         {popularTour?.length > 0 && (
           <Swiper
             spaceBetween={30}
@@ -64,7 +67,6 @@ const PopularTour = () => {
             ))}
           </Swiper>
         )}
-
         {modal && <Modal tour={tour} closeModal={() => setModel(false)} />}
       </div>
     </div>

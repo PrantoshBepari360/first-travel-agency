@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Review from "./Review";
+import TilteParaReuse from "../../../reuse/TilteParaReuse";
 import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 
 const Reviews = () => {
@@ -19,14 +20,11 @@ const Reviews = () => {
     <>
       <div className="container">
         <div className="my-10 text-center">
-          <h2 className="md:text-6xl font-dancingFont text-4xl  text-center text-orange-500 mb-2">
-            Customer Reviews
-          </h2>
-          <p className="text-xl font-caveatFont text-center text-orange-500 md:w-[60%] w-full mx-auto">
-            This Our Services from our valuable Customer, those who get from BD
+          <TilteParaReuse
+            heading2=" Customer Reviews"
+            para4=" This Our Services from our valuable Customer, those who get from BD
             Travel agency. We every time provide best quality services to our
-            cusotmer.
-          </p>
+            cusotmer." />
         </div>
         <div className="pb-10">
           {reviews?.length === 0 ? (
