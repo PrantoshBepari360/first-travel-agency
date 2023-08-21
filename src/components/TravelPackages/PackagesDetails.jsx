@@ -9,12 +9,10 @@ import { MdStar } from "react-icons/md";
 import SimilarTours from "../SimilarTours/SimilarTours";
 import CommentForm from "../TravelPackages/CommentForm";
 
-
 const PackagesDetails = () => {
   const { id } = useParams();
   const [packages, setPackages] = useState([]);
   console.log(id);
-
 
   useEffect(() => {
     fetch("/TravelPackages.json")
@@ -26,7 +24,6 @@ const PackagesDetails = () => {
   console.log(details);
 
   return (
-
     <>
       <div className="relative  rounded bg-center bg-cover">
         <img

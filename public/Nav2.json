@@ -21,40 +21,9 @@
     "id": 4,
     "name": "Shop",
     "href": "/shop",
-    "icon": "fa-solid fa-wifi",
-    "children": [
-      {
-        "id": 8,
-        "name": "Shop 1",
-        "href": "https://bongobd.com/tv",
-        "icon": "fa-solid fa-tv"
-      },
-      {
-        "id": 9,
-        "name": "Shop 2",
-        "href": "https://bongobd.com/tv",
-        "icon": "fa-solid fa-tv"
-      },
-      {
-        "id": 10,
-        "name": "Shop 3",
-        "href": "https://www.bioscopelive.com/live-tv",
-        "icon": "fa-solid fa-tv"
-      },
-      {
-        "id": 11,
-        "name": "Shop 4",
-        "href": "http://amrbd.com/",
-        "icon": "fa-solid fa-tv"
-      },
-      {
-        "id": 12,
-        "name": "Shop 5",
-        "href": "http://bdtv.live/live-tv.html",
-        "icon": "fa-solid fa-tv"
-      }
-    ]
+    "icon": "fa-solid fa-wifi"
   },
+
   {
     "id": 5,
     "name": "Blog",

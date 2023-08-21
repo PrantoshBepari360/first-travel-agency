@@ -1,37 +1,28 @@
-// import TravelPackagesCard from "./TravelPackagesCard";
-import { FaStar, FaUser } from "react-icons/fa";
-
+import SpinnerLoader from "../../Share/Loader/SpinnerLoader";
 import { useFetchData } from "../../hooks/useFetchData";
-import { Link } from "react-router-dom";
-import TilteParaReuse from "../../reuse/TilteParaReuse";
+import { FaUser } from "react-icons/fa";
 import PackagesCard from "../../reuse/PackagesCard";
-
+import TilteParaReuse from "../../reuse/TilteParaReuse";
 
 const TravelPackages = () => {
   const { packages } = useFetchData();
 
   return (
     <div className="container">
-       <div className="mb-9">
-       <TilteParaReuse  heading2 ="  Travel Packages" heading6=" ------Packages------" />
-       </div>
-    
-      {   console.log(packages)}
-      {packages?.length === 0 && (
-  
-        <h2 className="text-center text-4xl text-red-700">Loading...</h2>
-      )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <TilteParaReuse heading1={"Travel Packages"}/>
+      {packages?.length === 0 && <SpinnerLoader />}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {packages?.length > 0 &&
           packages?.map((item) => (
-           <PackagesCard  
-           key={item.id}
-           name={item.name}
-           id={item.id}
-            title={item.title} 
-            visited={item.visited} 
-            image={item.image}/>
-          
+            <PackagesCard
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              visited={item.visited}
+              user={<FaUser />}
+              image={item.image}
+              name={item.name}
+            />
           ))}
       </div>
     </div>

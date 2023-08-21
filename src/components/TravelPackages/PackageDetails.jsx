@@ -1,11 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { MdStar } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-// import "../PopularTour/Popular.css";
 import CommentForm from "./CommentForm";
 import { useFetchData } from "../../hooks/useFetchData";
+import { MdStar } from "react-icons/md";
 import detailImg from "../../assets/about/about.jpeg";
 import Common from "../../reuse/Common";
 
@@ -13,7 +12,11 @@ const PackageDetails = () => {
   const { id } = useParams();
   const { packages } = useFetchData();
 
-  const details = packages?.find((pk) => pk?.id === Number(id));
+  const details = packages.find((pk) => pk.id === Number(id));
+
+  if (!details) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>

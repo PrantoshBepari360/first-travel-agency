@@ -7,7 +7,7 @@ const Tours = () => {
   return (
     <>
       <Banner image={contactImg} name={"Tours...."} />
-      <div className="container -z-100">
+      <div className="container -z-100 pb-16">
         <TravelPackages />
       </div>
     </>
