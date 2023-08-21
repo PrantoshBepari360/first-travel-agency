@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import featuredImg from "../../../assets/book/caleb.jpg";
 
 const Featured = () => {
@@ -28,9 +29,11 @@ const Featured = () => {
               programs will help you achieve your fitness goals and embark on a
               journey of improved health and well-being.
             </p>
-            <button className="text-white px-3 py-2 rounded bg-orange-400 hover:bg-orange-500 border-b-2">
-              Read More
-            </button>
+            <Link to="/featuredDetails">
+              <button className="text-white px-3 py-2 rounded bg-orange-400 hover:bg-orange-500 border-b-2">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

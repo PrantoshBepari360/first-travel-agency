@@ -5,7 +5,6 @@ import About from "../../Pages/About/About";
 import Tours from "../../Pages/Tours/Tours";
 import Shop from "../../Pages/Shop/Shop";
 import Register from "../../login/Register";
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Blog from "../../Pages/Blog/Blog";
 import Contact from "../../Pages/Contact/Contact";
@@ -14,15 +13,16 @@ import TourBooking from "../../components/TravelPackages/TourBooking";
 import Login from "../../login/Login";
 import PrivetOutlet from "../../login/PrivetOutlet";
 import Navbar from "../Navbar";
+import FeatureDetails from "../../Pages/Home/Featured/FeatureDetails";
 
 const Main = () => {
   return (
     <>
-      {/* <Header /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
+        <Route path="/featuredDetails" element={<FeatureDetails />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/*" element={<PrivetOutlet />}>
           <Route path="tours" element={<Tours />}></Route>

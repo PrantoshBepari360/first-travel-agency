@@ -33,7 +33,7 @@ const Bottom = () => {
   };
 
   return (
-    <div className="w-full z-50 top-0 md:top-10 absolute drop-shadow-[0_1px_5px_rgba(193,193,193,0.4)]">
+    <div className="w-full top-0 md:top-10 absolute drop-shadow-[0_1px_5px_rgba(193,193,193,0.4)]">
       <div className="w-full md:w-[90%] mx-auto flex justify-between bg-white p-6">
         <div className="md:hidden">
           {isMobileMenuOpen ? (

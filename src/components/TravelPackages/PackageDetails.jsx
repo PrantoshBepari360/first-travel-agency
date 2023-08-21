@@ -3,7 +3,6 @@ import { MdStar } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "../PopularTour/Popular.css";
 import CommentForm from "./CommentForm";
 import { useFetchData } from "../../hooks/useFetchData";
 import detailImg from "../../assets/about/about.jpeg";

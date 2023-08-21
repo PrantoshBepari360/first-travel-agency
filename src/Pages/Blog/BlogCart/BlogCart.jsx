@@ -5,6 +5,7 @@ import BlogSideBar from "./BlogSideBar/BlogSideBar";
 import { useFetchData } from "./../../../hooks/useFetchData";
 import PackagesCard from "../../../components/TravelPackages/PackagesCard";
 import Review from "./../../Home/Reviews/Review";
+import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 
 const BlogCart = () => {
   const { packages } = useFetchData();
@@ -25,9 +26,7 @@ const BlogCart = () => {
         <span className="">Deal News</span> / View All Promotions
       </h4>
 
-      {currentBlog?.length === 0 && (
-        <h2 className="mt-10 text-center text-4xl text-red-700">Loading...</h2>
-      )}
+      {currentBlog?.length === 0 && <SpinnerLoader />}
 
       {currentBlog?.length > 0 && (
         <div className="grid grid-cols-12 gap-5">

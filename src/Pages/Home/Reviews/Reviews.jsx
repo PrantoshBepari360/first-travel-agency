@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Review from "./Review";
+import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -29,7 +30,7 @@ const Reviews = () => {
         </div>
         <div>
           {reviews?.length === 0 ? (
-            <div className="text-center text-4xl text-red-700">Loading...</div>
+            <SpinnerLoader />
           ) : (
             <Swiper
               spaceBetween={30}
@@ -55,7 +56,7 @@ const Reviews = () => {
             >
               {reviews?.map((review) => (
                 <SwiperSlide key={review?._id}>
-                  <Review review={review}></Review>
+                  <Review review={review} />
                 </SwiperSlide>
               ))}
             </Swiper>

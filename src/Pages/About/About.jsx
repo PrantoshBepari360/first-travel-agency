@@ -5,30 +5,20 @@ import air from "../../assets/about/f-icon-1.png";
 import calander from "../../assets/about/f-icon-2.png";
 import yellow from "../../assets/about/yellow-3.png";
 import pink from "../../assets/about/pink-4.png";
-
 import ficon10 from "../../assets/about/f-icon-10.png";
 import ficon11 from "../../assets/about/f-icon-11.png";
 import ficon12 from "../../assets/about/f-icon-12.png";
 import ficon13 from "../../assets/about/f-icon-13.png";
-
-// import { FiArrowRight } from "react-icons/fi";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-
 import { GiHiking } from "react-icons/gi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { RiTeamLine } from "react-icons/ri";
 import { FiCheckCircle } from "react-icons/fi";
-import { useFetchData } from "../../hooks/useFetchData";
 import { TbCalendarStats } from "react-icons/tb";
 import { TbArmchair2 } from "react-icons/tb";
 import { GiCaptainHatProfile } from "react-icons/gi";
 import { FaUserShield } from "react-icons/fa";
 
 const About = () => {
-  const { popularTour } = useFetchData();
 
   return (
     <>
@@ -194,7 +184,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full  flex justify-between ">
+      <div className="w-full flex justify-between ">
         <div className="flex justify-between  mx-auto w-[78rem] mt-10 mb-20 h-full ">
           <div className="w-[50rem] ">
             <div className=" w-[33rem] h-[40rem] ">

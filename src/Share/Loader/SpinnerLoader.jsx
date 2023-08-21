@@ -2,7 +2,7 @@ import React from "react";
 import "../Loader/Loader.css";
 const SpinnerLoader = () => {
   return (
-    <div className="bg-slate-800 flex justify-center items-center w-full h-screen">
+    <div className="flex justify-center items-center w-full py-5">
       <span className="loader"></span>
     </div>
   );

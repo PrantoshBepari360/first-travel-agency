@@ -1,3 +1,4 @@
+import SpinnerLoader from "../../Share/Loader/SpinnerLoader";
 import { useFetchData } from "../../hooks/useFetchData";
 import PackagesCard from "./PackagesCard";
 
@@ -9,9 +10,7 @@ const TravelPackages = () => {
       <h2 className="lg:text-4xl text-xl text-center py-8 font-dancingFont text-orange-500 font-semibold">
         Travel Packages
       </h2>
-      {packages?.length === 0 && (
-        <h2 className="text-center text-4xl text-red-700">Loading...</h2>
-      )}
+      {packages?.length === 0 && <SpinnerLoader />}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {packages?.length > 0 &&
           packages?.map((item) => (
