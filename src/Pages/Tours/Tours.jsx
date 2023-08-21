@@ -1,7 +1,7 @@
 import React from "react";
 import TravelPackages from "../../components/TravelPackages/TravelPackages";
 import contactImg from "../../assets/about/blog.jpeg";
-import Banner from "../Contact/banner";
+import Banner from "../contacts/Banner";
 
 const Tours = () => {
   return (

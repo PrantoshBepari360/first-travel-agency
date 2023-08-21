@@ -7,7 +7,7 @@ const Explore = () => {
     <div className="container mb-20">
       <section className="mb-9 ">
 
-        <TilteParaReuse  heading6="  -----With fun & Joy------" heading1="Lets Explore the world" />
+        <TilteParaReuse  heading6="  -----With fun & Joy------" heading2  ="Lets Explore the world" />
 
       </section>
 
