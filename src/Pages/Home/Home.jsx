@@ -1,10 +1,10 @@
 
-import PopularTour from "../../components/PopularTour/PopularTour";
 import TravelPackages from "../../components/TravelPackages/TravelPackages";
 // import BackgroundVideo from "./BackgroundVideo";
 import Explore from "./Explore";
 import Featured from "./Featured/Featured";
 import Intro from "./Intro";
+import PopularTour from "./PopularTour/PopularTour";
 import Reviews from "./Reviews/Reviews";
 import Slider from "./Slider";
 

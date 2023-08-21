@@ -3,7 +3,7 @@ import "./BlogCart.css";
 import Pagination from "./Pagination/Pagination";
 import BlogSideBar from "./BlogSideBar/BlogSideBar";
 import { useFetchData } from "./../../../hooks/useFetchData";
-import PackagesCard from "../../../components/TravelPackages/PackagesCard";
+import PackagesCard from "../../../reuse/PackagesCard";
 
 const BlogCart = () => {
   const { packages } = useFetchData();
@@ -34,7 +34,15 @@ const BlogCart = () => {
             <br />
             <div className="grid md:grid-cols-2 gap-2">
               {currentBlog?.map((blog) => (
-                <PackagesCard id={blog.id} title={blog.title} reviewPeople={blog.reviewPeople} review={blog.review} image={blog.image} />))}
+
+                <PackagesCard
+                  key={blog.id}
+                  name={blog.name}
+                  id={blog.id}
+                  title={blog.title}
+                  reviewPeople={blog.reviewPeople}
+                  review={blog.review}
+                  image={blog.image} />))}
             </div>
 
             <br />
