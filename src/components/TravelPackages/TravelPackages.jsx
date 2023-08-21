@@ -1,6 +1,7 @@
 import SpinnerLoader from "../../Share/Loader/SpinnerLoader";
 import { useFetchData } from "../../hooks/useFetchData";
 import PackagesCard from "./PackagesCard";
+import { FaUser } from "react-icons/fa";
 
 const TravelPackages = () => {
   const { packages } = useFetchData();
@@ -16,11 +17,12 @@ const TravelPackages = () => {
           packages?.map((item) => (
             <PackagesCard
               key={item.id}
+              id={item.id}
+              title={item.title}
+              visited={item.visited}
+              user={<FaUser />}
               image={item.image}
               name={item.name}
-              visited={item.visited}
-              title={item.title}
-              id={item.id}
             />
           ))}
       </div>

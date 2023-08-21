@@ -28,7 +28,7 @@ const Reviews = () => {
             cusotmer.
           </p>
         </div>
-        <div>
+        <div className="pb-10">
           {reviews?.length === 0 ? (
             <SpinnerLoader />
           ) : (

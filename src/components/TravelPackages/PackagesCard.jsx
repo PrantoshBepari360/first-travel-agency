@@ -1,34 +1,57 @@
 import React from "react";
-import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const PackagesCard = (props) => {
-  const { image, name, visited, title, id, review } = props;
+  const {
+    image,
+    name,
+    visited,
+    title,
+    review,
+    reviewPeople,
+    id,
+    price,
 
+    user,
+  } = props;
   return (
-    <div className="border rounded mb-3 p-2 cursor-pointer">
-      <div className="group max-w-sm relative max-h-full mx-auto overflow-hidden">
-        <img className="w-full h-auto" src={image} alt="Card Image" />
-        <div className="absolute inset-0 bg-red-500 opacity-0 hover:opacity-40 transition duration-300"></div>
+    <div className="p-4 border border-gray-300 rounded-md hover:border-blue-400 shadow-md hover:shadow-blue-400">
+      <div>
+        <img
+          alt={name}
+          className="object-cover object-center w-full h-full rounded-lg "
+          src={image}
+        />
       </div>
-      <div className="ps-2 pe-2">
-        <div className="flex items-center justify-between pt-3 ">
-          <h3 className="text-[26px]  text-[#FF6C3E] pb-3 font-semibold">
-            {name}
-          </h3>
-          <div className="flex items-center gap-2">
-            <FaUser className="h-4 w-4 text-[#FF6C3E]"></FaUser>
-            <p className="text-lg text-[#4A5151] font-bold">{visited}</p>
-            <p className="text-lg text-[#4A5151] font-bold">{review}</p>
-          </div>
+      <div className="mt-4 flex justify-between items-center mb-1">
+        <h1 className=" text-lg font-bold">{name}</h1>
+        
+
+        <div className="flex gap-2 items-center justify-center ">
+          {user}
+          <p className="mt-1">{visited}</p>
+          <p className=" text-lg font-bold">{reviewPeople}</p>
+          <p className="mt-1">{review}</p>
+
+          <p className="mt-1">{price}</p>
         </div>
-        <h2 className="text-[#4A5151] text-2xl font-bold pb-4 ">{title}</h2>
+      </div>
+      <p className=" text-lg font-bold mb-2">{title}</p>
+      <hr className="mb-1" />
+
+      {visited || reviewPeople ? (
         <Link to={`/tourDetails/${id}`}>
-          <button className="px-5 py-3 bg-[#FF6C3E] text-white rounded text-lg">
+          <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
             See Details
           </button>
         </Link>
-      </div>
+      ) : (
+        <Link to={`/product/${id}`}>
+          <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
+            Add to Cart
+          </button>
+        </Link>
+      )}
     </div>
   );
 };

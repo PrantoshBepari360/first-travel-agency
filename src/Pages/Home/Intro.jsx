@@ -8,8 +8,8 @@ const Intro = () => {
       <div className="w-full border py-4 shadow-md hover:shadow-blue-200  hover:shadow-xl rounded-xl">
         <div className="text-center">
           <img src={logo} className="w-24 mx-auto mb-3" alt="" />
-          <h2 className="text-2xl font-bold mb-5">Most Popular Destination</h2>
-          <p className="text-gray-400 text-sm">
+          <h2 className="text-2xl font-bold mb-5 ">Most Popular Destination</h2>
+          <p className="text- text-sm">
             Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
             et dolore magna aliqua enim ad minim veniam, quis nostrud.
           </p>

@@ -77,6 +77,7 @@ const Bottom = () => {
           <img src={logo} alt="Travel Logo" />
         </Link>
 
+     
         <div className="hidden md:block">
           <div className="flex">
             <ul className="flex">
@@ -104,7 +105,7 @@ const Bottom = () => {
                       {item.name}
                     </span>
                     <div
-                      className="absolute bg-subMenybg  top-full w-36 mt-6 hover:text-gray-600"
+                      className="absolute bg-subMenybg top-full w-36 mt-6 hover:text-gray-600"
                       variants={variants}
                       animate={showSubMenu[item.id] ? "open" : "closed"}
                     >

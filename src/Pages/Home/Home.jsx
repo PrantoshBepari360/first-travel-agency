@@ -12,7 +12,12 @@ const Home = () => {
       <Slider />
       <Intro />
       <Explore />
+
+
+
       <TravelPackages />
+
+
       <PopularTour />
       <Featured />
       <Reviews />

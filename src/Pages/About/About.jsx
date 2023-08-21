@@ -262,6 +262,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <hr className="mb-4"/>
 
       <section>
         <div className="mb-10">

@@ -4,7 +4,6 @@ import Pagination from "./Pagination/Pagination";
 import BlogSideBar from "./BlogSideBar/BlogSideBar";
 import { useFetchData } from "./../../../hooks/useFetchData";
 import PackagesCard from "../../../components/TravelPackages/PackagesCard";
-import Review from "./../../Home/Reviews/Review";
 import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 
 const BlogCart = () => {
@@ -16,13 +15,14 @@ const BlogCart = () => {
   const indexOfLastBlog = currentPage * blogPage;
   const indexOfFirstBlog = indexOfLastBlog - blogPage;
   const currentBlog = packages?.slice(indexOfFirstBlog, indexOfLastBlog);
+  console.log(currentBlog);
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="w-11/12 mx-auto">
-      <h4 className="text-center mt-5 mb-3">
+    <div className="w-11/12 mx-auto py-10">
+      <h4 className="text-center mb-3">
         <span className="">Deal News</span> / View All Promotions
       </h4>
 
@@ -34,15 +34,7 @@ const BlogCart = () => {
             <br />
             <div className="grid md:grid-cols-2 gap-2">
               {currentBlog?.map((blog) => (
-                <PackagesCard
-                  key={blog.id}
-                  image={blog.image}
-                  name={blog.name}
-                  review={blog.review}
-                  title={blog.title}
-                  id={blog.id}
-                />
-              ))}
+                <PackagesCard id={blog.id} title={blog.title} reviewPeople={blog.reviewPeople} name={blog.name} review={blog.review} image={blog.image}  />))}
             </div>
 
             <br />
