@@ -22,8 +22,8 @@ const BlogCart = () => {
 
   return (
     <div className="w-11/12 mx-auto py-10">
-      <h4 className="text-center mb-3">
-        <span className="">Deal News</span> / View All Promotions
+      <h4 className="text-center font-bold text-xl mb-3">
+        <span>Deal News</span> / View All Promotions
       </h4>
 
       {currentBlog?.length === 0 && <SpinnerLoader />}

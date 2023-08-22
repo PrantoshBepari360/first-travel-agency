@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TilteParaReuse from "./TilteParaReuse";
 
 const PackagesCard = (props) => {
   const { image, name, visited, title, review, reviewPeople, id, price, user } =
     props;
+
+    
 
   return (
     <div className="p-4 border border-gray-300 rounded-md hover:border-blue-400 shadow-md hover:shadow-blue-400">
@@ -17,8 +18,8 @@ const PackagesCard = (props) => {
       </div>
 
       <div className="mt-4 flex justify-between items-center mb-1">
-        {/* <h1 className=" text-lg font-bold">{name}</h1> */}
-        <TilteParaReuse heading3={name} />
+        <h1 className=" text-lg font-bold">{name}</h1>
+        {/* <TilteParaReuse heading3={name} /> */}
 
         <div className="flex gap-2 items-center justify-center ">
           {user}
@@ -29,8 +30,6 @@ const PackagesCard = (props) => {
           <p className="mt-1">{price}</p>
         </div>
       </div>
-      {/* <p className=" text-lg font-bold mb-2">{title}</p> */}
-      <TilteParaReuse heading4={title} />
       <hr className="mb-1" />
 
       {visited || reviewPeople ? (

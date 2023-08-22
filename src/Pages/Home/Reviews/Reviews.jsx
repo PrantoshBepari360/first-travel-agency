@@ -22,9 +22,8 @@ const Reviews = () => {
         <div className="my-10 text-center">
           <TilteParaReuse
             heading2=" Customer Reviews"
-            para4=" This Our Services from our valuable Customer, those who get from BD
-            Travel agency. We every time provide best quality services to our
-            cusotmer." />
+            heading6=" This Our Services from our valuable Customer, those who get from BD
+            Travel agency." />
         </div>
         <div className="pb-10">
           {reviews?.length === 0 ? (

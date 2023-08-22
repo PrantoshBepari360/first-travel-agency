@@ -1,12 +1,16 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useFetchData } from "../../hooks/useEffect";
+import TilteParaReuse from "../../reuse/TilteParaReuse";
 
 const ProductDetails = () => {
   const { data } = useFetchData("/shop.json");
 
   const { id } = useParams();
   const details = data?.find((item) => item.id === Number(id));
+
+const slice = data.slice(0,4);
+
 
   return (
     <>
@@ -58,6 +62,41 @@ const ProductDetails = () => {
             </div>
           </div>
           <p className="mt-10 text-justify">{details?.description}</p>
+        </div>
+      </section>
+
+      <section className="container">
+        <div>
+          <TilteParaReuse heading2={"Related Products"} />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-16">
+          {slice.map((item) => (
+            <div className="p-4 border border-gray-300 rounded-md hover:border-blue-400 shadow-md hover:shadow-blue-400">
+              <div>
+                <img
+                  alt={item.name}
+                  className="object-cover object-center w-full h-full rounded-lg "
+                  src={item.image}
+                />
+              </div>
+
+              <div className="mt-4 flex justify-between items-center mb-1">
+                <h1 className=" text-lg font-bold">{item.name}</h1>
+
+                <div className="flex gap-2 items-center justify-center ">
+                  <p className="mt-1">{item.price}</p>
+                </div>
+              </div>
+              <hr className="mb-1" />
+
+              <Link to={`/product/${id}`}>
+                <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
+                  Add to Cart
+                </button>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
     </>

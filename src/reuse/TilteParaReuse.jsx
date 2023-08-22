@@ -13,11 +13,12 @@ const TilteParaReuse = ({
   para4,
   para5,
   para6,
+  para7,
   brk,
 }) => {
   return (
     <div>
-      <h1 className="md:text-6xl font-dancingFont text-4xl  text-center text-gray-500 mb-2">
+      <h1 className="md:text-6xl font-dancingFont text-5xl  text-center text-gray-500 mb-2">
         {heading1}
       </h1>
 
@@ -27,10 +28,10 @@ const TilteParaReuse = ({
 
       <h3 className="text-3xl text-center font-semibold mb-2">{heading3}</h3>
 
-      <h4 className="text-2xl  font-semibold  mb-2">{heading4}</h4>
+      <h4 className="text-lg font-bold ">{heading4}</h4>
 
-      <h5 className="text-1xl font-semibold  mb-2">{heading5}</h5>
-      <h6 className="text-4xl font-caveatFont font-thin fon text-center text-orange-500 mb-2">
+      <h5 className="text-xl font-semibold  mb-2">{heading5}</h5>
+      <h6 className="text-xl font-caveatFont font-thin  text-center text-blue-500 mb-2">
         {heading6}
       </h6>
 
@@ -45,6 +46,7 @@ const TilteParaReuse = ({
         {para4}
       </p>
       <p className="text-base text-justify leading-7 mb-2">{para5}</p>
+      <p className=" text-lg font-bold mb-2">{para7}</p>
 
       <p className="text-base text-justify leading-7 mb-2">{para6}</p>
     </div>

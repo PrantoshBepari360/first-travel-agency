@@ -9,7 +9,7 @@ const TravelPackages = () => {
 
   return (
     <div className="container">
-      <TilteParaReuse heading1={"Travel Packages"}/>
+      <TilteParaReuse heading2={"Travel Packages"}/>
       {packages?.length === 0 && <SpinnerLoader />}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {packages?.length > 0 &&
