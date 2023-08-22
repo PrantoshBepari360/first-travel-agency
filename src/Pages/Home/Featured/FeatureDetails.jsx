@@ -12,7 +12,7 @@ const FeatureDetails = () => {
           -----to let our memories live------
         </h5>
       </section>
-      <div className="bg-[url('/public/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
+      <div className="bg-[url('/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
         <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-60">
           <div className="hidden md:block lg:w-2/4 md:mb-7 lg:mb-0">
             <img
@@ -35,7 +35,7 @@ const FeatureDetails = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/public/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
+      <div className="bg-[url('/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
         <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-60">
           <div className="hidden md:block lg:w-2/4 md:mb-7 lg:mb-0">
             <img
@@ -58,7 +58,7 @@ const FeatureDetails = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/public/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
+      <div className="bg-[url('/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
         <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-60">
           <div className="hidden md:block lg:w-2/4 md:mb-7 lg:mb-0">
             <img

@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const Top = () => {
   const { user, logOut } = useAuth();
   return (
-    <div className="bg-topColor">
+    <div className="bg-[#00BDBB]">
       <div className="w-[90%] mx-auto hidden md:flex items-center justify-between pt-2 px-6 pb-14">
         <div className="flex">
           <h3 className="text-white mr-6 ">Follow us :</h3>

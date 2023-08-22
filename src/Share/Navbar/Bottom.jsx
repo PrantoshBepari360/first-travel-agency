@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiMenu, HiOutlineClipboard, HiSearch } from "react-icons/hi";
-import NavJson from "../../../public/Nav2.json";
+import NavJson from "/public/Nav2.json";
 import logo from "../../assets/logo/logo.png";
 
 const Bottom = () => {
-  const [isOpen, setisOpen] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState([]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const openMobileMenu = () => setIsMobileMenuOpen(true);
@@ -34,7 +33,7 @@ const Bottom = () => {
 
   return (
     <div className="w-full top-0 md:top-10 absolute drop-shadow-[0_1px_5px_rgba(193,193,193,0.4)]">
-      <div className="w-full md:w-[90%] mx-auto flex justify-between bg-white p-6">
+      <div className="w-full md:w-[90%] mx-auto flex justify-between bg-white p-5">
         <div className="md:hidden">
           {isMobileMenuOpen ? (
             <button
@@ -77,81 +76,80 @@ const Bottom = () => {
           <img src={logo} alt="Travel Logo" />
         </Link>
 
-     
-        <div className="hidden md:block">
-          <div className="flex">
-            <ul className="flex">
-              {NavJson?.map((item, i) => {
-                if (!item.children) {
-                  return (
-                    <li
-                      key={item.id}
-                      className="mr-5 text-gray-600 font-bold hover:text-menuColor"
-                    >
-                      <a href={item.href}>
-                        <span>{item.name}</span>
-                      </a>
-                    </li>
-                  );
-                }
+        <div className="hidden md:flex justify-center items-center">
+          <ul className="flex justify-center items-center">
+            {NavJson?.map((item) => {
+              if (!item?.children) {
                 return (
                   <li
-                    onMouseEnter={() => onEnterHandler(item.id)}
-                    onMouseLeave={() => subMousLeaveHandle(item.id)}
                     key={item.id}
-                    className="relative cursor-pointer text-gray-600  mr-5 font-bold "
+                    className="mr-5 text-gray-600 font-bold hover:text-[#00BDCA]"
                   >
-                    <span onClick={() => setisOpen((prev) => !prev)}>
-                      {item.name}
-                    </span>
-                    <div
-                      className="absolute bg-subMenybg top-full w-36 mt-6 hover:text-gray-600"
-                      variants={variants}
-                      animate={showSubMenu[item.id] ? "open" : "closed"}
-                    >
-                      {showSubMenu[item.id] &&
-                        item.children.map((Submenu) => {
-                          return (
-                            <li key={Submenu.id} className="m-3">
-                              <a>
-                                <span href="#" className="">
-                                  {Submenu.name}
-                                </span>
-                              </a>
-                            </li>
-                          );
-                        })}
-                    </div>
+                    <NavLink to={item.href}>
+                      <span>{item.name}</span>
+                    </NavLink>
                   </li>
                 );
-              })}
-            </ul>
+              }
 
-            <div className="flex-3">
-              <ul className="flex justify-center space-x-5">
-                <li>
-                  <a href="#" className="text-gray-400">
-                    <HiOutlineClipboard className="absolute mt-1 w-7 h-6" />
-                    <span className="relative text-white bg-menuColor font-light ml-4 rounded">
-                      0
-                    </span>
-                  </a>
+              return (
+                <li
+                  onMouseEnter={() => onEnterHandler(item.id)}
+                  onMouseLeave={() => subMousLeaveHandle(item.id)}
+                  key={item.id}
+                  className="relative cursor-pointer text-gray-600 mr-5 font-bold "
+                >
+                  <span>{item.name}</span>
+                  <div
+                    className="absolute pt-2 top-full w-32"
+                    variants={variants}
+                    animate={showSubMenu[item.id] ? "open" : "closed"}
+                  >
+                    {showSubMenu[item.id] &&
+                      item.children.map((Submenu) => {
+                        return (
+                          <li
+                            key={Submenu.id}
+                            className="w-full h-10 bg-gray-500"
+                          >
+                            <NavLink
+                              to={Submenu.href}
+                              target="_blank"
+                              className="flex items-center w-full h-full pl-4 text-white border-b hover:bg-gray-400"
+                            >
+                              <span>{Submenu.name}</span>
+                            </NavLink>
+                          </li>
+                        );
+                      })}
+                  </div>
                 </li>
-                <div className="border-r-2 h-5 mt-1"></div>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-menuColor">
-                    <HiSearch className="mt-1 w-6 h-6" />
-                  </a>
-                </li>
-                <div className="border-r-2 h-5 mt-1"></div>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-menuColor">
-                    <HiMenu className="mt-1 w-6 h-6" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+              );
+            })}
+          </ul>
+
+          <ul className="flex justify-center space-x-5 text-gray-400">
+            <li>
+              <Link to="/">
+                <HiOutlineClipboard className="absolute w-7 h-6" />
+                <span className="relative text-white bg-menuColor font-light ml-4 rounded">
+                  0
+                </span>
+              </Link>
+            </li>
+            <div className="border-r-2 h-5"></div>
+            <li>
+              <Link to="/" className="hover:text-menuColor">
+                <HiSearch className="w-6 h-6" />
+              </Link>
+            </li>
+            <div className="border-r-2 h-5"></div>
+            <li>
+              <Link to="/" className="hover:text-menuColor">
+                <HiMenu className="w-6 h-6" />
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Mobile menu */}

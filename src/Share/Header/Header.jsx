@@ -96,12 +96,12 @@ const Header = () => {
               if (!el?.children) {
                 return (
                   <li key={el?.id}>
-                    <Link
+                    <NavLink
                       to={el?.href}
                       className="mr-6 text-white text-base font-medium hover:text-lime-500 md:mr-4 lg:mr-5 xl:mr-6"
                     >
                       <span>{el?.name}</span>
-                    </Link>
+                    </NavLink>
                   </li>
                 );
               }
