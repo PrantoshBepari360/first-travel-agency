@@ -19,7 +19,7 @@ const TravelPackages = () => {
               id={item.id}
               title={item.title}
               visited={item.visited}
-              user={<FaUser className="text-blue-600" />}
+              user={<FaUser className="text-[#00BDBB]" />}
               image={item.image}
               name={item.name}
             />

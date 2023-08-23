@@ -1,16 +1,15 @@
 import React from "react";
 import featuredImg from "../../../assets/book/caleb.jpg";
+import TilteParaReuse from "../../../reuse/TilteParaReuse";
 
 const FeatureDetails = () => {
   return (
     <div className="container pt-20">
       <section className="mb-9">
-        <h4 className="md:text-6xl text-4xl text-center text-orange-500 mb-2">
-          We choose travel
-        </h4>
-        <h5 className="text-2xl text-center text-orange-500">
-          -----to let our memories live------
-        </h5>
+      <TilteParaReuse
+          heading2=" We choose travel"
+          heading6=" -----to let our memories live------"
+        />
       </section>
       <div className="bg-[url('/public/hill.jpg')] bg-center bg-cover bg-no-repeat bg-fixed h-72 mb-10">
         <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 h-full bg-opacity-60">

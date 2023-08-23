@@ -29,35 +29,26 @@ const PackageDetails = () => {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
           <h2 className="absolute top-0 left-0 w-full h-full flex items-center justify-center  text-3xl xl:text-5xl lg:text-4xl text-white font-bold ">
-            Tour detailss details....
+            Tour  details....
           </h2>
         </div>
 
-        <div className="bg-slate-300 ">
-          <div className="container pt-8 pb-8 flex flex-col md:flex-row justify-between items-center">
-            <div className="ms-2 ">
-              <h2 className="lg:text-[40px] text-[23px] text-center md:text-left font-bold tracking-wide">
+        <div className="bg-blue-100 ">
+          <div className="container pt-8 pb-8 flex flex-col-reverse md:flex-row justify-between items-center">
+         <div>
+         <div className="ms-2 ">
+              <h2 className="lg:text-4xl text-[23px] text-center md:text-left font-bold tracking-wide p-2">
                 Are You Still Intarested To Tour?
               </h2>
-              <p className="lg:text-lg text-sm text-center md:text-left pb-2">
+              <p className="lg:text-lg text-sm text-center md:text-left pb-4">
                 We Offer A Wide Range Of Procedures To Help You Get The Perfect
                 Smile
               </p>
             </div>
-            <div>
-              <Link to={`/tourBooking/${id}`}>
-                <button
-                  className=" px-4 py-3 rounded border-2 border-orange-400 bg-white
-               text-orange-400 font-semibold text-xl hover:text-white hover:border-white duration-100  hover:bg-orange-400"
-                >
-                  Book A Tour!
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="container pb-6">
+
+            <div className="container ">
             <div className="flex items-center  ">
-              <h2 className="text-3xl font-bold text-[#4e5050]  mb-4">
+              <h2 className="text-3xl font-bold   mb-4">
                 {details?.name}
               </h2>
               <MdStar className="h-9 w-9 ms-10 lg:ms-8 pb-2  text-yellow-400"></MdStar>
@@ -66,15 +57,28 @@ const PackageDetails = () => {
             </div>
             <div className="text-[#4e5050]  mb-8 tracking-wider">
               <span className="">StartFrom </span>
-              <span className="text-2xl font-bold">${details?.price}</span>
+              <span className="text-2xl font-bold text-black">${details?.price}</span>
               <span>/ Per Person</span>{" "}
-              <span className="text-lg font-bold"> {details?.visited}</span>{" "}
+              <span className="text-lg font-bold text-black"> {details?.visited}</span>{" "}
               <span>People</span>
             </div>
           </div>
+
+         </div>
+            <div>
+              <Link to={`/tourBooking/${id}`}>
+                <button
+                  className="w-full mt-2 p-2 font-semibold border rounded text-[#298280] border-[#00BDBB] hover:bg-[#3aa4a2] hover:text-white hover:border-none"
+                >
+                  Book A Tour!
+                </button>
+              </Link>
+            </div>
+          </div>
+          
         </div>
 
-        <div className="container pt-10">
+        <div className="container pt-10 pb-5">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}

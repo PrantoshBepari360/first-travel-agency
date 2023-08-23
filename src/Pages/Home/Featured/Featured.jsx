@@ -11,7 +11,7 @@ const Featured = () => {
           heading6=" -----to let our memories live------"
         />
       </section>
-      <div className="bg-[url('/public/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
+      <div className="bg-[url('/dino.jpg')] bg-center bg-cover bg-no-repeat bg-fixed mb-10">
         <div className="lg:flex justify-center items-center gap-8 py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-60">
           <div className="hidden md:block lg:w-2/4 md:mb-7 lg:mb-0">
             <img
@@ -30,7 +30,7 @@ const Featured = () => {
             />
 
             <Link to="/featuredDetails">
-              <button className="text-white px-3 py-2 rounded bg-orange-400 hover:bg-orange-500 border-b-2">
+              <button className="text-white font-bold px-3 py-2 rounded bg-[#00BDBB] hover:bg-[#318a88] border-b-2 ">
                 Read More
               </button>
             </Link>

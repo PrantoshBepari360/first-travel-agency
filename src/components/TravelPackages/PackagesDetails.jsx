@@ -38,6 +38,9 @@ const PackagesDetails = () => {
           </h2>
         </div>
       </div>
+
+
+
       <div className="bg-gray-100">
         <div className="container  py-12 flex flex-col md:flex-row justify-between items-center">
           <div className="ms-2 ">
@@ -56,6 +59,9 @@ const PackagesDetails = () => {
           </div>
         </div>
       </div>
+
+
+      
       <div className="flex flex-col container  md:flex-row gap-6 pt-12 ">
         <div className="lg:w-8/12	 w-full	">
           <div className="flex flex-wrap  md:flex-row items-center lg:justify-between gap-1">

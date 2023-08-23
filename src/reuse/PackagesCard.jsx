@@ -8,7 +8,7 @@ const PackagesCard = (props) => {
     
 
   return (
-    <div className="p-4 border border-gray-300 rounded-md hover:border-blue-400 shadow-md hover:shadow-blue-400">
+    <div className="p-4 border border-gray-300 rounded-md hover:border-[#00BDBB] shadow-md hover:shadow-[#00BDBB]">
       <div>
         <img
           alt={name}
@@ -30,18 +30,20 @@ const PackagesCard = (props) => {
           <p className="mt-1">{price}</p>
         </div>
       </div>
+      <p className=" text-lg font-bold mb-2">{title}</p>
+      {/* <TilteParaReuse heading4={title} /> */}
       <hr className="mb-1" />
 
       {visited || reviewPeople ? (
         <Link to={`/tourDetails/${id}`}>
-          <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
+          <button className="w-full mt-2 p-2 font-semibold border rounded text-[#298280] border-[#00BDBB] hover:bg-[#3aa4a2] hover:text-white hover:border-none ">
             See Details
           </button>
         </Link>
       ) : (
         <Link to={`/product/${id}`}>
-          <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
-            Add to Cart
+          <button className="w-full mt-2 p-2 font-semibold border rounded text-[#298280] border-[#00BDBB] hover:bg-[#3aa4a2] hover:text-white hover:border-none ">
+            Details
           </button>
         </Link>
       )}

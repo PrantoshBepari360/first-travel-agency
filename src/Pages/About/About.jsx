@@ -24,7 +24,7 @@ const About = () => {
   return (
     <>
       <div className="relative overflow-hidden bg-stone-300 -z-100">
-        <div className="bg-[url('/public/brooke.jpg')] relative top-0 left-0 w-full h-[600px] bg-cover bg-center bg-fixed ">
+        <div className="bg-[url('/brooke.jpg')] relative top-0 left-0 w-full h-[600px] bg-cover bg-center bg-fixed ">
           <div className="absolute top-0 left-0 w-full h-[600px] bg-gray-700 bg-opacity-60"></div>
         </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">

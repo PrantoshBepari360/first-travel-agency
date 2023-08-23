@@ -5,12 +5,12 @@ import TilteParaReuse from "../../reuse/TilteParaReuse";
 
 const ProductDetails = () => {
   const { data } = useFetchData("/shop.json");
-
   const { id } = useParams();
   const details = data?.find((item) => item.id === Number(id));
 
-const slice = data.slice(0,4);
-
+  const relatedProducts = data.filter(
+    (item) => item.category === details?.category && item.id !== details.id
+  );
 
   return (
     <>
@@ -51,7 +51,7 @@ const slice = data.slice(0,4);
                   <span className="ml-2"> + </span>
                 </div>
 
-                <button className="p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none">
+                <button className="p-2 font-semibold border rounded text-[#00BDBB] border-[#00BDBB] hover:bg-[#00BDBB] hover:text-white hover:border-none">
                   Add to Cart
                 </button>
               </div>
@@ -65,15 +65,17 @@ const slice = data.slice(0,4);
         </div>
       </section>
 
-      <section className="container">
+           <section className="container">
         <div>
           <TilteParaReuse heading2={"Related Products"} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-16">
-          {slice.map((item) => (
-            <div className="p-4 border border-gray-300 rounded-md hover:border-blue-400 shadow-md hover:shadow-blue-400">
-              <div>
+          {relatedProducts.slice(0, 4).map((item) => (
+            <div>
+            <Link to={`/product/${item.id}`}>
+           <div key={item.id} className="p-4 border border-gray-300 rounded-md hover:border-[#00BDBB] shadow-md hover:shadow-[#00BDBB]">
+             <div>
                 <img
                   alt={item.name}
                   className="object-cover object-center w-full h-full rounded-lg "
@@ -82,19 +84,19 @@ const slice = data.slice(0,4);
               </div>
 
               <div className="mt-4 flex justify-between items-center mb-1">
-                <h1 className=" text-lg font-bold">{item.name}</h1>
+                <h1 className="text-lg font-bold">{item.name}</h1>
 
                 <div className="flex gap-2 items-center justify-center ">
                   <p className="mt-1">{item.price}</p>
                 </div>
               </div>
               <hr className="mb-1" />
+             </div>
+             </Link>
 
-              <Link to={`/product/${id}`}>
-                <button className="w-full mt-2 p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none ">
+                <button className="w-full mt-2 p-2 font-semibold border rounded text-[#40c4c2] border-[#00BDBB] hover:bg-[#3aa4a2] hover:text-white hover:border-none">
                   Add to Cart
                 </button>
-              </Link>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import BlogCart from "./BlogCart/BlogCart";
 import blogImg from "../../assets/about/blog.jpeg";
-import Banner from "../Contact/Banner";
+import Banner from "../contacts/Banner";
 
 const Blog = () => {
   return (
