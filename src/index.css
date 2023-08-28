@@ -8,6 +8,10 @@
   }
 }
 
+.active {
+  color: #00bdca;
+}
+
 * {
   margin: 0;
   padding: 0;

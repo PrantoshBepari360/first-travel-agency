@@ -8,7 +8,7 @@ import { useAuth } from "../../hooks/useAuth";
 const Footer = () => {
   const { user } = useAuth();
   return (
-    <div className="bg-[#333333] text-white ">
+    <div className="bg-[#333333] text-white">
       <footer className="container">
         <div className="grid grid-cols-1 gap-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col px-3">
@@ -105,8 +105,7 @@ const Footer = () => {
         </div>
 
         <ScrollToTopButton />
-      </footer>{" "}
-      *
+      </footer>
     </div>
   );
 };

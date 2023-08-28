@@ -1,23 +1,35 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-export const useFetchData = () => {
-  const [packages, setPackages] = useState([]);
-  const [popularTour, setPopularTour] = useState([]);
-
-  useEffect(() => {
-    fetch("/TravelPackages.json")
-      .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, []);
+export const useFetchData = (url, cb) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("PopularDestinations.json")
-      .then((res) => res.json())
-      .then((data) => setPopularTour(data));
+    fetchData();
   }, []);
+
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(url);
+      const result = await res.json();
+      if (cb) {
+        setData(cb(result));
+      } else {
+        setData(result);
+      }
+      setLoading(false);
+      setError("");
+    } catch (error) {
+      setLoading(false);
+      setData(error.message);
+    }
+  };
 
   return {
-    packages,
-    popularTour,
+    data,
+    loading,
+    error,
   };
 };

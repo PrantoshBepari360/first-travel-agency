@@ -1,4 +1,3 @@
-import TravelForm from "../TravelForm/TravelForm";
 import { useParams } from "react-router-dom";
 import { useAuth } from "./../../hooks/useAuth";
 import { useFetchData } from "../../hooks/useFetchData";
@@ -7,9 +6,9 @@ import bookingImg from "../../assets/about/flat-design.jpeg";
 const TourBooking = () => {
   const { user } = useAuth();
   const { id } = useParams();
-  const { packages } = useFetchData();
 
-  const details = packages?.find((pk) => pk?.id === Number(id));
+  const packages = useFetchData("/TravelPackages.json");
+  const details = packages.data?.find((pk) => pk?.id === Number(id));
 
   return (
     <>
@@ -27,19 +26,79 @@ const TourBooking = () => {
       <div className="w-full mx-auto z-50 rounded py-5 border-none lg:w-10/12">
         <h2 className="text-center text-3xl font-bold">Billing Details</h2>
         <form className="px-4">
-          <TravelForm destination={details} />
+          <div className="p-6 bg-slate-100 flex flex-col md:flex-row justify-between flex-wrap gap-2 shadow rounded">
+            <div className="mb-4">
+              <label
+                htmlFor="destination"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Destination
+              </label>
+              <input
+                type="text"
+                id="destination"
+                placeholder={details?.name}
+                className="w-full border-2 rounded py-3 px-3 focus:outline-none "
+                required
+                disabled
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="checkIn"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Check in
+              </label>
+              <input
+                type="date"
+                id="checkIn"
+                className="w-full border-2 rounded py-3 px-3 focus:outline-none "
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="checkOut"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Check out
+              </label>
+              <input
+                type="date"
+                id="checkOut"
+                className="w-full border-2 rounded py-3 px-3 focus:outline-none "
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="guests"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Guests
+              </label>
+              <input
+                type="number"
+                id="guests"
+                placeholder="Guests"
+                className="w-full border-2 rounded py-3 px-3 focus:outline-none "
+                required
+              />
+            </div>
+          </div>
+
           <div className="flex flex-col md:flex-row pt-6 items-center justify-between gap-4">
             <div className="mb-1  lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                htmlFor="name"
+                htmlFor="firstName"
               >
                 First Name <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="text"
-                id="name"
-                name="first"
+                id="firstName"
                 placeholder="Your Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
@@ -48,14 +107,13 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                htmlFor="subject"
+                htmlFor="lastName"
               >
                 Last Name <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="text"
-                id="subject"
-                name="last"
+                id="lastName"
                 placeholder="Last Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
@@ -67,14 +125,13 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold"
-                htmlFor="name"
+                htmlFor="email"
               >
                 Billing Email <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="email"
                 placeholder={user?.email}
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
@@ -84,32 +141,31 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                htmlFor="subject"
+                htmlFor="phone"
               >
                 Billing Mobile Number{" "}
                 <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="number"
-                id="subject"
-                name="number"
+                id="phone"
                 placeholder="Billing Mobile Number *"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
           </div>
+
           <div className="flex flex-col md:flex-row  items-center justify-between gap-4">
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                for="country"
+                htmlFor="country"
               >
                 Country <span className="text-red-600 text-lg">*</span>
               </label>
               <select
                 id="country"
-                name="country"
                 className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
               >
                 <option value="country1">Bangladesh</option>
@@ -123,13 +179,12 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                for="country"
+                htmlFor="district"
               >
                 District <span className="text-red-600 text-lg">*</span>
               </label>
               <select
-                id="country"
-                name="country"
+                id="district"
                 className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
               >
                 <option value="country1">Dhaka</option>
@@ -154,14 +209,13 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold"
-                htmlFor="name"
+                htmlFor="town"
               >
                 Town / City <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="text"
-                id="name"
-                name="city"
+                id="town"
                 placeholder="Town / City Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
@@ -170,14 +224,13 @@ const TourBooking = () => {
             <div className="mb-1 lg:w-1/2 w-full">
               <label
                 className="block text-gray-700 text-sm font-bold "
-                htmlFor="subject"
+                htmlFor="address"
               >
                 Street address <span className="text-red-600 text-lg">*</span>
               </label>
               <input
                 type="text"
-                id="subject"
-                name="Street"
+                id="address"
                 placeholder="House number and street number *"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required

@@ -29,7 +29,7 @@ const PackagesCard = (props) => {
           <p className="mt-1">{price}</p>
         </div>
       </div>
-      <p className=" text-lg font-bold mb-2">{title}</p>
+      <p className="text-lg font-bold mb-2">{title}</p>
       {/* <TilteParaReuse heading4={title} /> */}
       <hr className="mb-1" />
 

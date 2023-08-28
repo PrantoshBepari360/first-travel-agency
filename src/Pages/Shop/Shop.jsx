@@ -3,7 +3,7 @@ import { useFetchData } from "../../hooks/useEffect";
 import PackagesCard from "../../reuse/PackagesCard";
 
 const Shop = () => {
-  const { data } = useFetchData("/shop.json");
+  const shops = useFetchData("/shop.json");
 
   return (
     <>
@@ -26,12 +26,12 @@ const Shop = () => {
           <hr className="w-28 mx-auto h-1 bg-blue-500" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-16">
-          {data.map((shop) => (
+          {shops.data?.map((shop) => (
             <PackagesCard
               key={shop.id}
               id={shop.id}
               name={shop.name}
-              price={`$ ${shop.price} `}
+              price={`$ ${shop.price}`}
               image={shop.image}
             />
           ))}
