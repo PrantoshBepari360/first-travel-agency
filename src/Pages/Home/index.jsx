@@ -1,4 +1,4 @@
-import TourPackages from "../Tours/tourPackages/TourPackages";
+import TourPackages from "../tours/tourPackages/TourPackages";
 import Explore from "./Explore";
 import Intro from "./Intro";
 import Slider from "./Slider";
