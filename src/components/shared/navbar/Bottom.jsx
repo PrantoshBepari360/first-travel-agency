@@ -79,7 +79,7 @@ const Bottom = () => {
         <div className="hidden md:flex justify-center items-center">
           <ul className="flex justify-center items-center">
             {NavJson?.map((item) => {
-              if (!item?.children) {
+              if (!item.children) {
                 return (
                   <li
                     key={item.id}
@@ -94,9 +94,9 @@ const Bottom = () => {
 
               return (
                 <li
+                  key={item.id}
                   onMouseEnter={() => onEnterHandler(item.id)}
                   onMouseLeave={() => subMousLeaveHandle(item.id)}
-                  key={item.id}
                   className="relative cursor-pointer text-gray-600 mr-5 font-bold "
                 >
                   <span>{item.name}</span>
@@ -106,7 +106,7 @@ const Bottom = () => {
                     animate={showSubMenu[item.id] ? "open" : "closed"}
                   >
                     {showSubMenu[item.id] &&
-                      item.children.map((Submenu) => {
+                      item.children?.map((Submenu) => {
                         return (
                           <li
                             key={Submenu.id}
