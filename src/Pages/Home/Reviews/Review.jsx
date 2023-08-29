@@ -1,5 +1,5 @@
 import Rating from "react-rating";
-import "./Reviews";
+import "./Review.css";
 import startEmpty from "../../../../assets/reating/star-empty.png";
 import startFull from "../../../../assets/reating/star-full.png";
 import userPhoto from "../../../../assets/reating/user.png";
