@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "./../hooks/useAuth";
+import { FaGoogle } from "react-icons/fa";
+import img from '../assets/logo/252455-P4R9RT-971.jpg'
 const Login = () => {
   const { isLoading, loginUser, signInWidthGoogle, authError } = useAuth();
   const [showPass, setShowPass] = useState(false);
@@ -20,14 +22,14 @@ const Login = () => {
 
   return (
     <div>
-      <div className="rounded-lg overflow-hidden grid">
+      <div className="rounded-lg  grid md:grid-cols-2 ">
         <div className="w-full md:w-11/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto py-20 mt-10">
           <div className="flex flex-col justify-start items-start mb-10">
             <h1 className="text-gray-900 font-bold text-3xl font-title pl-4">
               Sign in
             </h1>
           </div>
-          <div className="rounded-lg px-4">
+          <div className="rounded-lg px-4 card border w-96 mx-auto p-2 shadow-md shadow-[#298280] ">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <div className="flex items-center justify-between">
@@ -90,7 +92,7 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-lg lg:text-xl font-medium  text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full py-2 px-4  rounded-md  text-lg lg:text-xl font-semibold hover:text-white  text-black bg-[#34c5c2] hover:bg-[#246463]"
                 >
                   {isLoading ? "Loading..." : "Sign in"}
                 </button>
@@ -109,19 +111,16 @@ const Login = () => {
                 </div>
               </div>
 
-              <div className="mt-6">
-                <div>
+              <div className="mt-6 w-full text-center">
                   <button
                     onClick={() => signInWidthGoogle(location, navigate)}
-                    className="w-full inline-flex justify-center items-center py-2 px-4 rounded-md shadow-sm bg-black text-lg lg:text-xl font-medium text-white hover:bg-opacity-80  focus:outline-none focus:ring-2 focus:ring-black "
+                    className=" border-2 p-2 rounded-full shadow-sm hover:shadow-teal-400  "
                   >
-                    <i className="fa-brands fa-google mr-2"></i>Sign in with
-                    Google
+                    <FaGoogle className=" text-teal-500"></FaGoogle>
                   </button>
-                </div>
               </div>
 
-              <p className="mt-6 text-center text-base lg:text-lg font-medium text-gray-900">
+              <p className="mt-6 text-center text-base lg:text-sm font-medium text-gray-900">
                 New to Travel Agency?
                 <Link
                   to="/register"
@@ -131,9 +130,13 @@ const Login = () => {
                 </Link>
               </p>
               <br />
-              {authError && <div className="">{authError}</div>}
+              {authError && <div className="text-red-500">{authError}</div>}
             </div>
           </div>
+        </div>
+
+        <div className="flex items-center justify-center">
+         <img src={img} alt="" />
         </div>
       </div>
     </div>
