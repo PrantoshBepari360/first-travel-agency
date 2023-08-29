@@ -1,20 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../components/shared/navbar";
-import Home from "../pages/home";
+import Home from "../pages/Home";
 import About from "../pages/about/About";
 import Tours from "../pages/Tours";
 import Shop from "../pages/shop/Shop";
 import Blog from "../pages/Blog";
-import Contact from "../pages/contacts";
+import Contact from "../pages/Contacts";
 import PrivetOutlet from "../login/PrivetOutlet";
-import PackageDetails from "../pages/Tours/tourPackages/PackageDetails";
+import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
 import ProductDetails from "../pages/shop/ProductDetails";
 import TourBooking from "../pages/booking/TourBooking";
-import FeatureDetails from "../pages/Home/featured/FeatureDetails";
+import FeatureDetails from "../pages/home/featured/FeatureDetails";
 import Login from "../login/Login";
 import Register from "../login/Register";
 import Footer from "../components/shared/footer/Footer";
-
 
 const Routers = () => {
   return (
