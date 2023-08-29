@@ -1,6 +1,5 @@
-import React from "react";
-import { useFetchData } from "../../hooks/useEffect";
-import PackagesCard from "../../reuse/PackagesCard";
+import { useFetchData } from "../../hooks/useFetchData";
+import PackagesCard from "../../components/shared/common/PackagesCard";
 
 const Shop = () => {
   const shops = useFetchData("/shop.json");

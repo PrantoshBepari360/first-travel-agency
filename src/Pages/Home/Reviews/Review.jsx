@@ -1,9 +1,8 @@
-import React from "react";
 import Rating from "react-rating";
-import "./Review.css";
-import startEmpty from "../../../assets/reating/star-empty.png";
-import startFull from "../../../assets/reating/star-full.png";
-import userPhoto from "../../../assets/reating/user.png";
+import "./Reviews";
+import startEmpty from "../../../../assets/reating/star-empty.png";
+import startFull from "../../../../assets/reating/star-full.png";
+import userPhoto from "../../../../assets/reating/user.png";
 
 const Review = (props) => {
   const { name, email, rating, review, photo } = props?.review;

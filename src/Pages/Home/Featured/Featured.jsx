@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import featuredImg from "../../../assets/book/caleb.jpg";
-import TilteParaReuse from "../../../reuse/TilteParaReuse";
+import featuredImg from "../../../../assets/book/caleb.jpg";
+import Heading from "../../../components/shared/common/Heading";
 
 const Featured = () => {
   return (
     <div className="container">
       <section className="mb-9">
-        <TilteParaReuse
+        <Heading
           heading2=" We choose travel"
           heading6=" -----to let our memories live------"
         />
@@ -21,7 +21,7 @@ const Featured = () => {
             />
           </div>
           <div className="lg:w-2/4">
-            <TilteParaReuse
+            <Heading
               para3=" Welcome to our website! We are dedicated to providing exceptional
               fitness solutions tailored to your needs. Our experienced
               trainers, state-of-the-art facilities, and personalized br
@@ -30,7 +30,7 @@ const Featured = () => {
             />
 
             <Link to="/featuredDetails">
-              <button className="text-white px-3 py-2 rounded bg-orange-400 hover:bg-orange-500 border-b-2">
+              <button className="text-white font-bold px-3 py-2 rounded bg-[#00BDBB] hover:bg-[#318a88] border-b-2 ">
                 Read More
               </button>
             </Link>

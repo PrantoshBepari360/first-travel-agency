@@ -1,14 +1,16 @@
-import img from "../../assets/about/aboutBg.jpg"; // Import the image
-import logo from "../../assets/logo/f-icon-1.png";
-import logo1 from "../../assets/logo/f-icon-2.png";
-import TilteParaReuse from "../../reuse/TilteParaReuse";
+import img from "../../../assets/about/aboutBg.jpg";
+import logo from "../../../assets/logo/f-icon-1.png";
+import logo1 from "../../../assets/logo/f-icon-2.png";
+import Heading from "../../components/shared/common/Heading";
 const Explore = () => {
+  
   return (
     <div className="container mb-20">
       <section className="mb-9 ">
-
-        <TilteParaReuse  heading6="  -----With fun & Joy------" heading2  ="Lets Explore the world" />
-
+        <Heading
+          heading6="  -----With fun & Joy------"
+          heading2="Lets Explore the world"
+        />
       </section>
 
       <section className="lg:flex flex-col gap-20 sm:flex-row sm:gap-10">
@@ -16,13 +18,15 @@ const Explore = () => {
           <img src={img} className="rounded-lg" alt="tour" />
         </div>
         <div className="w-full md:mt-10 lg:mt-0">
-          <TilteParaReuse para2="  Welcome to our travel agency!
+          <Heading
+            para2="  Welcome to our travel agency!
            We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
             provide you with exceptional service and tailor-made itineraries
             that suit your preferences and interests. Our team of experienced
             travel experts is dedicated to helping you discover the worlds most
-            captivating destinations."/>
+            captivating destinations."
+          />
 
           <div className="flex gap-6 mb-4">
             <div className="flex gap-3  items-center">
@@ -36,13 +40,15 @@ const Explore = () => {
               </h2>
             </div>
           </div>
-          <TilteParaReuse para2="  Welcome to our travel agency!
+          <Heading
+            para2="  Welcome to our travel agency!
            We are passionate about creating
             memorable travel experiences for our clients. Our mission is to
             provide you with exceptional service and tailor-made itineraries
             that suit your preferences and interests. Our team of experienced
             travel experts is dedicated to helping you discover the worlds most
-            captivating destinations."/>
+            captivating destinations."
+          />
         </div>
       </section>
     </div>

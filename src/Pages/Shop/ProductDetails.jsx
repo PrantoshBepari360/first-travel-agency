@@ -1,12 +1,16 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useFetchData } from "../../hooks/useEffect";
+import { Link, useParams } from "react-router-dom";
+import Heading from "../../components/shared/common/Heading";
+import { useFetchData } from "../../hooks/useFetchData";
 
 const ProductDetails = () => {
-  const { data } = useFetchData("/shop.json");
-
+  const shop = useFetchData("/shop.json");
   const { id } = useParams();
-  const details = data?.find((item) => item.id === Number(id));
+  
+  const details = shop.data?.find((item) => item.id === Number(id));
+
+  const relatedProducts = shop.data?.filter(
+    (item) => item.category === details?.category && item.id !== details.id
+  );
 
   return (
     <>
@@ -47,7 +51,7 @@ const ProductDetails = () => {
                   <span className="ml-2"> + </span>
                 </div>
 
-                <button className="p-2 font-semibold border rounded text-blue-800 border-blue-400 hover:bg-blue-500 hover:text-white hover:border-none">
+                <button className="p-2 font-semibold border rounded text-[#00BDBB] border-[#00BDBB] hover:bg-[#00BDBB] hover:text-white hover:border-none">
                   Add to Cart
                 </button>
               </div>
@@ -58,6 +62,46 @@ const ProductDetails = () => {
             </div>
           </div>
           <p className="mt-10 text-justify">{details?.description}</p>
+        </div>
+      </section>
+
+      <section className="container">
+        <div>
+          <Heading heading2={"Related Products"} />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-16">
+          {relatedProducts?.slice(0, 4)?.map((item) => (
+            <div>
+              <Link to={`/product/${item.id}`}>
+                <div
+                  key={item.id}
+                  className="p-4 border border-gray-300 rounded-md hover:border-[#00BDBB] shadow-md hover:shadow-[#00BDBB]"
+                >
+                  <div>
+                    <img
+                      alt={item.name}
+                      className="object-cover object-center w-full h-full rounded-lg "
+                      src={item.image}
+                    />
+                  </div>
+
+                  <div className="mt-4 flex justify-between items-center mb-1">
+                    <h1 className="text-lg font-bold">{item.name}</h1>
+
+                    <div className="flex gap-2 items-center justify-center ">
+                      <p className="mt-1">{item.price}</p>
+                    </div>
+                  </div>
+                  <hr className="mb-1" />
+                </div>
+              </Link>
+
+              <button className="w-full mt-2 p-2 font-semibold border rounded text-[#40c4c2] border-[#00BDBB] hover:bg-[#3aa4a2] hover:text-white hover:border-none">
+                Add to Cart
+              </button>
+            </div>
+          ))}
         </div>
       </section>
     </>

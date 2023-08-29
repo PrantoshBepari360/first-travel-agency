@@ -2,10 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import img1 from "../../assets/slider/diego.jpg";
-import img2 from "../../assets/slider/daniela.jpg";
-import img3 from "../../assets/slider/diego.jpg";
-// import Common from "../Common";
+import img1 from "../../../assets/slider/diego.jpg";
+import img2 from "../../../assets/slider/daniela.jpg";
+import img3 from "../../../assets/slider/diego.jpg";
 
 const homeBanner = [
   {

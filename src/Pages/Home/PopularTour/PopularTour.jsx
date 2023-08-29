@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import TilteParaReuse from "../../../reuse/TilteParaReuse";
 import Modal from "./Modal";
-import Common from "../../../reuse/Common";
+import Slider from "../../../components/shared/common/Slider";
 import { useFetchData } from "../../../hooks/useFetchData";
-import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
+import Heading from "../../../components/shared/common/Heading"
+import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
 
 const PopularTour = () => {
   const popularTour = useFetchData("/PopularDestinations.json");
@@ -24,7 +24,7 @@ const PopularTour = () => {
     <div className="py-8">
       <div className="container">
         <div className="mb-9">
-          <TilteParaReuse
+          <Heading
             heading2="Popular Destinations"
             heading6=" ------ Discover ------"
           />
@@ -59,7 +59,7 @@ const PopularTour = () => {
               {modal && (
                 <div className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-70 rounded-2xl"></div>
               )}
-              <Common
+              <Slider
                 image={tour.image}
                 name={tour.name}
                 seedetails={"See Details"}

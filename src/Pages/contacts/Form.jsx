@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
 
-export const Form = () => {
+const Form = () => {
   const form = useRef();
   const [success, setSuccess] = useState(false);
 
@@ -111,3 +111,5 @@ export const Form = () => {
     </div>
   );
 };
+
+export default Form;

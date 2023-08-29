@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import Review from "./Review";
-import TilteParaReuse from "../../../reuse/TilteParaReuse";
-import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
 import { useFetchData } from "../../../hooks/useFetchData";
+import Heading from "../../../components/shared/common/Heading"
+import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
+import Review from "./Review";
 
 const Reviews = () => {
   const reviews = useFetchData(
@@ -15,7 +14,7 @@ const Reviews = () => {
   return (
     <div className="container">
       <div className="my-10 text-center">
-        <TilteParaReuse
+        <Heading
           heading2=" Customer Reviews"
           para4=" This Our Services from our valuable Customer, those who get from BD
             Travel agency. We every time provide best quality services to our

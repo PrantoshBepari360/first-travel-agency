@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./BlogCart.css";
-import Pagination from "./Pagination/Pagination";
-import BlogSideBar from "./BlogSideBar/BlogSideBar";
-import { useFetchData } from "./../../../hooks/useFetchData";
-import PackagesCard from "../../../reuse/PackagesCard";
-import SpinnerLoader from "../../../Share/Loader/SpinnerLoader";
+import Pagination from "./Pagination";
+import BlogSideBar from "./BlogSideBar";
+import { useFetchData } from "../../../hooks/useFetchData";
+import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
+import PackagesCard from "../../../components/shared/common/PackagesCard";
 
 const BlogCart = () => {
   const packages = useFetchData("/TravelPackages.json", (data) =>
@@ -30,8 +30,8 @@ const BlogCart = () => {
 
   return (
     <div className="w-11/12 mx-auto py-10">
-      <h4 className="text-center mb-3">
-        <span className="">Deal News</span> / View All Promotions
+      <h4 className="text-center font-bold text-xl mb-3">
+        <span>Deal News</span> / View All Promotions
       </h4>
 
       {packages.loading && <SpinnerLoader />}

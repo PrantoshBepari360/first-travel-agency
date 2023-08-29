@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import leftDown from "../../assets/about/tickets.jpg";
-import leftUp from "../../assets/about/man-hiking-2.jpg";
-import air from "../../assets/about/f-icon-1.png";
-import calander from "../../assets/about/f-icon-2.png";
-import yellow from "../../assets/about/yellow-3.png";
-import pink from "../../assets/about/pink-4.png";
-import ficon10 from "../../assets/about/f-icon-10.png";
-import ficon11 from "../../assets/about/f-icon-11.png";
-import ficon12 from "../../assets/about/f-icon-12.png";
-import ficon13 from "../../assets/about/f-icon-13.png";
+import leftDown from "../../../assets/about/tickets.jpg";
+import leftUp from "../../../assets/about/man-hiking-2.jpg";
+import air from "../../../assets/about/f-icon-1.png";
+import calander from "../../../assets/about/f-icon-2.png";
+import yellow from "../../../assets/about/yellow-3.png";
+import pink from "../../../assets/about/pink-4.png";
+import ficon10 from "../../../assets/about/f-icon-10.png";
+import ficon11 from "../../../assets/about/f-icon-11.png";
+import ficon12 from "../../../assets/about/f-icon-12.png";
+import ficon13 from "../../../assets/about/f-icon-13.png";
 import { GiHiking } from "react-icons/gi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { RiTeamLine } from "react-icons/ri";
@@ -17,7 +17,7 @@ import { TbCalendarStats } from "react-icons/tb";
 import { TbArmchair2 } from "react-icons/tb";
 import { GiCaptainHatProfile } from "react-icons/gi";
 import { FaUserShield } from "react-icons/fa";
-import TilteParaReuse from "../../reuse/TilteParaReuse";
+import Heading from "../../components/shared/common/Heading"
 
 const About = () => {
 
@@ -40,7 +40,7 @@ const About = () => {
       <section className="bg-stone-200 ">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center justify-center gap-32 max-w-screen-xl mx-auto p-8 ">
           <div>
-            <TilteParaReuse heading3="About Us" para2=" This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel
+            <Heading heading3="About Us" para2=" This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel
               velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
               auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -50,7 +50,7 @@ const About = () => {
            
           </div>
           <div>
-            <TilteParaReuse heading3="Our Mission" para2=" This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel
+            <Heading heading3="Our Mission" para2=" This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel
               velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
               auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -70,7 +70,7 @@ const About = () => {
             <p className="text-8xl mb-1">
               <GiHiking className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Our Journey"
               para1=" Follow our transformative journey, from inception to innovation,
               as we chart a course through challenges"/>
@@ -80,7 +80,7 @@ const About = () => {
             <p className="text-8xl mb-1">
               <MdOutlineTravelExplore className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Mission & Values"
               para1=" Follow our transformative journey, from inception to innovation,
               as we chart a course through challenges"/>
@@ -90,7 +90,7 @@ const About = () => {
             <p className="text-8xl mb-1">
               <RiTeamLine className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Exploring the Teams"
               para1=" Follow our transformative journey, from inception to innovation,
               as we chart a course through challenges"/>
@@ -100,7 +100,7 @@ const About = () => {
             <p className="text-8xl mb-1">
               <FiCheckCircle className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Why Choose Us"
               para1=" Follow our transformative journey, from inception to innovation,
               as we chart a course through challenges" />
@@ -144,7 +144,7 @@ const About = () => {
           <div className=" w-[40rem] h-[40rem]">
             
             <div className="text-left">
-              <TilteParaReuse
+              <Heading
 
                 heading6=" Let’s Explore the World"
                 heading2=" We Make Your Travel More Enjoyable"
@@ -159,12 +159,12 @@ const About = () => {
             <div className="flex gap-6 mt-6">
               <div className="flex gap-3  items-center">
                 <img src={air} className="w-16" alt="" />
-                <TilteParaReuse heading5="Award winning tour & travel arranger" />
+                <Heading heading5="Award winning tour & travel arranger" />
                
               </div>
               <div className="flex gap-3  items-center">
                 <img src={calander} className="w-16" alt="" />
-                <TilteParaReuse heading5="Most popular booking solution provider" />
+                <Heading heading5="Most popular booking solution provider" />
                
               </div>
             </div>
@@ -189,11 +189,11 @@ const About = () => {
           <div className="w-[50rem] ">
             <div className=" w-[33rem] h-[40rem] ">
              
-              <TilteParaReuse heading6=" Our Speciality" heading2=" Your Trusted Travel Partner" />
+              <Heading heading6=" Our Speciality" heading2=" Your Trusted Travel Partner" />
 
             
               <div className="">
-                <TilteParaReuse para2="At our travel website, our speciality lies in curating
+                <Heading para2="At our travel website, our speciality lies in curating
                   unforgettable experiences that cater to the unique preferences
                   of each traveler. From family vacations to solo adventures,
                   romantic getaways to group escapades, we take pride in
@@ -223,7 +223,7 @@ const About = () => {
             <div className="flex mb-16 leading-7">
               <div className=" items-center">
                 <img src={ficon10} className="w-16 mb-5" alt="" />
-                <TilteParaReuse
+                <Heading
                   heading5="Innovative Tour Plans"
                   para1=" Experience our innovative tour plans designed to take you off
                   the beaten path and uncover hidden gems."/>
@@ -232,7 +232,7 @@ const About = () => {
               </div>
               <div className=" items-center ml-5">
                 <img src={ficon11} className="w-16 mb-5" alt="" />
-                <TilteParaReuse
+                <Heading
                   heading5="Expert Travel Guide"
                   para1=" Embark on your journey with confidence, guided by our expert
                   travel guides who share their local expertise and insider
@@ -244,7 +244,7 @@ const About = () => {
               <div className=" items-center leading-7">
                 <img src={ficon12} className="w-16 mb-5" alt="" />
 
-                <TilteParaReuse
+                <Heading
                   heading5="Flexible Payment Policy"
                   para1="Travel stress-free with our flexible payment policy that
                   accommodates your needs and preferences."/>
@@ -252,7 +252,7 @@ const About = () => {
               </div>
               <div className=" items-center">
                 <img src={ficon13} className="w-16 mb-5" alt="" />
-                <TilteParaReuse
+                <Heading
                   heading5="High Quality Management"
                   para1="  Rest assured that your travel experience is in capable hands
               with our high-quality management and attention to every
@@ -267,7 +267,7 @@ const About = () => {
 
       <section>
         <div className="mb-10">
-          <TilteParaReuse heading3="Our Benefit" />
+          <Heading heading3="Our Benefit" />
 
           <hr className="bg-red-900 h-[2px] w-36  mx-auto" />
         </div>
@@ -276,7 +276,7 @@ const About = () => {
             <p className="text-6xl mb-1">
               <TbCalendarStats className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Personal Schedule"
               para1=" The point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters"
@@ -288,7 +288,7 @@ const About = () => {
             <p className="text-6xl mb-1">
               <TbArmchair2 className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Luxury Interiors"
               para1=" The point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters"
@@ -299,7 +299,7 @@ const About = () => {
             <p className="text-6xl mb-1">
               <GiCaptainHatProfile className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Safe & Confidential"
               para1=" The point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters"
@@ -310,7 +310,7 @@ const About = () => {
             <p className="text-6xl mb-1">
               <FaUserShield className="text-teal-500" />
             </p>
-            <TilteParaReuse
+            <Heading
               heading4="Professional Crew"
               para1=" The point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters"/>
