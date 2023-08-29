@@ -29,7 +29,7 @@ const Featured = () => {
               journey of improved health and well-being."
             />
 
-            <Link to="/">
+            <Link to="/featureDetails">
               <button className="text-white font-bold px-3 py-2 rounded bg-[#00BDBB] hover:bg-[#318a88] border-b-2 ">
                 Read More
               </button>

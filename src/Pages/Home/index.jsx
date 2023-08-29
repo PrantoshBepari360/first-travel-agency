@@ -15,7 +15,7 @@ const Home = () => {
       <Explore />
       <TourPackages />
       <PopularTour />
-      {/* <Featured /> */}
+      <Featured />
       <Reviews />
     </div>
   );
