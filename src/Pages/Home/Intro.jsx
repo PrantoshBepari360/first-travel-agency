@@ -1,7 +1,8 @@
 import logo from "../../assets/logo/intro-1.png";
 import logo1 from "../../assets/logo/intro-2.png";
 import logo2 from "../../assets/logo/intro-3.png";
-import TilteParaReuse from "../../reuse/TilteParaReuse";
+import ColorPera from "../../reuse/ColPera";
+import H2P2Ruse from "../../reuse/Heading2";
 
 
 const Intro = () => {
@@ -10,9 +11,16 @@ const Intro = () => {
       <div className="w-full border py-4 shadow-md hover:shadow-blue-200  hover:shadow-xl rounded-xl">
         <div className="text-center">
           <img src={logo} className="w-24 mx-auto mb-3" alt="" />
-          <TilteParaReuse
-          heading4="Most Popular Destination"
-          para1=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
+
+          <div className="mb-10">
+          <ColorPera   para4="Most Popular Destination"/>
+          </div>
+        
+           
+
+
+          <H2P2Ruse
+          para2=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
           et dolore magna aliqua enim ad minim veniam, quis nostrud."
            />
 
@@ -23,9 +31,11 @@ const Intro = () => {
       <div className="w-full border py-4 shadow-md hover:shadow-orange-200  hover:shadow-xl rounded-xl">
         <div className="text-center">
           <img src={logo1} className="w-24 mx-auto mb-3" alt="" />
-          <TilteParaReuse
-            heading4="Budget Friendly Packages"
-            para1=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
+          <ColorPera  para4="Budget Friendly Packages"/>
+
+          <H2P2Ruse
+           
+            para2=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
             et dolore magna aliqua enim ad minim veniam, quis nostrud." />
 
         
@@ -35,9 +45,11 @@ const Intro = () => {
       <div className=" w-full py-4 border shadow-md hover:shadow-green-200  hover:shadow-xl rounded-xl">
         <div className="text-center">
           <img src={logo2} className="w-24 mx-auto mb-3" alt="" />
-          <TilteParaReuse
-            heading4="Satisfaction Guarranted"
-            para1=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
+
+          <ColorPera className="mb-10"  para4="Satisfaction Friendly Packages"/>
+
+          <H2P2Ruse
+            para2=" Sectetur adipisicing elised do eiusmod tempor incidid unt ut labore
             et dolore magna aliqua enim ad minim veniam, quis nostrud."/>
 
           

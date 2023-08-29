@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import TilteParaReuse from "../../../reuse/TilteParaReuse";
+import H2P2Ruse from '../../../reuse/Heading2'
 import Common from "../../../reuse/Common";
 import './Popular.css'
+import ColorPera from "../../../reuse/ColPera";
 
 const PopularTour = () => {
   const [popularTour, setPopularTour] = useState([]);
@@ -19,7 +20,9 @@ const PopularTour = () => {
     <div className="py-8">
       <div className="container">
         <div className="mb-9">
-        <TilteParaReuse  heading2 ="Popular Destinations"  heading6=" ------ Discover ------" />
+        <H2P2Ruse  heading2 ="Popular Destinations" />
+        <ColorPera  para4=" ------ Discover ------"/>
+
         </div>
      
 

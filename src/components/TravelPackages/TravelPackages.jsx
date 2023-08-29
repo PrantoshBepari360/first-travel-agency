@@ -3,8 +3,9 @@ import { FaStar, FaUser } from "react-icons/fa";
 
 import { useFetchData } from "../../hooks/useFetchData";
 import { Link } from "react-router-dom";
-import TilteParaReuse from "../../reuse/TilteParaReuse";
+import H2P2Ruse from '../../reuse/Heading2'
 import PackagesCard from "../../reuse/PackagesCard";
+import ColorPera from "../../reuse/ColPera";
 
 
 const TravelPackages = () => {
@@ -12,8 +13,10 @@ const TravelPackages = () => {
 
   return (
     <div className="container">
-       <div className="mb-9">
-       <TilteParaReuse  heading2 ="  Travel Packages" heading6=" ------Packages------" />
+       <div className="mb-9 text-4xl">
+
+       <H2P2Ruse  heading2 ="  Travel Packages" />
+       <ColorPera para4=" ------Packages------"/>
        </div>
     
       {   console.log(packages)}

@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Review from "./Review";
-import TilteParaReuse from "../../../reuse/TilteParaReuse";
+import H2P2Ruse from '../../../reuse/Heading2'
+import ColorPera from "../../../reuse/ColPera";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -19,12 +20,14 @@ const Reviews = () => {
     <>
       <div className="container">
         <div className="my-10 text-center">
-          <TilteParaReuse
+          <H2P2Ruse
             heading2=" Customer Reviews"
-            para4=" This Our Services from our valuable Customer, those who get from BD
-            Travel agency. We every time provide best quality services to our
-            cusotmer." />
+            />
         </div>
+        <ColorPera para4=" This Our Services from our valuable Customer, those who get from BD
+            Travel agency. We every time provide best quality services to our
+            cusotmer."/>
+
         <div>
           {reviews?.length === 0 ? (
             <div className="text-center text-4xl text-red-700">Loading...</div>

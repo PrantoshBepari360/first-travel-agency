@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
+import H2P2Ruse from '../../reuse/Heading2'
 
 export const Form = () => {
   const form = useRef();
@@ -38,8 +39,10 @@ export const Form = () => {
               <MdLocationPin className="h-6 w-6" />
             </div>
             <div className="text-left">
-              <h1 className="text-xl font-medium">Location:</h1>
-              <p className="">Dhamusa, Dasar, Madaripur-7900.</p>
+              <H2P2Ruse 
+              heading4="Location:" 
+              para2="Dhamusa, Dasar, Madaripur-7900."/>
+              
             </div>
           </div>
           <div className="flex items-center mb-8">
@@ -61,6 +64,9 @@ export const Form = () => {
             </div>
           </div>
         </div>
+
+
+
         <div className="col-span-6">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex mb-7">
@@ -107,6 +113,10 @@ export const Form = () => {
             )}
           </form>
         </div>
+
+
+
+        
       </div>
     </div>
   );
