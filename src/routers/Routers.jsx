@@ -10,7 +10,7 @@ import PrivetOutlet from "../login/PrivetOutlet";
 import PackageDetails from "../Pages/Tours/tourPackages/PackageDetails";
 import ProductDetails from "../Pages/Shop/ProductDetails";
 import TourBooking from "../Pages/Booking/TourBooking";
-import FeatureDetails from "/src/Pages/Home/featured/FeatureDetails";
+// import FeatureDetails from "../Pages/Home/featured/FeatureDetails";
 import Login from "../login/Login";
 import Register from "../login/Register";
 import Footer from "../components/shared/footer/Footer";
@@ -34,7 +34,7 @@ const Routers = () => {
         </Route>
 
         <Route path="/tourBooking/:id" element={<TourBooking />}></Route>
-        <Route path="/featureDetails" element={<FeatureDetails />}></Route>
+        {/* <Route path="/featureDetails" element={<FeatureDetails />}></Route> */}
 
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
