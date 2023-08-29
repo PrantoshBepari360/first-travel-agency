@@ -63,7 +63,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       <section className="grid bg-stone-200">
         <div className="grid p-5 md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-screen-xl mx-auto mb-20">
           <div className="text-center flex flex-col items-center justify-center">
