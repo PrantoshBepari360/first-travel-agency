@@ -2,7 +2,7 @@ import TourPackages from "../Tours/tourPackages/TourPackages";
 import Explore from "./Explore";
 import Intro from "./Intro";
 import Slider from "./Slider";
-// import Featured from "./featured/Featured";
+import Featured from "./featured/Featured";
 import PopularTour from "./popularTour/PopularTour";
 import Reviews from "./reviews/Reviews";
 
