@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../components/shared/navbar";
-import Home from "../pages/Home";
+import Home from "../pages/home";
 import About from "../pages/about/About";
-import Tours from "../pages/Tours";
+import Tours from "../pages/tours";
 import Shop from "../pages/shop/Shop";
-import Blog from "../pages/Blog";
-import Contact from "../pages/Contacts";
+import Blog from "../pages/blog";
+import Contact from "../pages/contacts";
 import PrivetOutlet from "../login/PrivetOutlet";
 import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
 import ProductDetails from "../pages/shop/ProductDetails";
