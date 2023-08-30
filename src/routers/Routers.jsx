@@ -21,13 +21,13 @@ const Routers = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        {/* <Route path="/tours" element={<Tours />}></Route> */}
+        <Route path="/tours" element={<Tours />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
         <Route path="/*" element={<PrivetOutlet />}>
-          {/* <Route path="tourDetails/:id" element={<PackageDetails />}></Route> */}
+          <Route path="tourDetails/:id" element={<PackageDetails />}></Route>
           <Route path="product/:id" element={<ProductDetails />}></Route>
         </Route>
 
