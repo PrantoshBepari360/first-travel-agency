@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { useFetchData } from "../../../hooks/useFetchData";
-import Heading from "../../../components/shared/common/Heading"
-import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
+import { useFetchData } from "../../../../hooks/useFetchData";
+import Heading from "../../../shared/common/Heading";
+import SpinnerLoader from "../../../shared/loader/SpinnerLoader";
 import Review from "./Review";
 
 const Reviews = () => {

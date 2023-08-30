@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Modal from "./Modal";
-import Slider from "../../../components/shared/common/Slider";
-import { useFetchData } from "../../../hooks/useFetchData";
-import Heading from "../../../components/shared/common/Heading"
-import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
+import Slider from "../../../shared/common/Slider";
+import { useFetchData } from "../../../../hooks/useFetchData";
+import Heading from "../../../shared/common/Heading";
+import SpinnerLoader from "../../../shared/loader/SpinnerLoader";
 
 const PopularTour = () => {
   const popularTour = useFetchData("/PopularDestinations.json");

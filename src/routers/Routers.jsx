@@ -10,14 +10,16 @@ import Contact from "../components/pages/contacts";
 import PrivetOutlet from "../login/PrivetOutlet";
 import ProductDetails from "../components/pages/shop/ProductDetails";
 import TourBooking from "../components/pages/booking/TourBooking";
+import Home from "../components/pages/home";
+import FeatureDetails from "../components/pages/home/featured/FeatureDetails";
 
 const Routers = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<Home />}></Route>
-        <Route path="/home" element={<Home />}></Route> */}
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         {/* <Route path="/tours" element={<Tours />}></Route> */}
         <Route path="/shop" element={<Shop />}></Route>
@@ -30,7 +32,7 @@ const Routers = () => {
         </Route>
 
         <Route path="/tourBooking/:id" element={<TourBooking />}></Route>
-        {/* <Route path="/featureDetails" element={<FeatureDetails />}></Route> */}
+        <Route path="/featureDetails" element={<FeatureDetails />}></Route>
 
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>

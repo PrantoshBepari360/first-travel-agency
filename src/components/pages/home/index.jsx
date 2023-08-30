@@ -1,12 +1,11 @@
 
-import TourPackages from "../tours/tourPackages/TourPackages";
-import Explore from "./Explore";
-import Intro from "./Intro";
 import Slider from "./Slider";
-import Featured from "./featured/Featured";
+import Intro from "./Intro";
+import Explore from "./Explore";
+import TourPackages from "../../../pages/tours/tourPackages/TourPackages";
 import PopularTour from "./popularTour/PopularTour";
+import Featured from "./featured/Featured";
 import Reviews from "./reviews/Reviews";
-
 
 const Home = () => {
   return (

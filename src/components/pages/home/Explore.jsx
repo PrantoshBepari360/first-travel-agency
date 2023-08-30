@@ -1,9 +1,8 @@
 import img from "../../../assets/about/aboutBg.jpg";
 import logo from "../../../assets/logo/f-icon-1.png";
 import logo1 from "../../../assets/logo/f-icon-2.png";
-import Heading from "../../components/shared/common/Heading";
+import Heading from "../../shared/common/Heading";
 const Explore = () => {
-  
   return (
     <div className="container mb-20">
       <section className="mb-9 ">

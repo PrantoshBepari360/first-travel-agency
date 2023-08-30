@@ -1,4 +1,4 @@
-import Heading from "../../../components/shared/common/Heading";
+import Heading from "../../../shared/common/Heading";
 
 const FeatureDetails = () => {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import featuredImg from "../../../../assets/book/caleb.jpg";
-import Heading from "../../../components/shared/common/Heading";
+import Heading from "../../../shared/common/Heading";
 
 const Featured = () => {
   return (
