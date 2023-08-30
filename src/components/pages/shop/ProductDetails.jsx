@@ -14,7 +14,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="bg-[url('/assets/shop/shop.jpg')] bg-center bg-cover bg-no-repeat  h-96 bg-fixed mb-10 relative -z-10">
+      <div className="bg-[url('/src/assets/shop/shop.jpg')] bg-center bg-cover bg-no-repeat  h-96 bg-fixed mb-10 relative -z-10">
         <div className="py-10 lg:px-28 px-6 bg-slate-600 bg-opacity-80  h-96 text-center">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
