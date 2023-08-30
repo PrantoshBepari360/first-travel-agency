@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "./../hooks/useAuth";
 import { FaGoogle } from "react-icons/fa";
-import img from '../../assets/logo/252455-P4R9RT-971.jpg'
+import img from '../assets/logo/252455-P4R9RT-971.jpg'
 const Login = () => {
   const { isLoading, loginUser, signInWidthGoogle, authError } = useAuth();
   const [showPass, setShowPass] = useState(false);

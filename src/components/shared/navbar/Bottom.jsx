@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiMenu, HiOutlineClipboard, HiSearch } from "react-icons/hi";
 import NavJson from "/public/Nav2.json";
-import logo from "../../../../assets/logo/logo.png";
+import logo from "../../../assets/logo/logo.png";
 
 const Bottom = () => {
   const [showSubMenu, setShowSubMenu] = useState([]);
