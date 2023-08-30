@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "../../../hooks/useAuth";
 import { useFetchData } from "../../../hooks/useFetchData";
 import bookingImg from "../../../assets/about/flat-design.jpeg";
+import { useState } from "react";
 
 const TourBooking = () => {
   const { user } = useAuth();
@@ -9,6 +10,162 @@ const TourBooking = () => {
 
   const packages = useFetchData("/TravelPackages.json");
   const details = packages.data?.find((pk) => pk?.id === Number(id));
+
+  const initial = {
+    destination: "",
+    checkIn: "",
+    checkOut: "",
+    guests: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    country: "",
+    district: "",
+    town: "",
+    address: "",
+  };
+
+  const initialFocus = {
+    destination: false,
+    checkIn: false,
+    checkOut: false,
+    guests: false,
+    firstName: false,
+    lastName: false,
+    email: false,
+    phone: false,
+    country: false,
+    district: false,
+    town: false,
+    address: false,
+  };
+
+  const [formValue, setFormValue] = useState({ ...initial });
+  const [errors, setErrors] = useState({ ...initial });
+  const [focus, setFocus] = useState({ ...initialFocus });
+
+  const handleChange = (e) => {
+    {
+      !formValue.email &&
+        setFormValue((prev) => ({
+          ...prev,
+          email: user.email,
+        }));
+    }
+
+    setFormValue((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+      destination: details.name,
+    }));
+
+    const key = e.target.name;
+    const { errors } = checkValidity(formValue);
+
+    if (!errors[key]) {
+      setErrors((prev) => ({
+        ...prev,
+        [key]: "",
+      }));
+    }
+  };
+
+  const checkValidity = (formValue) => {
+    const errors = {};
+
+    const {
+      checkIn,
+      checkOut,
+      guests,
+      firstName,
+      lastName,
+      email,
+      phone,
+      country,
+      district,
+      town,
+      address,
+    } = formValue;
+
+    if (!checkIn) {
+      errors.checkIn = "Invalid checkIn";
+    }
+    if (!checkOut) {
+      errors.checkOut = "Invalid checkOut";
+    }
+    if (!guests) {
+      errors.guests = "Invalid guests";
+    }
+    if (!firstName) {
+      errors.firstName = "Invalid firstName";
+    }
+    if (!lastName) {
+      errors.lastName = "Invalid lastName";
+    }
+    if (!email) {
+      errors.email = "Invalid email";
+    }
+    if (!phone) {
+      errors.phone = "Invalid phone";
+    }
+    if (!country) {
+      errors.country = "Invalid country";
+    }
+    if (!district) {
+      errors.district = "Invalid district";
+    }
+    if (!town) {
+      errors.town = "Invalid town";
+    }
+    if (!address) {
+      errors.address = "Invalid address";
+    }
+
+    return {
+      errors,
+      isValid: Object.keys(errors).length === 0,
+    };
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { isValid, errors } = checkValidity(formValue);
+
+    if (isValid) {
+      setErrors({ ...errors });
+    } else {
+      setErrors({ ...errors });
+    }
+
+    // console.log(formValue);
+    // setFormValue({ ...initialValue });
+  };
+
+  const handleFocus = (e) => {
+    setFocus((prev) => ({
+      ...prev,
+      [e.target.name]: true,
+    }));
+  };
+
+  const handleBlur = (e) => {
+    const key = e.target.name;
+    const { errors } = checkValidity(formValue);
+
+    if (errors[key] && focus[key]) {
+      setErrors((prev) => ({
+        ...prev,
+        [key]: errors[key],
+      }));
+    } else {
+      setErrors((prev) => ({
+        ...prev,
+        [key]: "",
+      }));
+    }
+  };
 
   return (
     <>
@@ -25,7 +182,7 @@ const TourBooking = () => {
       </div>
       <div className="w-full mx-auto z-50 rounded py-5 border-none lg:w-10/12">
         <h2 className="text-center text-3xl font-bold">Billing Details</h2>
-        <form className="px-4">
+        <form onSubmit={handleSubmit} className="px-4">
           <div className="p-6 bg-slate-100 flex flex-col md:flex-row justify-between flex-wrap gap-2 shadow rounded">
             <div className="mb-4">
               <label
@@ -37,6 +194,7 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="destination"
+                name="destination"
                 placeholder={details?.name}
                 className="w-full border-2 rounded py-3 px-3 focus:outline-none "
                 required
@@ -53,8 +211,14 @@ const TourBooking = () => {
               <input
                 type="date"
                 id="checkIn"
+                name="checkIn"
                 className="w-full border-2 rounded py-3 px-3 focus:outline-none "
                 required
+                value={formValue.checkIn}
+                onChange={handleChange}
+                error={errors.checkIn}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
             <div className="mb-4">
@@ -67,8 +231,14 @@ const TourBooking = () => {
               <input
                 type="date"
                 id="checkOut"
+                name="checkOut"
                 className="w-full border-2 rounded py-3 px-3 focus:outline-none "
                 required
+                value={formValue.checkOut}
+                onChange={handleChange}
+                error={errors.checkOut}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
             <div className="mb-4">
@@ -81,9 +251,15 @@ const TourBooking = () => {
               <input
                 type="number"
                 id="guests"
+                name="guests"
                 placeholder="Guests"
                 className="w-full border-2 rounded py-3 px-3 focus:outline-none "
                 required
+                value={formValue.guests}
+                onChange={handleChange}
+                error={errors.guests}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
           </div>
@@ -99,9 +275,15 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="firstName"
+                name="firstName"
                 placeholder="Your Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+                value={formValue.firstName}
+                error={errors.firstName}
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
             <div className="mb-1 lg:w-1/2 w-full">
@@ -114,9 +296,14 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="lastName"
+                name="lastName"
                 placeholder="Last Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+                value={formValue.lastName}
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
           </div>
@@ -132,10 +319,15 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="email"
+                name="email"
                 placeholder={user?.email}
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
-                disabled
+                value={formValue.email}
+                onChange={handleChange}
+                error={errors.email}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
             <div className="mb-1 lg:w-1/2 w-full">
@@ -149,9 +341,14 @@ const TourBooking = () => {
               <input
                 type="number"
                 id="phone"
+                name="phone"
                 placeholder="Billing Mobile Number *"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+                value={formValue.phone}
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
           </div>
@@ -166,13 +363,20 @@ const TourBooking = () => {
               </label>
               <select
                 id="country"
+                name="country"
                 className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                value={formValue.country}
+                onChange={handleChange}
+                error={errors.country}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               >
-                <option value="country1">Bangladesh</option>
-                <option value="country2">India</option>
-                <option value="country3">Australia</option>
-                <option value="country4">Canada</option>
-                <option value="country5">London</option>
+                <option value="">Selact a country</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="London">London</option>
               </select>
             </div>
 
@@ -185,22 +389,28 @@ const TourBooking = () => {
               </label>
               <select
                 id="district"
+                name="district"
                 className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                value={formValue.district}
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               >
-                <option value="country1">Dhaka</option>
-                <option value="country2">Faridpur</option>
-                <option value="country3">Madaripur</option>
-                <option value="country4">Gopalganj</option>
-                <option value="country5">Gazipur</option>
-                <option value="country6">Jamalpur</option>
-                <option value="country7">Kishoreganj</option>
-                <option value="country8">Tangail</option>
-                <option value="country9">Bogura</option>
-                <option value="country10">Rajshahi</option>
-                <option value="country11">Rangpur</option>
-                <option value="country12">Jhenaidah</option>
-                <option value="country13">Kushtia</option>
-                <option value="country14">Khulna</option>
+                <option value="">Selact a district</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Faridpur">Faridpur</option>
+                <option value="Madaripur">Madaripur</option>
+                <option value="Gopalganj">Gopalganj</option>
+                <option value="Gazipur">Gazipur</option>
+                <option value="Jamalpur">Jamalpur</option>
+                <option value="Kishoreganj">Kishoreganj</option>
+                <option value="Tangail">Tangail</option>
+                <option value="Bogura">Bogura</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Jhenaidah">Jhenaidah</option>
+                <option value="Kushtia">Kushtia</option>
+                <option value="Khulna">Khulna</option>
               </select>
             </div>
           </div>
@@ -216,9 +426,15 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="town"
+                name="town"
                 placeholder="Town / City Name"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+                value={formValue.town}
+                onChange={handleChange}
+                error={errors.town}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
             <div className="mb-1 lg:w-1/2 w-full">
@@ -231,9 +447,15 @@ const TourBooking = () => {
               <input
                 type="text"
                 id="address"
+                name="address"
                 placeholder="House number and street number *"
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+                value={formValue.address}
+                onChange={handleChange}
+                error={errors.address}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </div>
           </div>
