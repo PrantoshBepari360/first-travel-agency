@@ -12,8 +12,8 @@ import ProductDetails from "../components/pages/shop/ProductDetails";
 import TourBooking from "../components/pages/booking/TourBooking";
 import Home from "../components/pages/home";
 import FeatureDetails from "../components/pages/home/featured/FeatureDetails";
-// import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
-// import Tours from "../pages/tours";
+import Tours from "../components/pages/tours";
+import PackageDetails from "../components/pages/tours/tourPackages/PackageDetails";
 
 const Routers = () => {
   return (
@@ -23,13 +23,13 @@ const Routers = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        {/* <Route path="/tours" element={<Tours />}></Route> */}
+        <Route path="/tours" element={<Tours />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
         <Route path="/*" element={<PrivetOutlet />}>
-          {/* <Route path="tourDetails/:id" element={<PackageDetails />}></Route> */}
+          <Route path="tourDetails/:id" element={<PackageDetails />}></Route>
           <Route path="product/:id" element={<ProductDetails />}></Route>
         </Route>
 
