@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../components/shared/navbar";
-import Home from "../pages/home";
+// import Home from "../pages/home";
 import About from "../pages/about/About";
 import Tours from "../pages/tours";
 import Shop from "../pages/shop/Shop";
@@ -20,8 +20,8 @@ const Routers = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/home" element={<Home />}></Route>
+        {/* <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route> */}
         <Route path="/about" element={<About />}></Route>
         <Route path="/tours" element={<Tours />}></Route>
         <Route path="/shop" element={<Shop />}></Route>

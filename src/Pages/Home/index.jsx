@@ -1,5 +1,5 @@
 
-import TourPackages from "../tours/tourPackages/TourPackages";
+// import TourPackages from "../tours/tourPackages/TourPackages";
 import Explore from "./Explore";
 import Intro from "./Intro";
 import Slider from "./Slider";
@@ -14,7 +14,7 @@ const Home = () => {
       <Slider />
       <Intro />
       <Explore />
-      <TourPackages />
+      {/* <TourPackages /> */}
       <PopularTour />
       <Featured />
       <Reviews />
