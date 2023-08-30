@@ -12,7 +12,7 @@ import ProductDetails from "../components/pages/shop/ProductDetails";
 import TourBooking from "../components/pages/booking/TourBooking";
 import Home from "../components/pages/home";
 import FeatureDetails from "../components/pages/home/featured/FeatureDetails";
-import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
+// import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
 // import Tours from "../pages/tours";
 
 const Routers = () => {
@@ -29,7 +29,7 @@ const Routers = () => {
         <Route path="/contact" element={<Contact />}></Route>
 
         <Route path="/*" element={<PrivetOutlet />}>
-          <Route path="tourDetails/:id" element={<PackageDetails />}></Route>
+          {/* <Route path="tourDetails/:id" element={<PackageDetails />}></Route> */}
           <Route path="product/:id" element={<ProductDetails />}></Route>
         </Route>
 
