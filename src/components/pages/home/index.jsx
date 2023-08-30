@@ -2,10 +2,10 @@
 import Slider from "./Slider";
 import Intro from "./Intro";
 import Explore from "./Explore";
-// import TourPackages from "../../../pages/tours/tourPackages/TourPackages";
 import PopularTour from "./popularTour/PopularTour";
 import Featured from "./featured/Featured";
 import Reviews from "./reviews/Reviews";
+import TourPackages from "../../../pages/tours/tourPackages/TourPackages";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Slider />
       <Intro />
       <Explore />
-      {/* <TourPackages /> */}
+      <TourPackages />
       <PopularTour />
       <Featured />
       <Reviews />

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { MdStar } from "react-icons/md";
-import detailImg from "../../../../assets/about/about.jpeg";
+import detailImg from "../../../assets/about/about.jpeg";
 import { useFetchData } from "../../../hooks/useFetchData";
 import ComentForm from "./ComentForm";
 import Slider from "../../../components/shared/common/Slider";

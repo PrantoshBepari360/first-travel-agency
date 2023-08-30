@@ -13,6 +13,7 @@ import TourBooking from "../components/pages/booking/TourBooking";
 import Home from "../components/pages/home";
 import FeatureDetails from "../components/pages/home/featured/FeatureDetails";
 import Tours from "../pages/tours";
+import PackageDetails from "../pages/tours/tourPackages/PackageDetails";
 
 const Routers = () => {
   return (
