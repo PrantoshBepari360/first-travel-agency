@@ -11,8 +11,8 @@ import Navbar from "../components/shared/navbar";
 // import ProductDetails from "../pages/shop/ProductDetails";
 // import TourBooking from "../pages/booking/TourBooking";
 // import FeatureDetails from "../pages/home/featured/FeatureDetails";
-// import Login from "../login/Login";
-// import Register from "../login/Register";
+import Login from "../login/Login";
+import Register from "../login/Register";
 import Footer from "../components/shared/footer/Footer";
 
 const Routers = () => {
@@ -34,10 +34,10 @@ const Routers = () => {
         </Route>
 
         <Route path="/tourBooking/:id" element={<TourBooking />}></Route>
-        <Route path="/featureDetails" element={<FeatureDetails />}></Route>
+        <Route path="/featureDetails" element={<FeatureDetails />}></Route> */}
 
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/register" element={<Register />}></Route> */}
+        <Route path="/register" element={<Register />}></Route> 
       </Routes>
       <Footer />
     </BrowserRouter>
