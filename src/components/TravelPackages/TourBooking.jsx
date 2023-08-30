@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "./../../hooks/useAuth";
 import { useFetchData } from "../../hooks/useFetchData";
 import bookingImg from "../../assets/about/flat-design.jpeg";
+import { useState } from "react";
 
 const TourBooking = () => {
   const { user } = useAuth();
@@ -10,6 +11,7 @@ const TourBooking = () => {
   const { packages } = useFetchData();
 
   const details = packages?.find((pk) => pk?.id === Number(id));
+  
 
   return (
     <>
@@ -78,6 +80,7 @@ const TourBooking = () => {
                 placeholder={user?.email}
                 className="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 required
+               
                 disabled
               />
             </div>
