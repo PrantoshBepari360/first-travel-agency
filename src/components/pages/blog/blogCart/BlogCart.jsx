@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./BlogCart.css";
 import Pagination from "./Pagination";
 import BlogSideBar from "./BlogSideBar";
-import { useFetchData } from "../../../hooks/useFetchData";
-import SpinnerLoader from "../../../components/shared/loader/SpinnerLoader";
-import PackagesCard from "../../../components/shared/common/PackagesCard";
+import { useFetchData } from "../../../../hooks/useFetchData";
+import SpinnerLoader from "../../../shared/loader/SpinnerLoader";
+import PackagesCard from "../../../shared/common/PackagesCard";
 
 const BlogCart = () => {
   const packages = useFetchData("/TravelPackages.json", (data) =>

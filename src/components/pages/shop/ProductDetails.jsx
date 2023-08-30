@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import Heading from "../../components/shared/common/Heading";
-import { useFetchData } from "../../hooks/useFetchData";
+import Heading from "../../../components/shared/common/Heading";
+import { useFetchData } from "../../../hooks/useFetchData";
 
 const ProductDetails = () => {
   const shop = useFetchData("/shop.json");

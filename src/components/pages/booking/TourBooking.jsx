@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useAuth } from "../../hooks/useAuth";
-import { useFetchData } from "../../hooks/useFetchData";
+import { useAuth } from "../../../hooks/useAuth";
+import { useFetchData } from "../../../hooks/useFetchData";
 import bookingImg from "../../../assets/about/flat-design.jpeg";
 
 const TourBooking = () => {
