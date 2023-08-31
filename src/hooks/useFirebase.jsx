@@ -16,7 +16,7 @@ initializeFirebaseApp();
 
 export const useFirebase = () => {
   const [user, setUser] = useState({});
-  const [isLoading, setIsloading] = useState(true);
+  const [isLoading, setIsloading] = useState(false);
   const [authError, setAuthError] = useState("");
   const [admin, setAdmin] = useState(false);
 
